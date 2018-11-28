@@ -1,0 +1,18 @@
+<!--
+*2018/3/6
+*@author: SP0014
+*@description:  单电站监控页面  电站功率曲线
+-->
+<div class="sp-tit">
+    <h2 i18n="sp.plantPower">plantPower</h2>
+    <div class="searchPowerBox fr">
+        <input type="text" class="Wdate" id="searchDate" onclick="WdatePicker({readOnly:true,maxDate:'%y-%M-%d'})">
+        <span class="search_box" id="sureTime">
+                    <img src="/images/newMain/search.png" alt="">
+                </span>
+    </div>
+</div>
+<div class="" id="" style="width: 100%;height: 85%;text-align: center">
+    <div id="loadData" style="margin: 50px auto" i18n="sp.loading">loading</div>
+    <div id="powerKpi" style="width: 100%;height: 100%;display: none"></div>
+</div>

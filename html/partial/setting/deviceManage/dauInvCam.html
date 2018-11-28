@@ -1,0 +1,41 @@
+<div class="leftInfo_device fl">
+    <div class="leftTab">
+        <!--<div class="tab">-->
+            <!--<span class="activeSpan" data-type="1">按组织分组</span>-->
+            <!--<span data-type="2">按地区分组</span>-->
+        <!--</div>-->
+        <div class="organizationLf1">
+            <img src="/images/setting/search1.png" alt="">
+            <input type="text" i18nOnly="placeholder" i18n="ass.inputOrgPlant" placeholder="ass.inputOrgPlant" id="key">
+            <a id="searchOrgPlant" i18n="search">search</a>
+        </div>
+        <div id="ztree" class="ztree" style="margin-top: 10px">
+        </div>
+    </div>
+</div>
+<div class="rightInfo_device fr" >
+    <div class="deviceTab1">
+        <ul class="deviceUl">
+            <li permission = 'dataLogger' class="actLi"><a attr-href="partial/setting/deviceManage/dau.html" data-type="dau" i18n="dataCollector">dataCollector</a></li>
+            <li permission = 'inverterManage'><a attr-href="partial/setting/deviceManage/inverterDevice.html" data-type="inverter" i18n="inverter">inverter</a></li>
+            <li permission = 'cameraManage'><a attr-href="partial/setting/deviceManage/camera.html" data-type="camera" i18n="camera">camera</a></li>
+        </ul>
+    </div>
+    <div class="deviceHead1" style="display: none">
+        <!--style="display: none"-->
+        <div class="typeDiv"><span i18n="deviceName">deviceName</span><span>：</span><input type="text" name="deviceName" class="equipmentName" i18nOnly="placeholder" i18n="ass.inputDevName" placeholder="ass.inputDevName"></div>
+        <div class="typeDiv" style="display: none"><span i18n="manufacturer">manufacturer</span><span>：</span><input type="text" name="manufacturer" class="manufacturerName" i18nOnly="placeholder" i18n="ass.inputManufacturer" placeholder="ass.inputManufacturer"></div>
+        <div class="fl statusDiv"><span i18n="deviceStatus">deviceStatus</span><span>：</span><select name="status" id=""><option value="" i18n="pleaseChoose">pleaseChoose</option><option i18nOnly="value" value="one" i18n="enable">enable</option><option i18nOnly="value" value="zero" i18n="noEnable">noEnable</option></select></div>
+        <div class="fl statusDiv" style="display: none"><span i18n="deviceStatus">deviceStatus</span><span>：</span><select name="status1" ><option i18nOnly="value" value="one" i18n="pleaseChoose">pleaseChoose</option><option i18nOnly="value" value="zero" i18n="connected">connected</option><option value="1" i18n="unconnected">unconnected</option></select></div>
+        <div class="opeDiv fr"><a class="searchDevice" i18n="search">search</a><a permission = 'dataLoggerDelete' class="importDevice" id="deleteDau" i18n="delete">delete</a><a permission = 'dataLoggerNew' class="exportDevice" id="addDau" i18n="add">add</a></div>
+        <div class="opeDiv fr" style="display: none"><a class="searchDevice" id="searchCam" i18n="search">search</a><a permission = 'cameraManageDelete' class="importDevice" id="deleteCam" i18n="delete">delete</a><a permission = 'cameraManageNew' class="exportDevice" id="addCam" i18n="add">add</a></div>
+    </div>
+    <!--表格数据-->
+    <div class="deviceTables" id="deviceTables">
+
+    </div>
+    <div class="noData" style="margin: 30px auto">
+        <img src="/images/repImages/NaN.png" alt="" style="margin-left: 30%;">
+    </div>
+
+</div>

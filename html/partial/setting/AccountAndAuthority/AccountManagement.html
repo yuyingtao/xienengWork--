@@ -1,0 +1,62 @@
+
+
+
+<!--// 套用的组织信息页面的相关样式 所以class是organization-->
+<div class="organizationBox">
+    <div class="organizationLf">
+        <div class="searchBox">
+            <div class="searchImg">
+                <img src="/images/setting/search1.png" alt="">
+            </div>
+            <input type="text"  id="key" class="searchContent" i18n="searchPlaceholder" placeholder="searchPlaceholder">
+            <div class="searchBtn" i18n="search">search</div>
+        </div>
+        <div id="ztree" class="ztree">
+        </div>
+    </div>
+    <div class="organizationRi accountManagement">
+        <div class="title1">
+            <div class="title1_warp1">
+                <span i18n="accountInfo">accountInfo</span><b style="margin-left: -10px;margin-top: 7px;margin-right: 10px">:</b>
+                <input type="text" id="contentInput" i18n="nameOrTelOrEmail" placeholder="nameOrTelOrEmail">
+                <span i18n="accountRole">accountRole</span><b style="margin-left: -10px;margin-top: 7px;margin-right: 10px">:</b>
+                <select id="roleOption">
+                    <option value="" i18n="all">all</option>
+                </select>
+                <span class="state" i18n="status">status</span><b style="margin-left: -10px;margin-top: 7px;margin-right: 10px">:</b>
+                <select name="" id="statusSelect">
+                    <option value="" style="display: block;height: 50px"  i18n="all">all</option>
+                    <option  i18nOnly="value" value="one" i18n="enable">enable</option>
+                    <option     i18nOnly="value" value="zero"   i18n="noEnable">noEnable</option>
+                </select>
+                <a class="imgBtn" id="search" i18n="search">search</a>
+            </div>
+            <div class="title1_warp" >
+                <a permission = 'accountManageDelete' class="delete" id="delete" i18n="delete">delete</a>
+                <a permission = 'accountManageNew' class="add" id="addUser" i18n="add">add</a>
+            </div>
+        </div>
+        <div class="dataTables">
+                <table id="example" class="stripe">
+                    <thead class="text-center">
+                    <tr style="border: 1px solid white;border-radius: 4px">
+                        <!--<th style="display: none">ck</th>-->
+                        <th class="fith">
+                            <img class="checkall" src="images/repImages/rect.png">
+                        </th>
+                        <th i18n="accountsRole">accountsRole</th>
+                        <th i18n="eachName">eachName</th>
+                        <th i18n="orgName">orgName</th>
+                        <th i18n="loginId">loginId</th>
+                        <th i18n="phoneNum">phoneNum</th>
+                        <th i18n="eachEmail">eachEmail</th>
+                        <th i18n="status">status</th>
+                        <th  permission = 'accountManageEdit' class="lath" i18n="operate">operate</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</div>

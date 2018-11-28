@@ -1,0 +1,53 @@
+<div class="rep-auto">
+    <div class="curve">
+        <div class="cur-title">
+            <div class="cur-title-le">
+                <input type="text" id="plantName" placeholder="请输入电站名称">
+                <span>|</span>
+                <img id="lfSearch" src="/images/pmImages/search-icon.png" alt="搜索">
+                <div class="plantContain">
+                    <b class="arrow"></b>
+                    <div class="pnContainer">
+                        <div class="pcScrrol">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cur-title-ri">
+                <div class="choose-m-y">
+                    <span class="activeSpan" data-dimension="month" i18n="monthlyReport">monthlyReport</span>
+                    <b>|</b>
+                    <span data-dimension="year" i18n="annualReport">annualReport</span>
+                </div>
+                <div class="choose-time">
+                    <input type="text" class="Wdate" id="dimenTime" readonly>
+                </div>
+                <div class="choose-time-search" id="riSearch">
+                    <img src="/images/pmImages/search-icon_1.png" alt="搜索">
+                </div>
+                <div class="export-btn">
+                    <a  class="exportBtn" id="export" i18n="export">export</a>
+                </div>
+            </div>
+        </div>
+        <div class="curve-box">
+            <div class="show-curve" id="show-curve" style="width: 100%;height: 270px"></div>
+        </div>
+    </div>
+    <div class="table-box">
+        <div class="caption" i18n="opReportOfPowerStation">
+            opReportOfPowerStation
+        </div>
+        <div class="plantInfo" style="display: none">
+            <span i18n = "plantName">plantName</span>
+            <span>--</span>
+            <span i18n ="capacityOfPowerStation">capacityOfPowerStation</span>
+            <span>--</span>
+            <span i18n = "statisticalTime">statisticalTime</span>
+            <span>--</span>
+        </div>
+        <table  class="reportTable hover stripe" width="100%" id="reportTable">
+
+        </table>
+    </div>
+</div>

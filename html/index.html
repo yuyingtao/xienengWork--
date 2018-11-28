@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>光伏管理系统</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="navSysCtrolNav" class="navSysCtrolNav" style="display:none">
+        <div class="navSysCtrolArrow"><img src="/images/energyEfficient/activeMonitor/up.png"></div>
+        <div id="navSysCtrol" class="navSysCtrol">
+            <div id="solarIcon" class="solarIcon ctrolBox" attr-sys = "main" attr-planttype = "1"><div class="nsItem"><img src="/images/energyEfficient/activeMonitor/solar_1.png"></div><span>光伏</span></div>
+            <div id="socIcon" class="socIcon ctrolBox" attr-sys = "cnmain" attr-planttype = "2"><div class="nsItem"><img src="/images/energyEfficient/activeMonitor/soc_1.png"></div><span>储能</span></div>
+            <div id="energyIcon" class="energyIcon ctrolBox on" attr-sys = "energySys" attr-planttype = "4"><div class="nsItem"><img src="/images/energyEfficient/activeMonitor/energy_1.png"></div><span>能耗</span></div>
+        </div>
+    </div>
+    <div id="sysBody" class="sp-body"></div>
+<script type="text/javascript" src="/js/require.js" data-main="/js/main/load.js" defer async="true"></script>
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+    <script language="javascript" for="EZUIKit"
+            event="PluginEventHandler(lEventType, strErrorCode, lInterErrorCode)">   //打开预览时触发该事件
+    SynpowerCamera.PluginEventHandler(lEventType, strErrorCode, lInterErrorCode)</script>
+</body>
+</html>

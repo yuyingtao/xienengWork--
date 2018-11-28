@@ -1,0 +1,174 @@
+
+.plantRep table.dataTable.stripe thead th,table.dataTable.display thead th{
+  &.sorting .orderImg{
+    background: url("/images/repImages/filter_01.png");
+  }
+  &.sorting_asc .orderImg{
+    background: url("/images/repImages/filter_11.png");
+  }
+  &.sorting_desc .orderImg{
+    background: url("/images/repImages/filter_22.png");
+  }
+}
+.plantRep {
+  width: 100%;
+  padding-bottom: 14px;
+  .titleBar-item {
+    background-color: #fff;
+    box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.1);
+  }
+  .titleBar {
+    text-align: left;
+    height: 56px;
+    line-height: 56px;
+    margin: auto;
+    .setFont(1.1428em);
+    font-weight: 700;
+  }
+  .navTitBar {
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    //.test:before{
+    //  background: url("/images/repImages/1power.png") no-repeat center;
+    //}
+    > div {
+      display: inline-block;
+      padding: 0 20px;
+      position: relative;
+      color: #8A8A8A;
+      font-weight: 500;
+      margin-left: 1px;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        //padding: 0 20px;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        vertical-align: middle;
+        //background: url("/images/repImages/power.png") no-repeat center;
+        margin-top: -2px;
+      }
+      &:first-child:before {
+        background: url("/images/repImages/power_0.png") no-repeat center;
+      }
+      &:nth-of-type(2):before{
+        background: url("/images/repImages/1power_0.png") no-repeat center;
+      }
+      &:nth-of-type(3):before{
+        background: url("/images/repImages/history_0.png") no-repeat center;
+      }
+      &:nth-of-type(4):before{
+        background: url("/images/repImages/ammeter_2.png") no-repeat center;
+      }
+      //&:nth-of-type(4):before{
+      //  background: url("/images/repImages/1power.png") no-repeat center;
+      //}
+      //&:last-child:before{
+      //  background: url("/images/repImages/history_1.png") no-repeat center;
+      //}
+      &.on, &:hover {
+        background-color: #01B1ED;
+        color: #fff;
+        //&:before {
+        //  background: url("/images/pmImages/equipmentmonitoring.png") no-repeat center;
+        //}
+        b {
+          position: absolute;
+          left: 43%;
+          bottom: -10px;
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-top: 10px solid #01B1ED;
+          border-right: 10px solid transparent;
+          border-left: 10px solid transparent;
+        }
+        &:first-child:before {
+          background: url("/images/repImages/power.png") no-repeat center;
+        }
+        &:nth-of-type(2):before{
+          background: url("/images/repImages/1power.png") no-repeat center;
+        }
+        &:nth-of-type(3):before{
+          background: url("/images/repImages/history_1.png") no-repeat center;
+        }
+        &:nth-of-type(4):before{
+          background: url("/images/repImages/ammeter_3.png") no-repeat center;
+        }
+        //&:nth-of-type(4):before{
+        //  background: url("/images/repImages/1power_1.png") no-repeat center;
+        //}
+        //&:last-child:before{
+        //  background: url("/images/repImages/history.png") no-repeat center;
+        //}
+      }
+    }
+
+  }
+  .rep-content {
+    margin: 16px auto 0 auto;
+    //margin-top: 12px;
+  }
+  .pms-item {
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+}
+
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+.plantRep {
+
+  .rep-content {
+    width: 1500px;
+    .palntImg {
+      width: 409px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .titleBar {
+    width: 1500px;
+  }
+}
+
+@import '../../media.less';
+@media (max-width: @screen1920) {
+
+}
+
+@media (max-width: @screen1500) {
+  .plantRep {
+    .rep-content {
+      width: 100%;
+
+      .palntImg {
+        width: 27.69%;
+      }
+    }
+    .titleBar {
+      width: 98.5333%;
+    }
+  }
+}
+
+@media (max-width: @screen1366) {
+
+}
+
+@media (max-width: @screen1024) {
+
+}

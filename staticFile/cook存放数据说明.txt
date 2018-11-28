@@ -1,0 +1,20 @@
+后端返回：
+	userName:用户名,
+                 	loginId:用户名ID,
+                 	roleId:角色ID,
+                 	id:,
+                 	plantNum:电站数量,
+                 	plantId:个人类型且只有一个电站时的电站ID,
+                 	plantType:电站类型，1：光伏；2：储能；3：光储,
+                 	userType:0:企业，1：个人,
+                 	iconUrl:用户头像,
+                 	logoPic:系统logo,
+                 	plantTypeList  ->    系统类型：1：光伏，2：储能，4：能效
+                 	plantNum：‘1,1,1’  ->   返回三个值分别代表光伏、储能、能效的电站数量
+                 	plantId：只有当plantTypeList返回一种类型的时候，且对应系统类型的plantNum为1时，才有用。即只包含一种系统类型,且此类型的电站数量为1时，这个电站的id。
+                 	tokenId:token
+
+前端定义：
+	defaultLoading:默认加载的系统类型【main:多电站作为首页；singleSys：单电站作为首页；；synpowerScreen：大屏作为首页；】,用户登陆后可以改变跳转相应的页面
+	sysType:登陆成功根据返回的各种数据判断确定系统类型【0：多电站首页；1：单电站首页；2：大屏首页】,用户登陆后就固定不变了
+	singlePlantInfo:JSON.stringify({plantId:单电站ID,singlePlantType:单电站类型}))

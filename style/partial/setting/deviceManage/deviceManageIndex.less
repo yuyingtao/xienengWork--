@@ -1,0 +1,168 @@
+
+.navList1{
+  width: 100%;
+  height: 100%;
+  .navUl{
+    width: 19%;
+    padding-top: 26px;
+    background: #fff;
+    float: left;
+    list-style:none;
+    text-align: left;
+    margin-right: 9px;
+    height: 100%;
+    li{
+      padding: 20px 0px 20px 36px;
+      margin-bottom: 15px;
+      a{
+        color:#8A8A8A;
+        font-family: "Microsoft Yahei", Verdana, Simsun, "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+      }
+      img{
+        vertical-align: -9px;
+      }
+    }
+    .activeLi{
+      border-left:6px solid #01B1ED;
+      background:rgba(229,248,255,1);
+      a{
+        color: #01B1ED ;
+      }
+    }
+  }
+  .messageList{
+    padding-top: 26px;
+    float: right;
+    width: 80%;
+    background: #fff;
+    height: 100%;
+    .deviceTab1{
+      width: 97.6%;
+      height: 36px;
+      margin: 0 auto;
+      border-bottom: 1px solid #DEDEDE;
+      .deviceUl{
+        text-align: center;
+        li{
+          float: left;
+          width: 120px;
+          height: 36px;
+          background: #ECECEC;
+          line-height: 34px;
+          border: 1px solid #ECECEC;
+          color: #999;
+        }
+        li:first-child{
+          margin-left: 5px;
+        }
+        li.actLi{
+          background: #fff;
+          border-top: 2px solid #01B1ED;
+          border-radius: 2px;
+          border-bottom: none;
+          color: #333;
+        }
+      }
+    }
+    .deviceHead1{
+      width: 97.6%;
+      overflow: hidden;
+      margin: 20px auto 0 auto;
+      select{
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background: url("/images/setting/plantManage/dropdown.png") no-repeat 96% center;
+      }
+      .typeDiv{
+        float: left;
+        width: 21.04%;
+        height: 36px;
+        line-height: 36px;
+        text-align: left;
+        span{
+          font-size: 1rem;
+        }
+        input,select{
+          width: 68%;
+          border: 1px solid #DEDEDE;
+          height: 34px;
+          border-radius: 4px;
+          font-size: 14px;
+          text-indent: 5px;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+      .statusDiv{
+        height: 36px;
+        line-height: 36px;
+        text-align: left;
+        font-size: 1rem;
+        select{
+          width: 90px;
+          height: 34px;
+          border: 1px solid #DEDEDE;
+          border-radius: 4px;
+          font-size: 14px;
+          text-indent: 5px;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+      .opeDiv{
+        //float: left;
+        a{
+          width: 80px;
+          float: left;
+          font-size: 1rem;
+          height: 34px;
+          line-height: 34px;
+          display: inline-block;
+          text-indent: 30px;
+          border-radius: 4px;
+          color: #fff;
+          background: #01B1ED url(/images/setting/search_1.png) no-repeat 5% 2px;
+          &:nth-of-type(1){
+            margin-left: 24px;
+            margin-right: 15px;
+          }
+          &:nth-of-type(2){
+            margin-right: 15px;
+            background: #01B1ED url(/images/setting/deviceManage/export2.png) no-repeat 5% 2px;
+          }
+          &:nth-of-type(3){
+            margin-right: 15px;
+            background: #01B1ED url(/images/repImages/export.png) no-repeat 5% 2px;
+          }
+          &:nth-of-type(4){
+            //float: right;
+            background: #01B1ED url(/images/setting/deviceManage/add_1.png) no-repeat 5% 2px;
+          }
+
+        }
+      }
+    }
+  }
+}
+@import '../../../media.less';
+@media(max-width:@screen1500) {
+  .navList{
+    width: 100%;
+    ul{
+      width: 17%;
+    }
+    .messageList{
+      width: 70%;
+    }
+  }
+}
+@media (max-width: @screen1366) {
+  .navList1 .messageList .deviceHead1 .typeDiv {
+    input,select{
+      width: 50%;
+    }
+  }
+}

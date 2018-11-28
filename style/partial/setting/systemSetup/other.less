@@ -1,0 +1,152 @@
+@import "../../../media";
+.otherInfo{
+  .title{
+    padding-left: 8px;
+    height: 36px;
+    line-height: 36px;
+    .setFont(1rem);
+    border-bottom: 1px dashed rgba(222,222,222,1);
+    color: white;
+    text-align: left;
+    background: url(/images/setting/title.png) no-repeat;
+  }
+  .commentBox{
+    width: 340px;
+    height: 90px;
+    margin: 28px 30px 28px  0px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    .showImg{
+      margin: 0 28px 0 16px;
+    }
+    .showTex{
+      color: #626262;
+      .setFont(1.285rem);
+      .fp{
+        .setFont(1rem);
+        margin-bottom: 10px;
+        color: #BCBCBC;
+      }
+    }
+    .showTex1{
+      margin-right: 100px;
+    }
+  }
+  .roleSet{
+    //display: flex;
+    //flex-wrap: wrap;\
+    overflow: hidden;
+    .commentBox{
+      float: left;
+    }
+  }
+  .editBox1{
+    .showTex{
+      .autoCalculation{
+        img{
+          margin-right: 3px;
+        }
+      }
+    }
+    .showTex1{
+      margin-right: 20px;
+    }
+    .electricity{
+      width: 100px;
+      border-bottom: 1px solid #EBEBEB;
+      input{
+        border: none;
+        outline: none;
+      }
+    }
+    .setelectricity{
+      width: 100px;
+      position: relative;
+      border-bottom: 1px solid #EBEBEB;
+      input{
+        display: inline-block;
+        padding-left: 5px;
+        width: 70px;
+        border: none;
+        outline: none;
+      }
+      .chooseTricity{
+        width: 180px;
+        height: 80px;
+        line-height: 40px;
+        text-align: center;
+        background: white;
+        padding: 20px;
+        position: absolute;
+        bottom: -90px;
+        z-index: 10;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid #cacaca;
+        border-radius: 5px;
+        img{
+          margin-right: 5px;
+        }
+      }
+      .imgShaw{
+        position: absolute;
+        bottom: -11px;
+        right: 10px;
+        z-index: 11;
+        //transform: rotate(180deg);
+      }
+    }
+
+    .roleType1{
+      width: 100px;
+      border-bottom: 1px solid #EBEBEB;
+      input{
+        display: inline-block;
+        padding-left: 5px;
+        width: 70px;
+        border: none;
+        outline: none;
+      }
+    }
+    .num{
+      position: relative;
+      width: 100px;
+      border-bottom: 1px solid #EBEBEB;
+      input{
+        display: inline-block;
+        padding-left: 5px;
+        width: 70px;
+        border: none;
+        outline: none;
+      }
+      label.error{
+          font-size: 10px !important;
+          position: absolute;
+          bottom: -23px;
+          left: 10px;
+      }
+    }
+  }
+  .hideType{
+    display: none;
+  }
+  .showType{
+    display: block;
+  }
+}
+.editElectricity{
+  display: inline-block;
+  width: 100px;
+}
+.btnBox{
+  width: 350px;
+  margin: 57px auto;
+}
+@import "../../../media";
+@media (max-width: @screen1366) {
+  .otherInfo{
+    .commentBox{
+      margin: 10px 10px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+<div class="firSection clearfix">
+    <div class="palntImg pms-item carousel slide" id="spMonitorCarousel">
+        <div class="cameraImg" id="toCamera"></div>
+        <ol class="carousel-indicators">
+        </ol>
+        <div class="carousel-inner">
+        </div>
+    </div>
+    <div class="wpContain pms-item">
+        <!-- 天气 收益div -->
+        <div class="palntIndo clearfix">
+            <!--电站状态-->
+            <div class="palntStatus" id="spPlantStatus" >
+
+            </div>
+            <!--天气-->
+            <div class="pms-weather">
+
+            </div>
+        </div>
+    </div>
+    <!--收益-->
+    <div class="profContain pms-item pms-data" id="profitBox">
+
+    </div>
+</div>
+<div class="secSection clearfix">
+    <!--电池容量等左边信息div-->
+    <div class="mapItem pms-item capPower">
+
+    </div>
+    <!--电站功率div-->
+    <div class="powerItem pms-item plantPower">
+
+    </div>
+</div>
+<!--环境贡献 收益统计-->
+<div class="secSection clearfix">
+    <!--环境贡献-->
+    <div class="mapItem pms-item spContribution">
+
+    </div>
+    <!--收益统计-->
+    <div class="powerItem pms-item spGenProfit">
+
+    </div>
+</div>
+<!--<div class="thrSection pms-item clearfix">-->
+    <!--<div class="sp-tit">-->
+        <!--<h2>发电量及收益统计</h2>-->
+        <!--<div class="dateChange fr">-->
+            <!--<nav>-->
+                <!--<span class="isActive" data-type="day">日</span>-->
+                <!--<span data-type="month">月</span>-->
+                <!--<span data-type="year">年</span>-->
+                <!--<input type="text" id="limitDate" style="display: none">-->
+            <!--</nav>-->
+            <!--<input type="text" class="Wdate" id="dateStart" style="margin-left: 20px">-->
+            <!--&nbsp;&nbsp;—-->
+            <!--<input type="text" class="Wdate" id="dateEnd">-->
+            <!--<img src="/images/pmImages/search.png" alt="" id="searchTime" class="fr">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div style="float:right"><span>日</span><span>月</span><span>年</span></div>&ndash;&gt;-->
+    <!--<div class="l-quota">-->
+        <!--<div class="l-quota1">-->
+            <!--<p>单kW日平均发电量</p>-->
+            <!--<div class="data" id="sp-ppr"><span>&#45;&#45;度</span><img src="/images/pmImages/icon_3.png" alt="">&#45;&#45;</div>-->
+        <!--</div>-->
+        <!--<div class="splitLine"><img src="/images/pmImages/online_2.png" alt=""></div>-->
+        <!--<div class="l-quota2">-->
+            <!--<p>等效利用小时数</p>-->
+            <!--<div class="data" id="sp-pr"><span>&#45;&#45;小时</span><img src="/images/pmImages/icon_3.png" alt="">&#45;&#45;</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="r-kpi">-->
+        <!--<div class="" id="profitLine" style="width: 100%;height: 85%"></div>-->
+    <!--</div>-->
+
+<!--</div>-->
+<!--
+<div class="camerapop" id="videoHisWin">
+    <div class="cameraWin">
+        <a class="closebtn" id="cawin-close"><img src="/images/largeScreen/close_1.png"></a>
+    <div style="width: 1375px;height: 650px;">
+        <object classid="clsid:54FC7795-1014-4BF6-8BA3-500C61EC1A05" id="EZUIKit" width="1000" height="600" name="EZUIKit"></object>
+        <div class="progressBar"><div class="progressCon" id="progressCon"></div></div>
+            <div class="timePic"><img src="/images/time.png" alt=""></div>
+
+        <div class="videoHisList" id="hisTimeList">
+            <input type="button" value="2018-03-01">
+        </div>
+    </div>
+       &lt;!&ndash; <div class="oprDiv" style="text-align: left;float: left">
+            <input type="button" value="开始播放" onclick="StartPlay()"
+                   style="display:inline-block" id="startplaybtn">
+            <input type="button" value="结束播放" onclick="StopPlay()"
+                   style="display:none" id="stopplaybtn">
+            <div>
+                参数：<textarea rows=8 cols=70 id="dataPanel" value=""></textarea>
+            </div>
+            <div id="hisTimeList" style="width: 818px;height:50px;display: inline-block;">
+            </div>
+            <div>
+                播放结果：<textarea rows=8 cols=70 id="showPanel" value=""></textarea>
+            </div>
+        </div>&ndash;&gt;
+    </div>
+    </div>
+</div>-->
+
+<!--<div style="width: 1400px;height: 600px;">
+    <table border=1 width="1366">
+        <tr>
+            <td width="255" style="position: relative">
+                <object classid="clsid:54FC7795-1014-4BF6-8BA3-500C61EC1A05" id="EZUIKit" width="1000" height="360"
+                        name="EZUIKit"></object>
+                <div class="progressBar"><div class="progressCon" id="progressCon"></div></div>
+
+            </td>
+            <td valign="bottom">
+
+                <table border>
+                    <tr>
+                        <td>
+                            <table border="1" width="1000" height="120">
+                                    <td>
+                                        <table border width="1200" height="100">
+                                            <tr>
+                                                <td>
+                                                    <input type="button" value="开始播放" onclick="StartPlay()"
+                                                           style="display:block" id="startplaybtn">
+                                                    <input type="button" value="结束播放" onclick="StopPlay()"
+                                                           style="display:none" id="stopplaybtn">
+                                                </td>
+                                                <td><textarea rows=8 cols=70 id="dataPanel"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div id="hisTimeList">
+                                                    </div>
+
+                                                </td>
+                                                <td><input type="text" id="picturename"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>播放结果</td>
+                                                <td><textarea rows=8 cols=70 id="showPanel" value=""></textarea></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                </tr>
+                            </table>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+</div>-->
+<!--<script language="javascript" for="EZUIKit"
+        event="PluginEventHandler(lEventType, strErrorCode, lInterErrorCode)">   //打开预览时触发该事件
+SynpowerCamera.PluginEventHandler(lEventType, strErrorCode, lInterErrorCode);
+</script>-->

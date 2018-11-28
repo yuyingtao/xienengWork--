@@ -1,0 +1,60 @@
+<div class="organizationBox">
+    <div class="organizationLf">
+        <div class="searchBox">
+            <div class="searchImg">
+                <img src="/images/setting/search1.png" alt="">
+            </div>
+            <input type="text" id="key" class="searchContent" i18n="searchPlaceholder" placeholder="searchPlaceholder">
+            <div class="searchBtn searchBtn2" i18n="search">search</div>
+        </div>
+        <div id="ztree" class="ztree">
+        </div>
+    </div>
+    <div class="roleListBox">
+        <div class="roleType">
+            <p i18n="roleAuthMan.roleList">roleAuthMan.roleList</p>
+            <p><img id="addRoleBtn" src="images/setting/add_63.png" alt=""></p>
+            <p><img id="delete" src="/images/setting/delete.png" alt=""></p>
+        </div>
+        <ul class="roleList" id="roleList">
+            <!--<li>电站业主(默认)</li>-->
+            <!--<li class="activeLi">管理员(默认)</li>-->
+            <!--<li>管理员1</li>-->
+            <!--<li>管理员2</li>-->
+            <!--<li>管理员3</li>-->
+            <!--<li>管理员4</li>-->
+            <!--<li>管理员5</li>-->
+        </ul>
+        <div class="promptMess" i18n="roleAuthMan.PromptMsg">
+            roleAuthMan.PromptMsg
+        </div>
+    </div>
+    <div class="jurisdictionList" id="jurisdictionList">
+        <div class="authoritySearch">
+            <div class="searchBox">
+                <div class="searchImg">
+                    <img src="/images/setting/search1.png" alt="">
+                </div>
+                <input type="text" id="key1" class="searchContent" i18n="roleAuthMan.roleKeyWord" placeholder="roleAuthMan.roleKeyWord">
+                <div class="searchBtn searchBtn1" i18n="search">search</div>
+            </div>
+            <div class="takeUpAll" i18n="roleAuthMan.stopAll">stopAll</div>
+        </div>
+        <div class="authorityTitle">
+            <span i18n="roleAuthMan.title">title</span>
+            <span i18n="roleAuthMan.permissionDescription">permissionDescription</span>
+            <span i18n="roleAuthMan.permissionOpen">permissionOpen</span>
+        </div>
+        <div class="showAccordLength">
+            <b i18n="roleAuthMan.conformingToConditions">conformingToConditions</b>&nbsp;<span>--</span>&nbsp;<b i18n="roleAuthMan.strip">strip</b>
+        </div>
+        <div id="authorityZtree" class="ztree authorityZtree">
+            <b i18n="roleAuthMan.permissionsLoading">permissionsLoading</b>
+        </div>
+        <div class="jurisdictionBtn">
+            <!--<a class="delete" id="delete">删除角色</a>-->
+            <a class="save" id="saveModify" i18n="save">save</a>
+            <a class="cancel" id="cancelModify" i18n="cancel">cancel</a>
+        </div>
+    </div>
+</div>

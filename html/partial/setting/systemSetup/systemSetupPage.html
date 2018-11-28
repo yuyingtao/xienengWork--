@@ -1,0 +1,94 @@
+<div class="title" i18n="sysPageSetup.sysSetup">
+    sysSetup
+</div>
+<div class="showBox">
+    <div class="sysName">
+        <span i18n="sysPageSetup.sysName">sysName</span><b style="margin-left: 5px">:</b>
+        <i class="sysSpanName showSysSpanName">--</i>
+    </div>
+    <div class="sysLog">
+        <span i18n="sysPageSetup.loginLogo">loginLogo</span><b style="margin-left: 5px;margin-top: 14px">:</b>
+        <div class="sysLogImgBox">
+            <img class="showSysImg" src="" alt="">
+        </div>
+    </div>
+    <div class="loginImgBox">
+        <span i18n="sysPageSetup.loginIcon">loginIcon</span><b style="margin-left: 5px">:</b>
+        <div class="eachImg showEachImg">
+            <div class="eachImgBox">
+                <img src=""  class="loginPhoto1" alt="">
+            </div>
+            <div class="eachImgBox">
+                <img src="" class="loginPhoto2" alt="">
+            </div>
+            <div class="eachImgBox">
+                <img src="" class="loginPhoto3"alt="">
+            </div>
+        </div>
+    </div>
+    <!--<div class="QRcode">-->
+        <!--<span>登录码:</span>-->
+        <!--<div class="QRcodeImg">-->
+            <!--<img src="/images/setting/systemSetup/code.png" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="btnBox">
+        <a permission = 'systemSettingEdit' class="preservation edit" id="edit" i18n="edit">edit</a>
+    </div>
+</div>
+<div class="editBox" style="display: none">
+    <div class="sysName" >
+        <span i18n="sysPageSetup.sysName">sysName</span><b style="margin-left: 5px">:</b>
+        <input class="sysSpanName editSysSpanName" type="text" value="--">
+    </div>
+    <div class="sysLog">
+        <span i18n="sysPageSetup.loginLogo">loginLogo</span><b style="margin-left: 5px;margin-top: 14px">:</b>
+        <div class="sysLogImgBox editLoginImg">
+            <img id="newIcon" src="" alt="">
+            <div class="uploadA">
+                <img class="closeBtn" src="/images/setting/close.png" alt="">
+            </div>
+            <input type="file" accept="image/jpeg,image/gif,image/png"  id="up_img"/>
+        </div>
+        <i i18n="sysPageSetup.proposedResolution">proposedResolution</i><i style="margin-left: 0">130*48</i>
+    </div>
+    <div class="loginImgBox">
+        <span i18n="sysPageSetup.loginIcon">loginIcon</span><b style="margin-left: 5px">:</b>
+        <div class="eachImg">
+            <div class="eachImgBox">
+                <img src="/images/setting/upload1.png" alt="" class="eachImgBox4" id="eachImgBox4">
+                <input type="file" accept="image/jpeg,image/gif,image/png" id="upImg4">
+                <div class="uploadA">
+                    <img class="closeImg" src="/images/setting/close.png" alt="">
+                </div>
+            </div>
+            <div class="eachImgBox">
+                <img src="/images/setting/upload1.png" alt="" class="eachImgBox5" id="eachImgBox5">
+                <input type="file" accept="image/jpeg,image/gif,image/png" id="upImg5">
+                <div class="uploadA">
+                    <img class="closeImg" src="/images/setting/close.png" alt="">
+                </div>
+            </div>
+            <div class="eachImgBox">
+                <img src="/images/setting/upload1.png" alt="" class="eachImgBox6" id="eachImgBox6">
+                <input type="file" accept="image/jpeg,image/gif,image/png" id="upImg6">
+                <div class="uploadA">
+                    <img class="closeImg" src="/images/setting/close.png" alt="">
+                </div>
+            </div>
+            <i i18n="sysPageSetup.proposedResolution">proposedResolution</i><i style="margin-left: 0">1920*550</i>
+        </div>
+    </div>
+    <!--<div class="QRcode">-->
+        <!--<span>登录码:</span>-->
+        <!--<div class="QRcodeImg">-->
+            <!--<img src="/images/setting/systemSetup/code.png" alt="">-->
+            <!--<img class="closeBtn1" src="/images/setting/close.png" alt="">-->
+        <!--</div>-->
+        <!--<i>建议分辨率122*122</i>-->
+    <!--</div>-->
+    <div class="btnBox">
+        <a class="preservation cancel" id="cancel" i18n="cancel">cancel</a>
+        <a class="preservation save" id="save" i18n="save">save</a>
+    </div>
+</div>

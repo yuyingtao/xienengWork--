@@ -1,0 +1,19 @@
+<div class="deviceTab1">
+    <ul class="deviceUl">
+        <li permission = 'libInverterManage' class="actLi"><a attr-href="partial/setting/deviceManage/inverterManage.html" data-type="inverter" i18n="inverter">inverter</a></li>
+        <li permission = 'libAssemblyLogger'><a attr-href="partial/setting/deviceManage/assembly.html" data-type="assembly" i18n="assembly">assembly</a></li>
+        <!--<li><a attr-href="partial/setting/deviceManage/inverterManage.html" data-type="ammeter">电表</a></li>-->
+        <li permission = 'libCameraManage'><a attr-href="partial/setting/deviceManage/cameraManage.html" data-type="camera" i18n="camera">camera</a></li>
+    </ul>
+</div>
+<div class="deviceHead1">
+    <!--<div class="typeDiv"><span>设备类型：</span><select name="deviceType" disabled><option value="inverter">逆变器</option><option value="assembly">组件</option><option value="ammeter">电表</option></select></div>-->
+    <div class="typeDiv"><span i18n="manufacturer">manufacturer</span><span>：</span><input type="text" name="manufacturer" i18nOnly="placeholder" i18n="ass.inputManufacturer" placeholder="ass.inputManufacturer"></div>
+    <div class="typeDiv"><span i18n="deviceModel">deviceModel</span><span>：</span><input type="text" name="model" i18nOnly="placeholder" i18n="ass.inputDevModel" placeholder="ass.inputDevModel"></div>
+    <div class="fl statusDiv"><span i18n="status">status</span><span>：</span><select name="status" id=""><option value="" i18n="pleaseChoose">pleaseChoose</option><option i18nonly="value" value="one" i18n="enable">enable</option><option i18nonly="value" value="zero" i18n="noEnable">noEnable</option></select></div>
+    <div class="opeDiv fr"><a class="searchDevice" i18n="search">search</a><a class="exportDevice" i18n="export">export</a></div>
+</div>
+<!--表格数据-->
+<div class="deviceTables" id="deviceTables">
+
+</div>

@@ -1,0 +1,110 @@
+<!--
+*2018/3/6
+*@author: SP0014
+*@description:  单电站监控页面 实时 发电量 收益 等信息
+-->
+<!--光伏-->
+<div class="gfProfit" style="">
+    <div class="one sItem">
+        <img src="/images/pmImages/green.png" alt="">
+        <div class="test1"></div>
+        <div class="sData">
+            <p i18n="genToday">genToday</p>
+            <p class="data-show" id="sp-genDay">--</p>
+        </div>
+    </div>
+    <div class="two sItem">
+        <img src="/images/pmImages/orange.png" alt="">
+        <div class="test2"></div>
+        <div class="sData">
+            <p i18n="profitToday">profitToday</p>
+            <p class="data-show" id="sp-profitDay">--</p>
+        </div>
+    </div>
+    <div class="three sItem">
+        <img src="/images/pmImages/blue.png" alt="">
+        <div class="test3"></div>
+        <div class="sData">
+            <p i18n="totalPowerGen">totalPowerGen</p>
+            <p class="data-show" id="sp-genTotal">--</p>
+        </div>
+    </div>
+    <div class="four sItem">
+        <img src="/images/pmImages/red.png" alt="">
+        <div class="test4"></div>
+        <div class="sData">
+            <p i18n="totalProfit">totalProfit</p>
+            <p class="data-show" id="sp-profitTotal">--</p>
+        </div>
+    </div>
+</div>
+<!--光储-->
+<div class="gcProfit" style="display: none">
+    <div class="one sItem">
+        <img src="/images/pmImages/green.png" alt="">
+        <div class="test1" id="test-gc1"></div>
+        <div class="sData">
+            <p><span i18n="genToday">genToday</span><span id="sp-gcGenDay-unit"></span></p>
+            <p class="data-show" id="sp-gcGenDay">--</p>
+        </div>
+    </div>
+    <div class="two sItem">
+        <img src="/images/pmImages/orange.png" alt="">
+        <div class="test2" id="test-gc2"></div>
+        <div class="sData">
+            <p><span i18n="profitToday">profitToday</span><span id="sp-gcProfitDay-unit"></span></p>
+            <p class="data-show" id="sp-gcProfitDay">--</p>
+        </div>
+    </div>
+    <div class="three sItem">
+        <img src="/images/pmImages/blue.png" alt="">
+        <div class="test3" id="test-gc3"></div>
+        <div class="sData">
+            <p><span i18n="charge/dischargeTotal">charge/dischargeTotal</span><span id="sp-charge-discharge-unit"></span></p>
+            <p class="data-show" id="sp-charge-discharge">--</p>
+        </div>
+    </div>
+    <div class="four sItem">
+        <img src="/images/pmImages/red.png" alt="">
+        <div class="test4" id="test-gc4"></div>
+        <div class="sData">
+            <p><span i18n="totalProfit">totalProfit</span><span id="sp-gcProfitTotal-unit"></span></p>
+            <p class="data-show" id="sp-gcProfitTotal">--</p>
+        </div>
+    </div>
+</div>
+<!--储能-->
+<div class="cnProfit" style="display: none">
+    <div class="one sItem">
+        <img src="/images/pmImages/green.png" alt="">
+        <div class="test1" id="test-cn1"></div>
+        <div class="sData">
+            <p><span i18n="dischargeToday">dischargeToday</span><span id="sp-discharge-unit"></span></p>
+            <p class="data-show" id="sp-discharge">--</p>
+        </div>
+    </div>
+    <div class="two sItem">
+        <img src="/images/pmImages/orange.png" alt="">
+        <div class="test2" id="test-cn2"></div>
+        <div class="sData">
+            <p><span i18n="profitToday">profitToday</span><span id="sp-cnProfit-unit"></span></p>
+            <p class="data-show" id="sp-cnProfit">--</p>
+        </div>
+    </div>
+    <div class="three sItem">
+        <img src="/images/pmImages/blue.png" alt="">
+        <div class="test3" id="test-cn3"></div>
+        <div class="sData">
+            <p><span i18n="chargeToday">chargeToday</span><span id="sp-charge-unit"></span></p>
+            <p class="data-show" id="sp-charge">--</p>
+        </div>
+    </div>
+    <div class="four sItem">
+        <img src="/images/pmImages/red.png" alt="">
+        <div class="test4" id="test-cn4"></div>
+        <div class="sData">
+            <p><span i18n="totalProfit">totalProfit</span><span id="sp-cnProfitTotal-unit"></span></p>
+            <p class="data-show" id="sp-cnProfitTotal">--</p>
+        </div>
+    </div>
+</div>

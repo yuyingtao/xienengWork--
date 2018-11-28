@@ -1,0 +1,235 @@
+
+
+.pmSinglePlant-box {
+  width: 100%;
+  padding-bottom: 14px;
+  .titleBar-item {
+    background-color: #fff;
+    box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.1);
+  }
+  .titleBar {
+    text-align: left;
+    height: 56px;
+    line-height: 56px;
+    margin: auto;
+    .setFont(1.1428em);
+    font-weight: 700;
+    .searchPlant {
+      float: right;
+      .serchBox {
+        position: relative;
+        margin-top: 11px;
+        box-shadow:0px 0.8px 3px rgba(0, 0, 0, 0.2);;
+        border-radius: 17px;
+        padding: 0 5px;
+        overflow: hidden;
+      }
+      input {
+        width: 220px;
+        height: 34px;
+        line-height: 34px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        padding: 0 5px 0 10px;
+        color: #1D2B36;
+        font-size: .8775em;
+        font-weight: 500;
+        float: left;
+        &:focus {
+          outline: none;
+        }
+
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #8A8A8A;
+      }
+
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #8A8A8A;
+      }
+
+      input:-ms-input-placeholder {
+        color: #8A8A8A;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #8A8A8A;
+      }
+      .serchBtn {
+
+        float: left;
+        display: inline-block;
+        width: 38px;
+        height: 28px;
+        margin-top: 3px;
+        line-height: 34px;
+        text-align: center;
+        background-color: #fff;
+        border-left: 1px solid #e2e2e2;
+        background: url("/images/pmImages/search-icon_1.png") no-repeat center;
+        &:hover{
+
+          background: url("/images/pmImages/search-icon.png") no-repeat center;
+        }
+      }
+      .plantContain {
+        a {
+          display: block;
+          width: 100%;
+          height: 36px;
+          margin: 0;
+          padding: 0;
+          line-height: 36px;
+          text-indent: 5px;
+          color: #8A8A8A;
+          font-weight: normal;
+          //background: ;
+        }
+        a:hover {
+          background: #01B1ED;
+          color: #fff;
+        }
+      }
+
+      .plantContain {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: #fff;
+        display: none;
+        .arrow{
+          position: absolute;
+          top: 0;
+          left: 10%;
+          z-index: 99;
+          bottom: -10px;
+          display: inline-block;
+          width: 17px;
+          height: 13px;
+          background: url(/images/pmImages/shadow.png);
+        }
+      }
+      .pnContainer {
+        width: 258px;
+        position: absolute;
+        top:12px;
+        z-index: 20;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 5px 0;
+        box-shadow: 0px 0.8px 3px rgba(0, 0, 0, 0.2);;
+        border-radius: 4px;
+        height: 300px;
+      }
+    }
+  }
+  .navTitBar {
+    display: inline-block;
+    margin-left: 58px;
+    height: 56px;
+    line-height: 56px;
+    > div {
+      display: inline-block;
+      padding: 0 5px;
+      margin: 0 25px;
+      position: relative;
+      color: #8A8A8A;
+      font-weight: 500;
+      margin-left: 1px;
+      cursor: pointer;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        vertical-align: middle;
+        background: url("/images/pmImages/equipmentmonitoring_1.png") no-repeat center;
+        margin-top: -2px;
+      }
+      &:first-child:before {
+        background: url("/images/pmImages/powerplant.png") no-repeat center;
+      }
+      &.on, &:hover {
+        color: #0abddd;
+        &:before {
+          background: url("/images/pmImages/equipmentmonitoring.png") no-repeat center;
+        }
+        b {
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          display: inline-block;
+          width: 100%;
+          height: 0;
+          border: 1px solid #0abddd;
+        }
+        &:first-child:before {
+          background: url("/images/pmImages/powerplant_1.png") no-repeat center;
+        }
+      }
+    }
+
+  }
+  .sp-content {
+    margin: 16px auto 0 auto;
+    //margin-top: 12px;
+  }
+  .pms-item {
+    //border-radius: 4px;
+    background-color: #fff;
+    //overflow: hidden;
+     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+.pmSinglePlant-box {
+  .sp-content {
+    width: 1500px;
+    .palntImg {
+      width: 409px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .titleBar {
+    width: 1472px;
+  }
+}
+
+@import '../../media.less';
+@media (max-width: @screen1920) {
+
+}
+
+@media (max-width: @screen1500) {
+  .pmSinglePlant-box {
+    .sp-content {
+      width: 100%;
+
+      .palntImg {
+        width: 27.69%;
+      }
+    }
+    .titleBar {
+      width: 98.5333%;
+    }
+  }
+}
+
+@media (max-width: @screen1366) {
+
+}
+
+@media (max-width: @screen1024) {
+
+}

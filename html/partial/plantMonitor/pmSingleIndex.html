@@ -1,0 +1,27 @@
+<div class="pmSinglePlant-box sp-component" permission = 'PlantMonView'>
+    <div class="titleBar-item">
+        <div class="titleBar">
+            <span id="sp-name">--</span>
+            <div class="navTitBar" id="navTitBar">
+                <div permission = 'singlePlantMonView' class="on" attr-href="partial/plantMonitor/pmSinglePlant.html"><b></b><span i18n="plantMonitor.pantView">电站概览</span></div>
+                <div permission = 'deviceControlEdit' attr-href="partial/plantMonitor/pmSingleDevice.html"><b></b><span i18n="plantMonitor.devView">设备监控</span></div>
+                <!--<div attr-href="partial/plantMonitor/pmBattery/pmBattery.html"><b></b>电池监控</div>-->
+            </div>
+            <div class="searchPlant">
+                <div class="serchBox clearfix">
+                    <input autocomplete="off" i18n="plantMonitor.nameInpTip" i18n-only="placeholder" placeholder="请输入电站名称" type="text" id="plantName" autoComplete='on'>
+                    <!--<a class="serchBtn" id="serchSingleBtn">&nbsp;</a>-->
+                </div>
+                <div class="plantContain">
+                        <b class="arrow"></b>
+                        <div class="pnContainer">
+                            <div class="pcScrrol">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sp-content" id="pmSinglecontent"></div>
+</div>

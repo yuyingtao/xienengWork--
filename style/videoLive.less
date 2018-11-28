@@ -1,0 +1,133 @@
+//摄像头
+.camerapop{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,.7);
+  z-index: 99;
+  text-align: center;
+}
+.cameraWin{
+  position: absolute;
+  z-index: 99;
+  width: 1366px;
+  height: 820px;
+  border:1px solid #0497e6;
+  top:70px;
+  left: calc(~"(100% - 1366px)/2");
+  background: #000;
+  .closebtn{
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    z-index: 100;
+  }
+  .top-tit{
+    height: 56px;
+    line-height: 65px;
+    color: #00acea;
+    font-size: 18px;
+    padding-left: 7px;
+    text-align: left;
+  }
+  .c-main{
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    z-index: 3;
+    .videoMain{
+      width: 100%;
+      height: 700px;
+    }
+    video,object{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+    .floatBox{
+      position: absolute;
+      z-index: 999;
+      right: -12px;;
+      top:50%;
+      width: 107px;
+      height:48px;
+    }
+
+    .toHis{
+      display: inline-block;
+      width: 107px;
+      height:48px;
+      background: url("/images/toHosty.png");
+      &:hover{
+        //background: url("/images/largeScreen/data.png");
+        opacity: .9;
+      }
+    }
+  }
+  .b-toolbar{
+    height: 54px;
+    text-align:center;
+    .toolBarCon{
+      float: right;
+      margin-top: 15px;
+    }
+    .cameraSw{
+      margin-top: 15px;
+      float: left;
+      a{
+
+        width: 64px ;
+        height: 24px;
+        line-height: 22px;
+        border: 1px solid #b9b9b9;
+        margin-left: 15px;
+        margin-right: 0;
+        color: #b9b9b9;
+        &:hover{
+          border-color: #019cec;
+          color: #019cec;
+        }
+        &.on{
+          display: none;
+        }
+      }
+    }
+    a{
+      text-align:center;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .switchSource{
+      width: 64px ;
+      height: 24px;
+      line-height: 22px;
+      border: 1px solid #b9b9b9;
+      margin-right: 18px;
+      color: #b9b9b9;
+      &:hover{
+        border-color: #019cec;
+        color: #019cec;
+      }
+      &.on{
+        border-color: #019cec;
+        color: #019cec;
+      }
+    }
+    .switchScreen{
+
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+      background: url("/images/largeScreen/all_1.png") no-repeat center;
+      &.on{
+        background: url("/images/largeScreen/all.png") no-repeat center;
+      }
+      &:hover{
+        background: url("/images/largeScreen/all.png") no-repeat center;
+      }
+    }
+  }
+}

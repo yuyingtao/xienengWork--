@@ -1,0 +1,404 @@
+.boxAuto{
+  width: 1500px;
+  margin: 0 auto;
+  .banner{
+    margin: 14px auto 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .row1{
+    display: flex;
+    justify-content: space-between;
+    .poorBox{
+      position: relative;
+      .lenged{
+        position: absolute;
+        top:80px;
+        right:30px;
+        z-index: 100;
+        .lengedNum{
+          font-size: 14px;
+          color: #333;
+        }
+        .lengedColor{
+          background: #FFBE31;
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 4px;
+        }
+      }
+    }
+    .showBox{
+      width: 22.86%;
+      background: #fff;
+      margin-right: 14px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      .title{
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 12px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        border-bottom: 1px solid #F5F3F0;
+        b{
+          display: inline-block;
+          width: 6px;
+          height: 24px;
+          border-radius: 4px;
+          background: #0ABDDD;
+          margin-right: 10px;
+          vertical-align: -5px;
+        }
+      }
+      .subTitleBox{
+        padding: 0 10px;
+        background: #FAFAFA;
+        height: 50px;
+        .shadow{
+          height: 1px;
+          background:#F5F3F0;
+          box-shadow: 0 7px 23px rgba(0,0,0,0.2);
+        }
+        .subTitle{
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+    .recode{
+      width: 52.4%;
+      background: #FEFEFE;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      .arrow{
+        position: absolute;
+        top: 47%;
+        padding: 5px;
+        cursor: pointer;
+        &:hover{
+          background: rgba(0,0,0,0.3);
+        }
+      }
+      .leftArrow{
+        left: 6%;
+      }
+      .rightArrow{
+        right: 6%;
+      }
+      .title{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 12px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        b{
+          display: inline-block;
+          width: 6px;
+          height: 24px;
+          border-radius: 4px;
+          background: #0ABDDD;
+          margin-right: 10px;
+          vertical-align: -5px;
+        }
+      }
+      .mainBox{
+        width: 78.1%;
+        height: 151px;
+        margin: 20px auto;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        position:relative;
+        border-radius: 5px;
+        overflow: hidden;
+        .eachMain{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          background: #fff;
+          padding: 14px;
+          border-radius: 4px;
+          flex-shrink: 0;
+          z-index: 11;
+          cursor: pointer;
+          .img{
+            margin-right: 14px;
+            width: 35%;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+              vertical-align: middle;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .tex{
+            width: 60%;
+            padding-right: 10px;
+          }
+          .title{
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          .news{
+            font-size: 12px;
+            color: #666;
+            text-indent:2em;
+            text-align: left;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
+        }
+      }
+      .line{
+        display: flex;
+        padding: 0 23px;
+        .line-left{
+          width: 10%;
+          height: 45px;
+          border-top: 1px solid #E6E6E6;
+        }
+        .line-middle{
+          width: 80%;
+          height: 45px;
+          line-height: 45px;
+          border-top: 1px solid #E6E6E6;
+          display: flex;
+          justify-content: space-between;
+          p{
+            position: relative;
+            b{
+              position: absolute;
+              top: -24px;
+              display: block;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              cursor: pointer;
+              image{
+                vertical-align: middle;
+              }
+            }
+            span{
+              color: #D1D1D1;
+              font-size: 16px;
+              cursor: pointer;
+            }
+          }
+          .activeP{
+            span{
+              color: #24242A;
+              font-weight: bold;
+            }
+          }
+
+        }
+        .line-right{
+          width: 10%;
+          height: 45px;
+          border-top: 1px dashed #E6E6E6;
+        }
+      }
+    }
+  }
+  .row2{
+    display: flex;
+    margin-top: 10px;
+    .row2-le{
+      width: 46.6%;
+      margin-right: 14px;
+      .subBanner{
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        img{
+          width: 100%;
+        }
+      }
+      .incomeAndElectric{
+        display: flex;
+        justify-content: space-between;
+        .showBox{
+          width: 49.07%;
+          background: #fff;
+          margin-right: 14px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          .title{
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 12px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            border-bottom: 1px solid #F5F3F0;
+            b{
+              display: inline-block;
+              width: 6px;
+              height: 24px;
+              border-radius: 4px;
+              background: #0ABDDD;
+              margin-right: 10px;
+              vertical-align: -5px;
+            }
+          }
+          .income{
+            span{
+              display: inline-block;
+              width: 61.2%;
+              text-align: right;
+              //margin: 10px auto;
+              font-size: 14px;
+              font-weight: bold;
+              color: #8A8A8A;
+            }
+            .incomeNum{
+              width: 61.2%;
+              height: 124px;
+              line-height: 124px;
+              font-weight: bold;
+              font-size: 2.14285rem;
+              color: #555;
+              margin: 0 auto;
+              background: url(/images/povertyAlleviation/photo_3.png);
+              background-size: 100% 100%;
+            }
+            .incomeTip{
+              font-size: 1.314rem;
+              color: #555;
+              font-weight: 700;
+              margin: 10px auto;
+              width: 100%;
+              text-align: center;
+            }
+          }
+          .subTitleBox{
+            padding: 0 10px;
+            background: #FAFAFA;
+            height: 50px;
+            position: relative;
+            .shadow{
+              height: 1px;
+              background:#F5F3F0;
+              box-shadow: 0 7px 23px rgba(0,0,0,0.2);
+            }
+            .subTitle{
+              display: flex;
+              justify-content: space-between;
+              height: 50px;
+              line-height: 50px;
+              font-size: 14px;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+    .row2-ri{
+      width: 52.4%;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      .title{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 12px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        b{
+          display: inline-block;
+          width: 6px;
+          height: 24px;
+          border-radius: 4px;
+          background: #0ABDDD;
+          margin-right: 10px;
+          vertical-align: -5px;
+        }
+      }
+      .tableTitle{
+        display: flex;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #253646;
+        background: #ECFAFC;
+        padding-left:24px;
+        border-bottom: 1px solid #DEF6FA;
+        justify-content: space-between;
+        span{
+          text-align: left;
+          display: inline-block;
+          width: 25%;
+        }
+      }
+      .tableContent{
+        height: 270px;
+        .each{
+          display: flex;
+          height: 50px;
+          line-height: 50px;
+          font-size: 12px;
+          color: #253646;
+          border-bottom: 1px dashed #F0F0F0;
+          padding-left:24px;
+          justify-content: space-between;
+          span{
+            text-align: left;
+            padding-left: 10px;
+            display: inline-block;
+            width: 25%;
+          }
+          span:first-child{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.newsDetail{
+  p{
+    font-size: 14px;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 24px;
+    color: #333;
+    margin: 20px 0;
+  }
+  img{
+    width: 100%;
+  }
+}
+.mianPage .mianPage_container{
+  height: 98%;
+}
+@import "../../media";
+@media (max-width: @screen1500) {
+  .boxAuto{
+    width: 100%;
+  }
+}

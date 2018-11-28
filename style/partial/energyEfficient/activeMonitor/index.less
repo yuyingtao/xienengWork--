@@ -1,0 +1,178 @@
+/**
+ * 2018/8/14
+ * @author hh.todd@qq.com
+ * @description  能效系统
+ * @param:
+*/
+.boxBac{
+  background: url("/images/energyEfficient/activeMonitor/big_bg.png") center;
+}
+.eePage{
+  text-align: left;
+  .activeInd{
+
+  }
+  .row1,.row11,.row12,.row2{
+    display: flex;
+  }
+  .row11{
+    width: 70.3125%;
+    flex-direction: column;
+    margin-left: 1.0416%;
+  }
+  .row2{
+    margin-top: 20px;
+  }
+  .row12{
+    margin-top: 20px;
+  }
+  .eeMainContent{
+    padding-top: 15px;
+  }
+  .eeMainContent .eeitem{
+    position: relative;
+    background: url("/images/energyEfficient/activeMonitor/bg.png");
+    overflow: hidden;
+    display: none;
+    //background: #dcdcdc;
+  }
+  .bgc{
+  }
+  .enterpriseInfoPage{
+    width: 26.5625%;
+    height: 552px;
+    margin-left: 1.0416%;
+    .bgl,.bgr{
+      width: 22px;
+      height: 552px;
+      background: url("/images/energyEfficient/activeMonitor/bg_1.png") no-repeat center;
+    }
+    .bgc{
+      position: relative;
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_1_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_1_1.png") no-repeat center;
+    }
+  }
+  .useElectricityPage{
+    width: 100%;
+    height: 230px;
+    .bgl,.bgr{
+      width: 88px;
+      height: 230px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background: url("/images/energyEfficient/activeMonitor/bg_2.png") no-repeat center;
+    }
+    .bgc{
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_2_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_2_1.png") no-repeat center;
+    }
+  }
+  .elecQualityPage{
+    width: 52.888889%;
+    height: 302px;
+    margin-left: 1.307189%;
+    .bgl,.bgr{
+      width: 30px;
+      height: 302px;
+      background: url("/images/energyEfficient/activeMonitor/bg_4.png") no-repeat center;
+    }
+    .bgc{
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_4_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_4_1.png") no-repeat center;
+    }
+  }
+  .electricityPage{
+    width: 45.48148%;
+    height: 302px;
+    .bgl,.bgr{
+      width: 60px;
+      height: 302px;
+      background: url("/images/energyEfficient/activeMonitor/bg_3.png") no-repeat center;
+    }
+    .bgc{
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_3_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_3_1.png") no-repeat center;
+    }
+  }
+  .useElecKPIPage{
+    width: 48.4375%;
+    height: 346px;
+    margin-left: 1.0416%;
+    .bgl,.bgr{
+      width: 52px;
+      height: 346px;
+      background: url("/images/energyEfficient/activeMonitor/bg_5.png") no-repeat center;
+    }
+    .bgc{
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_5_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_5_1.png") no-repeat center;
+    }
+  }
+  .useElecLoadKPI{
+    width: 48.4375%;
+    height: 346px;
+    margin-left: 1.0416%;
+    .bgl,.bgr{
+      width: 52px;
+      height: 346px;
+      background: url("/images/energyEfficient/activeMonitor/bg_5.png") no-repeat center;
+    }
+    .bgc{
+      flex-grow: 1;
+      background: url("/images/energyEfficient/activeMonitor/bg_5_2.png");
+    }
+    .bgr{
+      background: url("/images/energyEfficient/activeMonitor/bg_5_1.png") no-repeat center;
+    }
+  }
+  .noDataDraw{
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+@import '../../../media.less';
+@media(max-width:@screen1366) {
+  .eePage {
+    .enterpriseInfoPage{
+      width: 20.5625%;
+    }
+    .row11{
+      width: 76.3125%;
+    }
+  }
+}
+@media(max-width:@screen1024) {
+  .eePage {
+    .row2{
+      flex-wrap: wrap;
+      .eeitem{
+        width: 96.888%;
+      }
+      .useElecLoadKPI{
+        margin-top: 20px;
+      }
+    }
+  }
+}

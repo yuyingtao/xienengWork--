@@ -1,0 +1,37 @@
+<!--<div class="plantRep">-->
+<!--&lt;!&ndash;切换栏&ndash;&gt;-->
+<!--<div class="pr-nav clearfix">-->
+<!--<div class="on" showImg="qyyx"><a>区域运行报表</a></div>-->
+<!--<div showImg="qydb"><a>区域对比报表</a></div>-->
+<!--<div showImg="dzyx"><a>电站运行报表</a></div>-->
+<!--<div showImg="dzdb"><a>电站对比报表</a></div>-->
+<!--<div showImg="lsqx"><a>历史曲线报表</a></div>-->
+<!--</div>-->
+<!---->
+<!--&lt;!&ndash;图片&ndash;&gt;-->
+<!--<div class="pr-content">-->
+<!--<img class="qyyx" src="/images/demo/report1.png" alt="">-->
+<!--<img class="qydb" src="/images/demo/report2.png" alt="">-->
+<!--<img class="dzyx" src="/images/demo/report3.png" alt="">-->
+<!--<img class="dzdb" src="/images/demo/report4.png" alt="">-->
+<!--<img class="lsqx" src="/images/demo/report5.png" alt="">-->
+<!--</div>-->
+<!--</div>-->
+<div class="plantRep">
+    <div class="titleBar-item">
+        <div class="titleBar">
+            <div class="navTitBar" id="navTitBar">
+                <!--<div class="on" attr-href="partial/plantMonitor/pmSinglePlant.html"><b></b>区域运行报表</div>-->
+                <!--<div attr-href="partial/plantMonitor/pmSingleDevice.html"><b></b>区域对比报表</div>-->
+                <div permission = 'runReportView' attr-href="partial/analysisReport/PlRunReport/runReportIndex.html" ><b></b><span i18n="opReportOfPowerStation">opReportOfPowerStation</span></div>
+                <div permission = 'compReportView' id="compReportTab" attr-href="partial/analysisReport/plantComRep.html"><b></b><span i18n="comReportOfPowerStation">comReportOfPowerStation</span></div>
+                <div permission = 'hisReportView'   attr-href="partial/analysisReport/hisDataLine.html" ><b></b><span i18n="historicalDataCurve">historicalDataCurve</span></div>
+                <div permission="eleFeesReportView"  id="electricityReportTab"  permission = 'hisReportView' attr-href="partial/analysisReport/electricityReport.html"><b></b><span i18n="reportOfElectricity">reportOfElectricity</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rep-content" id="repContent">
+
+    </div>
+</div>

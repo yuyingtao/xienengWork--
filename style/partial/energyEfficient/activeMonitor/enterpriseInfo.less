@@ -1,0 +1,64 @@
+/**
+ * 2018/8/14
+ * @author hh.todd@qq.com
+ * @description  企业基本信息
+ * @param:
+ */
+.eePage{
+  .enterpriseInfoBox{
+    position: absolute;
+    width: 100%;
+    .carousel{
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .carousel-inner .item {
+      height: 260px;
+      img{
+        height: 100%;
+        max-width: inherit;
+        margin: auto;
+      }
+    }
+    .info-p{
+      color: #fff;
+      line-height: 2rem;
+      label{
+        font-weight: 500;
+      }
+      img{
+        width: 26px;
+        height: 26px;
+        vertical-align: middle;
+        margin-right: 12px;
+      }
+    }
+    .description{
+      display: flex;
+      img,label{
+        flex-grow:0;
+        flex-shrink:0;
+      }
+      span{
+        float: right;
+      }
+    }
+  }
+}
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+@import '../../../media.less';
+@media(max-width:@screen1366) {
+  .eePage .enterpriseInfoBox {
+    width: 95%;
+  }
+}
+@media(max-width:@screen1024) {
+  .eePage .enterpriseInfoBox {
+    width: 98%;
+  }
+}

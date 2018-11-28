@@ -1,0 +1,169 @@
+/**
+ * 2018/8/14
+ * @author hh.todd@qq.com
+ * @description  能效系统
+ * @param:
+*/
+@import '../../common.less';
+.sp-body{
+  overflow: auto;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color:#010e38
+}
+.eePage{
+  padding-bottom: 15px;
+
+  .topBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    height: 128px;
+    padding: 20px;
+    background:#001555 url("/images/energyEfficient/activeMonitor/top_bg.png") no-repeat;
+    background-position-x: 77%;
+    font-size: 1.14285rem;
+  }
+  .navBar{
+    display: flex;
+    justify-content: space-between;
+    .logoImg{
+      margin-left: 7px;
+      width: 110px;
+      height: 40px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .navigationBar{
+      flex-grow:1;
+      text-align: left;
+      padding-left: 40px;
+      ul{
+        display: flex;
+        align-items: center;
+        a{
+          display: inline-block;
+          width: 100px;
+          height: 38px;
+          line-height: 38px;
+          background: url("/images/energyEfficient/activeMonitor/top_2.png") no-repeat center;
+          text-align: center;
+          margin-right: 23px;
+          color: #B1B1B1;
+          &.on{
+            background: url("/images/energyEfficient/activeMonitor/top_1.png") no-repeat center;
+            color: #F48E20;
+          }
+        }
+      }
+    }
+    .basicSetBar{
+      color: #fff;
+      font-size: 1.214285rem;
+      padding-right: 5px;
+      span{
+        margin-left: 35px;
+        cursor: pointer;
+      }
+      span:before{
+        display: inline-block;
+        content: '';
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      .loginUser:before{
+        background: url("/images/energyEfficient/activeMonitor/personal-center.png") no-repeat;
+      }
+      .setting:before{
+        background: url("/images/energyEfficient/activeMonitor/set-1.png") no-repeat;
+      }
+      .exit:before{
+        width: 0;
+        height: 0;
+      }
+
+    }
+  }
+  .subBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6394FF;
+    .sysName{
+      margin-left: 7px;
+      font-size: 1.42857rem;
+      font-weight: 700;
+    }
+    .enterpriseName{
+      margin-right: 7px;
+      padding: 0 7px;
+      background-color: #011B67;
+      margin-bottom: -7px;
+    }
+  }
+  .timeSearchBtn{
+    width:28px;
+    height:22px;
+    line-height: 22px;
+    border-radius:11px;
+    background-color:#021D68;
+    border:1px solid #3361C4;
+    vertical-align: middle;
+    &:before{
+      display: inline-block;
+      content: '';
+      width:16px;
+      height:16px;
+      margin-top: 2px;
+      background: url("/images/energyEfficient/activeMonitor/search.png") no-repeat center;
+    }
+  }
+  input.EleWdate {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    border:1px solid #3361C4;
+    border-radius: 11px;
+    padding: 0 9px;
+    cursor: pointer;
+    vertical-align: middle;
+    background:#021D68 url(/images/energyEfficient/activeMonitor/day.png) no-repeat 93% 1px;
+  }
+}
+
+@media(max-width:@screen1920) {
+  html,body{
+    .setFont(14px);
+  }
+  .sp-body{
+    .setFont(1em);
+  }
+}
+@media(max-width:@screen1500) {
+  html,body{
+    .setFont(13px);
+  }
+  .sp-body{
+    .setFont(.92857em);
+  }}
+@media(max-width:@screen1366) {
+  html,body{
+    .setFont(12px);
+  }
+  .sp-body{
+    .setFont(.85714em);
+  }
+}
+@media(max-width:@screen1024) {
+  .container-fluid{
+    padding: 0;
+  }
+  .sp-body{
+    width: @screen1024;
+    .setFont(.7em);
+  }
+}

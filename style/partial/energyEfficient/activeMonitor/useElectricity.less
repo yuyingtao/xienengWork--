@@ -1,0 +1,98 @@
+/**
+ * 2018/8/14
+ * @author hh.todd@qq.com
+ * @description  用电统计
+ * @param:
+ */
+
+.eePage{
+  .useElectricityBox{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    h2{
+      font-size: 1.14285rem;
+      padding-left: 20px;
+      margin-top: 15px;
+      img{
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+    .content{
+      display: flex;
+      justify-content: space-between;
+    }
+    .item{
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .split{
+      flex: 0 0 1px;
+    }
+    .item-l{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .item-r{
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .mainTit{
+        font-size: 1.42857rem;
+      }
+      .mainVal{
+        margin-top: 10px;
+        color: #01BD24;
+        font-size: 2.14285rem;
+        font-weight: 700;
+      }
+      .sub-p{
+        margin-top: 25px;
+      }
+      .subTit{
+        font-size: 1.285714rem;
+        font-weight: 500;
+      }
+      .subVal{
+        color: #FF9E39;
+        font-size: 1.285714rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+@import '../../../media.less';
+@media(max-width:@screen1366) {
+  .eePage .useElectricityBox {
+    .item-l{
+      img{
+        width: 88px;
+        height: 88px;
+      }
+    }
+  }
+}
+@media(max-width:@screen1024) {
+  .eePage .useElectricityBox {
+    .item-l{
+      img{
+        width: 78px;
+        height: 78px;
+      }
+    }
+    .item-r .subVal{
+      display: block;
+    }
+  }
+}

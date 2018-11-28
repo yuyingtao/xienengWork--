@@ -1,0 +1,99 @@
+.cameraWin{
+  padding: 5px;
+  .progressBar{
+    width: 98%;
+    /* height: 50px; */
+    position: relative;
+    height: 14px;
+    margin: 10px auto;
+  }
+  .objContainer{
+    //width: 1000px;
+    //height: 600px;
+
+  }
+  .progressMain{
+    top:6px;
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+  }
+  .VideoSplitLine{
+    position: absolute;
+    width: 10px;
+    height:14px;
+    z-index: 99;
+    left: -5px;
+    background: url("/images/loding1.png");
+  }
+  .progressCon{
+    position: absolute;
+    background: #1a2334;
+    width: 100%;
+    height: 8px;
+    left:0;
+    top:0;
+    span{
+      height: 100%;
+      float: left;
+      display: inline-block;
+    }
+  }
+  .ctrol{
+    background: #aad56c;
+  }
+  .disctrol{
+    background: #434343;
+  }
+  .timePic{
+    /* position: absolute; */
+    /* top: 11px; */
+    width: 98%;
+    margin: 4px auto;
+    img{
+      width: 100%;
+    }
+  }
+  .floatBox{
+    position: absolute;
+    z-index: 999;
+    right: -7px;;
+    top:50%;
+    width: 107px;
+    height:48px;
+  }
+  .toHis{
+    display: inline-block;
+    width: 107px;
+    height:48px;
+    background: url("/images/hosty1.png");
+    &:hover{
+      //background: url("/images/largeScreen/data.png");
+      opacity: .9;
+    }
+  }
+  .videoHisList{
+    text-align: left;
+    color: #019cec;
+    margin:20px 0;
+    width: 95%;
+    float: left;
+    input{
+      background: transparent;
+      padding: 2px 7px;
+      border: 1px solid #019cec;
+      color: #019cec;
+      margin-left: 7px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+  .screenSet{
+    width: 3%;
+    text-align: center;
+    float: right;
+  }
+}

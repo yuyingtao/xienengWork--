@@ -1,0 +1,129 @@
+<div class="organizationBox">
+    <div class="organizationLf">
+        <div class="searchBox">
+            <div class="searchImg">
+                <img src="/images/setting/search1.png" alt="">
+            </div>
+            <input type="text" id="key" class="searchContent" i18n="searchPlaceholder" placeholder="searchPlaceholder">
+            <div class="searchBtn" i18n="search">search</div>
+        </div>
+        <div id="ztree" class="ztree">
+        </div>
+    </div>
+    <div class="organizationRi enterpriseInfo">
+        <div class="title" i18n="enterpriseSetup.editInfo">
+            编辑信息
+        </div>
+        <div class="showBox">
+            <div class="sysName">
+                <span i18n="enterpriseSetup.sysName">sysName</span><b style="margin-right: 20px">:</b>
+                <p id="showSysName">--</p>
+            </div>
+            <div class="sysLogo">
+                <span i18n="enterpriseSetup.sysLogo">sysLogo</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p>
+                    <img id="showSysLogo" src="" alt="">
+                </p>
+            </div>
+            <div class="BigName">
+                <span i18n="enterpriseSetup.largeScreenName">largeScreenName</span><b style="margin-right: 20px">:</b>
+                <p>协能共创光伏管理系统</p>
+            </div>
+            <div class="BigLOGO">
+                <span i18n="enterpriseSetup.largeScreenLogo">largeScreenLogo</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p>
+                    <img id="showBigLOGOImg" src="" alt="">
+                </p>
+            </div>
+            <div class="enterpriseImgs">
+                <span i18n="enterpriseSetup.enterprisePropaganda">enterprisePropaganda</span><b style="margin-right: 20px">:</b>
+                <p>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </p>
+            </div>
+            <div class="companyLogo">
+                <span i18n="enterpriseSetup.enterprisePhoto">enterprisePhoto</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p>
+                    <img id="showCompanyLogo" src="" alt="">
+                </p>
+            </div>
+            <div class="enterpriseIntroduction">
+                <span i18n="enterpriseSetup.enterpriseIntroduction">enterpriseIntroduction</span><b style="margin-right: 20px">:</b>
+                <p>分布式光伏发电特指在用户场地附近建设，运行方式以用户侧自发自用、多余电量上网，且在配电系统平衡调节为特征的光伏发电设施</p>
+            </div>
+
+            <div class="btnBox1">
+                <a permission = 'enterpriseSettingEdit' class="preservation edit" id="edit" i18n="edit">edit</a>
+            </div>
+        </div>
+        <!--编辑信息-->
+        <div class="editBox" style="display: none">
+            <div class="sysName">
+                <span i18n="enterpriseSetup.sysName">sysName</span><b style="margin-right: 20px">:</b>
+                <input  class="newSysName" type="text" value="协能共创光伏管理系统">
+            </div>
+            <div class="sysLogo">
+                <span i18n="enterpriseSetup.sysLogo">sysLogo</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p class="sysLogImgBox">
+                    <img id="sysLogoNewIcon" src="/images/setting/systemSetup/cpLog.png" alt="">
+                    <img class="sysLogoCloseBtn" src="/images/setting/close.png" alt="">
+                    <input type="file" accept="image/jpeg,image/gif,image/png"  id="up_img"/>
+                </p>
+                <i i18n="enterpriseSetup.proposedHeight">proposedHeight</i><i style="margin-left: 0">40px</i>
+            </div>
+            <div class="BigName">
+                <span i18n="enterpriseSetup.largeScreenName">largeScreenName</span><b style="margin-right: 20px">:</b>
+                <input id="newBigScName" type="text" value="--">
+            </div>
+            <div class="BigLOGO">
+                <span i18n="enterpriseSetup.largeScreenLogo">largeScreenLogo</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p class="BigLOGOImgBox">
+                    <img id="BigLOGONewIcon" src="/images/setting/systemSetup/hasbeenconnected.png" alt="">
+                    <img class="BigLOGOCloseBtn" src="/images/setting/close.png" alt="">
+                    <input type="file" accept="image/jpeg,image/gif,image/png"  id="bigup_img"/>
+                </p>
+                <i i18n="enterpriseSetup.proposedHeight">proposedHeight</i><i style="margin-left: 0">48px</i>
+            </div>
+            <div class="enterpriseImgs">
+                <span i18n="enterpriseSetup.enterprisePropaganda">enterprisePropaganda</span><b style="margin-right: 20px">:</b>
+                <div class="enterpriseImgsBox">
+                    <div class="eachEnterpriseImgsBox">
+                        <img class="enterShow" id="enterShow1" src="/images/setting/upload2.png" alt="">
+                        <img class="enterUpClose" src="/images/setting/close.png" alt="">
+                        <input type="file" accept="image/jpeg,image/gif,image/png"  id="enterUp1"/>
+                    </div>
+                    <div class="eachEnterpriseImgsBox">
+                        <img class="enterShow" id="enterShow2" src="/images/setting/upload2.png" alt="">
+                        <img class="enterUpClose" src="/images/setting/close.png" alt="">
+                        <input type="file" accept="image/jpeg,image/gif,image/png"  id="enterUp2"/>
+                    </div>
+                    <div class="eachEnterpriseImgsBox">
+                        <img class="enterShow" id="enterShow3" src="/images/setting/upload2.png" alt="">
+                        <img class="enterUpClose" src="/images/setting/close.png" alt="">
+                        <input type="file" accept="image/jpeg,image/gif,image/png"  id="enterUp3"/>
+                    </div>
+                </div>
+                <i i18n="sysPageSetup.proposedResolution">proposedResolution</i><i style="margin-left: 0">1500px*216px</i>
+            </div>
+            <div class="companyLogo">
+                <span i18n="enterpriseSetup.enterprisePhoto">enterprisePhoto</span><b style="margin-right: 20px;margin-top: 14px">:</b>
+                <p class="companyLogoImgBox">
+                    <img id="companyLogoNewIcon" src="/images/setting/systemSetup/cpLog.png" alt="">
+                    <img class="companyLogoCloseBtn" src="/images/setting/close.png" alt="">
+                    <input type="file" accept="image/jpeg,image/gif,image/png"  id="companyup_img"/>
+                </p>
+                <i i18n="sysPageSetup.proposedResolution">proposedResolution</i><i style="margin-left: 0">188*100</i>
+            </div>
+            <div class="enterpriseIntroduction">
+                <span i18n="enterpriseSetup.enterpriseIntroduction">enterpriseIntroduction</span><b style="margin-right: 20px">:</b>
+                <textarea id="newDes" rows="4" cols="80"></textarea>
+            </div>
+            <div class="btnBox1">
+                <a class="preservation cancel" id="cancel" i18n="cancel">cancel</a>
+                <a class="preservation save" id="save" i18n="save">save</a>
+            </div>
+        </div>
+    </div>
+</div>

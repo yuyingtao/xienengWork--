@@ -1,0 +1,63 @@
+<div class="runRep">
+    <div class="runRepContent">
+        <div class="repHead">
+            <div class="leftBar fl">
+                <input type="text" placeholder="请输入电站关键信息" id="plantName">
+                <!--<a class="searchBtn fr">搜 索</a>-->
+                <div class="plantContain">
+                    <b class="arrow"></b>
+                    <div class="pnContainer">
+
+                    </div>
+                </div>
+            </div>
+            <div class="rightBar fr">
+                <nav class="dimenSwi">
+                    <span class="activeSpan" data-dimension="month">月 报</span>
+                    <span style="float: right;" data-dimension="year">年 报</span>
+                </nav>
+                <input type="text" class="" id="dimenTime" >
+                <a class="sureTime imgBtn">搜索</a>
+                <a  class="export imgBtn" id="export">导出</a>
+            </div>
+        </div>
+        <div class="" id="nanImg" style="margin-top: 100px;">
+            <img class="noData" src="/images/NaN.png" alt="">
+        </div>
+        <!--各种曲线-->
+        <div class="lineBox" style="display: none">
+            <div id="lineContent"></div>
+        </div>
+        <!--报表表格-->
+        <div class="repTable" style="display: none">
+            <div class="caption">
+                电站运行报表
+            </div>
+            <!--<table class="repTableHead hover stripe" id="headTable">-->
+                <!--<tr>-->
+                    <!--<td>电站名称</td>-->
+                    <!--<td>上海新建电站</td>-->
+                    <!--<td>电站容量</td>-->
+                    <!--<td>900</td>-->
+                    <!--<td>统计时间</td>-->
+                    <!--<td>2017年10月</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+            <div class="plantInfo" style="display: none">
+                <span>电站名称</span>
+                <span>--</span>
+                <span>电站容量</span>
+                <span>--</span>
+                <span>统计时间</span>
+                <span>--</span>
+            </div>
+            <table  class="reportTable hover stripe" width="100%" id="reportTable">
+
+            </table>
+
+        </div>
+    </div>
+    <!-- 存储电站Id 最小时间-->
+    <input type="text" id="plantId" style="display: none">
+    <input type="text" id="limit" style="display: none">
+</div>

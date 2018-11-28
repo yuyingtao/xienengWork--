@@ -1,0 +1,288 @@
+//中间信息
+.leftInfo_device{
+  width: 24.2%;
+  border-right: 1px solid #E7E7E7;
+  height: 100%;
+  overflow: auto;
+  .leftTab{
+    .tab{
+      width: 91.5%;
+      height: 36px;
+      margin: 0 auto;
+      background: #ECECEC;
+      border-radius: 4px;
+      text-align: center;
+      color: #989797;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        width: 50%;
+        height: 36px;
+        line-height: 36px;
+        .setFont(1rem);
+        float: left;
+      }
+      span.activeSpan{
+        background: #01B1ED;
+        color: #fff;
+        border-radius: 4px;
+      }
+    }
+    .organizationLf1 {
+      width: 91.5%;
+      height: 36px;
+      margin: 0 auto;
+      position: relative;
+      input {
+        width: 80%;
+        height: 34px;
+        border: 1px solid #DEDEDE;
+        border-radius: 4px 0 0 4px;
+        padding: 0 0 0 28px;
+        position: absolute;
+        left: 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      //&:before {
+      //  content: '';
+      //  position: absolute;
+      //  display: inline-block;
+      //  left: 5px;
+      //  top: 6px;
+      //  width: 22px;
+      //  height: 22px;
+      //  background: url("/images/setting/search1.png") no-repeat 2% center;
+      //}
+      a#searchOrgPlant{
+        display:inline-block;
+        width: 20%;
+        height: 34px;
+        line-height: 34px;
+        background: #01B1ED;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        border-radius: 0 4px 4px 0;
+        .setFont(1rem)
+      }
+      img{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 5px;
+        top:6px;
+        z-index: 10;
+      }
+    }
+  }
+}
+.rightInfo_device{
+  width: 75.79%;
+  overflow: auto;
+  font-size: 1rem;
+  .typeDiv{
+    width: 27.1%!important;
+  }
+  .opeDiv{
+    //float: left;
+    a{
+      background: #01B1ED url(/images/setting/search_1.png) no-repeat 5% 2px!important;
+      &:nth-of-type(1){
+        margin-left: 24px;
+        margin-right: 20px;
+      }
+      &:nth-of-type(2){
+        margin-right: 20px;
+        background: #01B1ED url(/images/setting/deviceManage/delete.png) no-repeat 5% 2px!important;
+      }
+      &:nth-of-type(3){
+        float: right;
+        background: #01B1ED url(/images/setting/deviceManage/add_1.png) no-repeat 5% 2px!important;
+      }
+    }
+  }
+}
+//ztree样式
+.ztree li ul{
+  height: auto;
+}
+.ztree li a.curSelectedNode{
+  border: none;
+
+  background:none;
+}
+//当前被点击的节点 样式
+.ztree li a.curSelectedNode .node_name{
+  border-radius: 4px;
+  padding: 4px 5px;
+  background: #01B1ED;
+}
+//根节点 前面的+ - 设置
+.ztree li span.button.root_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.root_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+//根节点 前面的+ - 设置 结束
+
+//根节点自定义图标设置
+.ztree li span.button.ico_close{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+.ztree li span.button.ico_open{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+//根节点自定义图标设置 结束
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+.ztree li span.button.center_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.center_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+
+.ztree li span{
+  .setFont(1.14rem);
+  line-height: 24px;
+  font-family:MicrosoftYaHei;
+}
+.ztree li span.button{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.pIcon01_ico_open{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//第一级子菜单  class level1
+.ztree li.level1{
+  margin-top: 26px;
+}
+//第一级子菜单  class level2
+.ztree li.level2 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+//第二级子菜单  class level3
+.ztree li.level3 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level4 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level5 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level6 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level7 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level8{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level9{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level10{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li span.button.pIcon01_ico_close{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.icon01_ico_docu{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//去掉hover显示 下划线
+.ztree li a:hover{
+  text-decoration: none;
+}
+//选中样式
+.ztree li a.curSelectedNode .node_name{
+  color: #fff;
+}
+.ztree li span.button.icon03{margin-left: 0px; background: url("/images/setting/addOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.icon04{margin-left: 0px; background: url("/images/setting/delOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+//响应式设置
+@import '../../../media.less';
+@media (max-width: @screen1920) {
+
+
+}
+@media (max-width: @screen1500) {
+
+}
+@media (max-width: @screen1366) {
+
+}

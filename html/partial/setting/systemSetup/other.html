@@ -1,0 +1,197 @@
+<div class="organizationBox">
+    <div class="organizationLf">
+        <div class="searchBox">
+            <div class="searchImg">
+                <img src="/images/setting/search1.png" alt="">
+            </div>
+            <input type="text" id="key" class="searchContent" i18n="searchPlaceholder" placeholder="searchPlaceholder">
+            <div class="searchBtn" i18n="search">search</div>
+        </div>
+        <div id="ztree" class="ztree">
+        </div>
+    </div>
+    <div class="organizationRi otherInfo">
+        <div class="title" i18n="otherSetup.accessPower">
+            accessPower
+        </div>
+        <div class="showBox" >
+            <div class="commentBox">
+                <div class="showImg">
+                    <img src="/images/setting/systemSetup/hasbeenconnected.png" alt="">
+                </div>
+                <div class="showTex">
+                    <p class="fp" i18n="otherSetup.alreadyAccessPower">alreadyAccessPower</p>
+                    <p>
+                        <span class="showeElectricity">--</span>
+                        <span class="showCompany"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="title" i18n="otherSetup.roleSetUp">
+                roleSetUp
+            </div>
+            <div class="roleSet">
+                <div class="commentBox">
+                    <div class="showImg">
+                        <img src="/images/setting/systemSetup/role_1.png" alt="">
+                    </div>
+                    <div class="showTex showTex1">
+                        <p class="fp" i18n="otherSetup.role1">role1</p>
+                        <p class="showRole1">--</p>
+                    </div>
+                    <div class="showTex ">
+                        <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                        <p class="showRole1Num">--</p>
+                    </div>
+                </div>
+                <div class="commentBox">
+                    <div class="showImg">
+                        <img src="/images/setting/systemSetup/role_2.png" alt="">
+                    </div>
+                    <div class="showTex showTex1">
+                        <p class="fp" i18n="otherSetup.role2">role2</p>
+                        <p class="showRole2">--</p>
+                    </div>
+                    <div class="showTex">
+                        <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                        <p class="showRole2Num">--</p>
+                    </div>
+                </div>
+                <div class="commentBox">
+                    <div class="showImg">
+                        <img src="/images/setting/systemSetup/role_3.png" alt="">
+                    </div>
+                    <div class="showTex showTex1">
+                        <p class="fp" i18n="otherSetup.role3">role3</p>
+                        <p class="showRole3">--</p>
+                    </div>
+                    <div class="showTex">
+                        <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                        <p class="showRole3Num">--</p>
+                    </div>
+                </div>
+                <div class="commentBox">
+                    <div class="showImg">
+                        <img src="/images/setting/systemSetup/role_4.png" alt="">
+                    </div>
+                    <div class="showTex showTex1">
+                        <p class="fp" i18n="otherSetup.role4">role4</p>
+                        <p class="showRole4">--</p>
+                    </div>
+                    <div class="showTex">
+                        <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                        <p class="showRole4Num">--</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btnBox">
+                <a permission = 'elseSettingEdit' class="preservation edit" id="edit" i18n="edit">edit</a>
+            </div>
+        </div>
+        <div class="editBox1" style="display: none">
+            <div class="commentBox">
+                <div class="showImg">
+                    <img src="/images/setting/systemSetup/hasbeenconnected.png" alt="">
+                </div>
+                <div class="showTex showTex1">
+                    <p class="fp" i18n="otherSetup.alreadyAccessPower">alreadyAccessPower</p>
+                    <div class="electricity">
+                        <input class="editElectricity" type="text"  value="--">
+                    </div>
+                </div>
+                <div class="showTex">
+                    <p class="fp autoCalculation"><img class="autoCalculationBtn" src="/images/setting/rect.png" alt=""><b i18n="otherSetup.autoCalculation">autoCalculation</b></p>
+                    <div class="setelectricity">
+                        <!--<input class="eidtCompany" type="text" value="MW">-->
+                        <span class="eidtCompany" style="margin-right: 30px"></span>
+                        <img class="showChoose" src="/images/setting/dropdown.png" alt="">
+                        <div class="chooseTricity hideType">
+                            <span><img class="chooseCompany" src="/images/repImages/rect.png" alt=""><span>KW</span></span>
+                            <span><img class="chooseCompany" src="/images/repImages/rect.png" alt=""><span>MW</span></span>
+                        </div>
+                        <img class="imgShaw hideType" src="/images/setting/shadow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="title" i18n="otherSetup.roleSetUp">
+                roleSetUp
+            </div>
+            <div class="roleSet">
+                <form id="numForm">
+                    <div class="commentBox">
+                        <div class="showImg">
+                            <img src="/images/setting/systemSetup/role_1.png" alt="">
+                        </div>
+                        <div class="showTex showTex1">
+                            <p class="fp" i18n="otherSetup.role1">role1</p>
+                            <div class="roleType1">
+                                <input class="editRole1 roleInput" type="text" value="--">
+                            </div>
+                        </div>
+                        <div class="showTex ">
+                            <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                            <div class="num">
+                                <input id="numInput1" name="role1" class="editRole1Num numInput checkNumber" type="text" value="--">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentBox">
+                        <div class="showImg">
+                            <img src="/images/setting/systemSetup/role_2.png" alt="">
+                        </div>
+                        <div class="showTex showTex1">
+                            <p class="fp" i18n="otherSetup.role2">role2</p>
+                            <div class="roleType1">
+                                <input class="editRole2 roleInput" type="text" value="--">
+                            </div>
+                        </div>
+                        <div class="showTex ">
+                            <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                            <div class="num">
+                                <input name="role2" class="editRole2Num numInput checkNumber" type="text" value="--">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentBox">
+                        <div class="showImg">
+                            <img src="/images/setting/systemSetup/role_3.png" alt="">
+                        </div>
+                        <div class="showTex showTex1">
+                            <p class="fp" i18n="otherSetup.role3">role3</p>
+                            <div class="roleType1">
+                                <input class="editRole3 roleInput" type="text" value="--">
+                            </div>
+                        </div>
+                        <div class="showTex ">
+                            <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                            <div class="num">
+                                <input name="role3" class="editRole3Num numInput checkNumber" type="text" value="--">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentBox">
+                        <div class="showImg">
+                            <img src="/images/setting/systemSetup/role_4.png" alt="">
+                        </div>
+                        <div class="showTex showTex1">
+                            <p class="fp" i18n="otherSetup.role4">role4</p>
+                            <div class="roleType1">
+                                <input class="editRole4 roleInput" type="text" value="--">
+                            </div>
+                        </div>
+                        <div class="showTex ">
+                            <p class="fp" i18n="otherSetup.numberOf">numberOf</p>
+                            <div class="num">
+                                <input name="role4" class="editRole4Num numInput checkNumber" type="text" value="--">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnBox">
+                <a class="preservation cancel" id="cancel" i18n="cancel">cancel</a>
+                <a class="preservation save" id="save" i18n="save">save</a>
+            </div>
+        </div>
+    </div>
+</div>

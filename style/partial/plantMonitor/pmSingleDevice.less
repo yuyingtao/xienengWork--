@@ -1,0 +1,588 @@
+.pmSinglePlant-box{
+    .fourfirSection{
+        width: 98.5333%;
+        height: 230px;
+        margin: auto;
+        .pms-item{
+            height: 100%;
+            float: left;
+        }
+    }
+    .fourfirSection{
+        margin-top: 12px;
+        height: auto;
+        .deviceList{
+            min-height: 10px;
+            border-radius: 0;
+            overflow: scroll;
+            .status0,.status5{
+                span{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    display: inline-block;
+                    margin: -2px 9% 0 0;
+                    background-color: #3eb766;
+                }
+                color: #3eb766;
+            }
+            .status1{
+                .status0;
+                span{
+                    background-color: #e9cb02;
+                }
+                color: #e9cb02;
+            }
+            .status4{
+                .status0;
+                span{
+                    background-color: #ffa35c;
+                }
+                color: #ffa35c;
+            }
+            .status2{
+                .status0;
+                span{
+                    background-color: #cf0000;
+                }
+                color: #cf0000;
+            }
+            .status3{
+                .status0;
+                span{
+                    background-color: #909090;
+                }
+                color: #909090;
+            }
+        }
+        .deviceDetail{
+            border-radius: 0;
+            padding-bottom: 15px;
+            .deviceBasic{
+                margin: auto;
+                margin-top: 19px;
+                width: 96.2238%;
+            }
+            .noData{
+                vertical-align: middle;
+                margin-top: 10%;
+            }
+            .pic{
+                width: 40.8076%;
+                height:198px;
+                border: 1px solid #bbf5ff;
+                overflow: hidden;
+                float: left;
+                line-height: 198px;
+                background-color: #ebebeb;
+                margin-right: 3%;
+                border-radius: 4px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .txt{
+                float: left;
+                width: 55.5%;
+                text-align: left;
+                p{
+                    border-bottom: 1px dashed #f0f0f0;
+                    margin-top: 9px;
+                    padding: 0 20px;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+                label{
+                    display: inline-block;
+                    font-weight:500;
+                    color: #8A8A8A;
+                }
+                span{
+                    margin-left: 20%;
+                    font-weight:700;
+                }
+            }
+        }
+        .dynamicData{
+            width: 96.2238%;
+            margin: auto;
+            margin-top: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            .sp-navBar{
+                height: 50px;
+                line-height: 50px;
+                text-align: left;
+                border-bottom: 1px dashed #e7e7e7;
+                padding-left: 10px;
+                div{
+                    display: inline-block;
+                    position: relative;
+                    padding: 0 10px;
+                    text-align: center;
+                    margin-left: 30px;
+                    cursor: pointer;
+                    color: #707070;
+                    &.on{
+                        color: #0abddd;
+                        font-weight: 700;
+                        b{
+                            display: inline-block;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 0;
+                            left: 0;
+                            border: 1px solid #0abddd;
+                        }
+                    }
+                    &:first-child{
+                        margin-left: 15px;
+                    }
+                }
+            }
+            .sp-data{
+                height: 250px;
+            }
+            .sliderBtn{
+                display: inline-block;
+                width: 55px;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    width: 44px;
+                    height: 219px;
+                    margin-top: 16px;
+                    background: url("/images/pmImages/page_left.png") no-repeat center;
+                    &:hover{
+                        background: url("/images/pmImages/page_left_1.png") no-repeat center;
+                    }
+                }
+            }
+            .next a{
+                background: url("/images/pmImages/page_right.png") no-repeat center;
+                &:hover{
+                    background: url("/images/pmImages/page_right_1.png") no-repeat center;
+                }
+            }
+            .contain{
+                position: relative;
+                display: inline-block;
+                width: calc(~"100% - 120px");
+                height: 100%;
+                vertical-align: top;
+                padding-top: 10px;
+                overflow: hidden;
+                .status0{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    display: inline-block;
+                    margin: -2px 9% 0 0;
+                    border: 1px solid #747474;
+                }
+                .status1{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    display: inline-block;
+                    margin: -2px 9% 0 0;
+                    background-color: #3eb766;
+                }
+                .status2{
+                    .status1;
+                    background-color: #FF0000;
+                }
+                td{
+                    text-align: left;
+                    padding: 10px 7px;
+                }
+            }
+        }
+        .deviceDataDetail{
+            color: #707070;
+            .data-item{
+                float: left;
+                &:first-child{
+                    margin-left: 0;
+                }
+                h2{
+                    font-size: 1em;
+                    color: #333;
+                    margin: 0;
+                    font-weight: 700;
+                    text-align: left;
+                    margin-top: 7px;
+                }
+                /*label{
+                    display: inline-block;
+                    width: 85px;
+                    text-align: right;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 0;
+                    vertical-align: bottom;
+                }*/
+                span{
+                    color: #3eb766;
+                   &.type0{
+                       color: #3eb766;
+                   }
+                   &.type1{
+                       color: #e9cb02;
+                   }
+                   &.type4{
+                       color: #ffa35c;
+                   }
+                   &.type2{
+                       color: #cf0000;
+                   }
+                   &.type3{
+                       color: #909090;
+                   }
+                }
+            }
+            .box-item{
+                float: left;
+                vertical-align: top;
+                p{
+                    margin-top: 10px;
+                }
+                span{
+                    color: #3eb766;
+                     display: inline-block;
+                     width: 80px;
+                     text-align: left;
+                     font-weight: 700;
+                     vertical-align: bottom;
+                     white-space: nowrap;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                }
+                label{
+                    text-align: left;
+                }
+            }
+            .sliderItem{
+                td{
+                    padding: 10px 2px;
+                }
+            }
+        }
+        .sliders{
+            position: absolute;
+            width: 20000px;
+            left: 0;
+            label{
+
+                display: inline-block;
+                width: 102px;
+                text-align: right;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 0;
+                vertical-align: bottom;
+                padding-left: 5px;
+            }
+            .sliderItem{
+                float: left;
+                .box-item{
+                    //margin-left: 30px;
+                    &:first-of-type{
+                        margin-left: 0;
+                    }
+
+                    &:nth-of-type(4){
+                        //padding-left: 30px;
+                    }
+                }
+            }
+        }
+        .monitorData{
+            .mItem{
+                vertical-align: top;
+            }
+            .exuteBtn{
+                display: inline-block;
+            }
+            .ssr{
+                display: inline-block;
+                width: 33%;
+                text-align: center;
+                .exuteBtn{
+                    margin-top: 20px;
+                    width: 145px;
+                    height: 34px;
+                    line-height: 34px;
+                    border-radius: 17px;
+                    border: none;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                    color: #585858;
+                    display: block;
+                    margin-left: calc(~"((100% - 145px)) / 2");
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &.on{
+                        background-color: #ffa10c;
+                        color: #fff;
+                    }
+                }
+            }
+            .splitLine{
+                display: inline-block;
+                margin-top: 14px;
+                width: 2%;
+            }
+            .sliderItem{
+                text-align: left;
+            }
+            .btns{
+                text-align: center;
+            }
+            .dataSet{
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                label{
+                    font-weight: 500;
+                    color: #333333;
+                    vertical-align: middle;
+                }
+                input{
+                    margin-top: 12px;
+                    border: 1px solid #dedede;
+                    width: 105px;
+                    height: 28px;
+                    line-height: 28px;
+                    border-radius: 4px;
+                }
+                .valueUnit{
+                    display: inline-block;
+                    width: 145px;
+                    text-align: left;
+                }
+                .exuteBtn{
+                    border: 1px solid #0abddd;
+                    background-color: #0abddd;
+                    width: 80px;
+                    height: 28px;
+                    line-height: 28px;
+                    border-radius: 4px;
+                    color: #fff;
+                    opacity: .9;
+                    margin-left: 14px;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                p{
+                    margin-top: 15px;
+                    &:first-child{
+                        margin-top: 11px;
+                    }
+                }
+            }
+        }
+        .curve{
+            width: 96.2238%;
+            margin: auto;
+            margin-top: 30px;
+            text-align: left;
+            .toolBar{
+                position: relative;
+                .splitLineH{
+                    position: absolute;
+                    left: 0;
+                    width: calc(~"100% - 274px");
+                    border-bottom:1px dashed #dcdcdc ;
+                    height: 0px;
+                    top: 10px;
+                }
+                .tit{
+                    font-weight: 700;
+                    margin-left: 10px;
+                }
+            }
+            input.Wdate{
+                float: right;
+                margin-top: -3px;
+            }
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_info{
+            margin-left: 1%;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+        .dataTables_paginate {
+            float: none;
+            text-align: center;
+            margin: 2.6em 0;
+        }
+        .dataTables_length{
+            height: 0;
+        }
+    }
+    .searchTime{
+        float: right;
+        margin-left: 12px;
+        height: 26px;
+        line-height: 26px;
+        vertical-align: top;
+        margin-top: -3px;
+        &:before{
+            top:-1px;
+        }
+    }
+    .deviceTable{
+        margin-top: 10px;
+        &:first-child{
+            margin-top: 0;
+        }
+        &:first-of-type{
+            margin-top: 0;
+        }
+        .td-noWrap{
+            width: 110px;
+        }
+    }
+}
+.pmSinglePlant-box .noNavigator  .dataTables_info {
+    display: none;
+}
+.deviceTable{
+    table.dataTable.stripe tbody tr {
+        td{
+            padding: 8px 7px;
+        }
+        &.selected{
+            background-color: #DEDEDE!important;
+        }
+    }
+    table.dataTable.stripe thead th{
+        padding: 10px 7px;
+    }
+}
+
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+.pmSinglePlant-box{
+    .fourfirSection{
+        .deviceList{
+            width:35.1826%;
+        }
+        .deviceDetail{
+            width:64.1%;
+            margin-left: 0.67%;
+        }
+    }
+}
+@import '../../media.less';
+@media(max-width:@screen1920) {
+
+}
+@media(max-width:@screen1500) {
+    .pmSinglePlant-box{
+        .fourfirSection{
+            .deviceDetail .txt p{
+                margin-top: 15px;
+            }
+            .dynamicData .contain{
+                margin-top: 12px;
+            }
+            .deviceDataDetail{
+                .box-item {
+                    //margin-left: 32px;
+                }
+                .data-item {
+                    label{
+                        width: 92px;
+                    }
+                    span{
+                        width: 69px;
+                    }
+
+                }
+            }
+            .curve .toolBar .splitLineH{
+                //width: calc(~"100% - 262px");
+            }
+        }
+    }
+}
+@media(max-width:@screen1366) {
+    .pmSinglePlant-box {
+        .fourfirSection{
+            .deviceDetail .txt p{
+                margin-top: 19px;
+            }
+            .dynamicData .contain{
+                margin-top: 0px;
+            }
+            .monitorData .dataSet {
+                label{
+                    width: 80px;
+                }
+                input{
+                    width: 75px;
+                }
+                .exuteBtn{
+                    width: 44px;
+                    margin-left: 10px;
+                }
+                .valueUnit{
+                    width: 103px;
+                }
+            }
+        }
+        .fourfirSection .deviceDataDetail {
+            .box-item {
+                float: left;
+                vertical-align: top;
+                //margin-left: 20px;
+            }
+            .data-item{
+                margin-left: 2%;
+                label{
+                    width: 70px;
+                }
+                span{
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1260px) {
+
+    .pmSinglePlant-box  .fourfirSection .deviceDataDetail {
+        .data-item{
+            margin-left: 2%;
+            label{
+                width: 50px;
+            }
+            span{
+                width: 53px;
+            }
+        }
+    }
+}
+@media(max-width:@screen1024) {
+
+}

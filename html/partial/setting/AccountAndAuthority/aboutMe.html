@@ -1,0 +1,52 @@
+<div class="messList">
+   <p class="headImg"><span class="messListSp" i18n="userIcon">userIcon</span><b style="margin-right: 21px">:</b><span class="headBox"><img id="oldIcon"  src="" alt=""></span></p>
+   <p><span class="messListSp" i18n="name">name</span><b style="margin-right: 21px">:</b> <span id="oldUserName"></span>  </p>
+   <p><span class="messListSp" i18n="userTel">userTel</span><b style="margin-right: 21px">:</b><span id="oldUserTel"></span>  </p>
+   <p><span class="messListSp" i18n="loginId">loginId</span><b style="margin-right: 21px">:</b><span id="oldLoginId"></span>  </p>
+   <p><span class="messListSp" i18n="email">email</span><b style="margin-right: 21px">:</b><span id="oldEmail"></span>  </p>
+   <p><span class="messListSp" i18n="passWord">passWord</span><b style="margin-right: 21px">:</b><span>*******</span>  </p>
+   <a class="edit imgBtn" id="edit" permission = 'myInfoEdit' i18n="edit">edit</a>
+</div>
+<div class="editBox" style="display: none">
+   <form action="" id="modifyForm" enctype="multipart/form-data">
+      <div class="editColum editColumfi">
+         <p class="editMess" i18n="userIcon" style="width: 50px">userIcon</p><b style="margin-right: 27px">:</b>
+         <p class="headBox">
+            <img id="newIcon1" src="" alt="">
+            <a class="uploadA">
+               <img class="closeImg" src="/images/setting/close.png" alt="">
+            </a>
+            <input type="file" accept="image/jpeg,image/gif,image/png"  id="up_img"/>
+         </p>
+         <p class="sug"><b i18n="ProposedPictureLengthWidthRatio">ProposedPictureLengthWidthRatio</b>1:1</p>
+      </div>
+      <div class="editColum">
+         <p class="editMess"><span class="impMess">*</span><b i18n="name">name</b><b style="margin-right: 21px">:</b></p>
+         <input type="text"  id="newUserName" class="messInput" required/>
+      </div>
+      <div class="editColum">
+         <p class="editMess"><span class="impMess">*</span><b i18n="userTel">userTel</b><b style="margin-right: 21px">:</b></p>
+            <input type="text" name="mobile" id="newUserTel" class="checkRepeatTel mobile messInput" required/>
+            <p>
+               <img class="codeImg" src="" alt="" style="display: none">
+            </p>
+      </div>
+      <div class="editColum">
+         <p class="editMess">&nbsp;&nbsp;<b i18n="loginId">loginId</b><b style="margin-right: 21px">:</b></p>
+         <input type="text" id="newLoginId" disabled="true" class="checkRepeatLoginId messInput codeInput" required/>
+      </div>
+      <div class="editColum">
+         <p class="editMess">&nbsp;&nbsp;<b i18n="email">email</b><b style="margin-right: 21px">:</b></p>
+         <input type="email" name="" id="newEmail" class="checkRepeatEmail messInput codeInput"/>
+         <p>
+            <img class="codeImg" src="/images/setting/ture.png" alt="" style="display: none">
+         </p>
+      </div>
+      <p class="verificationMess"></p>
+      <p class="verificationMess1"></p>
+      <div class="submit">
+         <a class="cancel imgBtn" id="cancel" i18n="cancel">cancel</a>
+         <a class="preservation imgBtn" id="save" i18n="save">save</a>
+      </div>
+   </form>
+</div>

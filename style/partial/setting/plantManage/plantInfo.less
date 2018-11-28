@@ -1,0 +1,1149 @@
+.setNavBox{
+  .setNav{
+    //overflow: auto;
+  }
+}
+.plantInfo{
+  //min-height: 1400px;
+  height: 100%;
+  background: #fff;
+  .leftInfo{
+    width: 19.8%;
+    height: 100%;
+    //min-height: 1400px;
+    border-right: 1px solid #E7E7E7;
+    overflow: auto;
+    .leftTab{
+      margin-top: 22px;
+      .tab{
+        width: 91.5%;
+        height: 36px;
+        margin: 0 auto;
+        background: #ECECEC;
+        border-radius: 4px;
+        text-align: center;
+        color: #989797;
+        cursor: pointer;
+        span{
+          display: inline-block;
+          width: 50%;
+          height: 36px;
+          line-height: 36px;
+          .setFont(1rem);
+          float: left;
+        }
+        span.activeSpan{
+          background: #01B1ED;
+          color: #fff;
+          border-radius: 4px;
+        }
+      }
+      .organizationLf1{
+        width: 91.5%;
+        height: 36px;
+        margin: 10px auto 0 auto;
+        position: relative;
+        input{
+          width: 80%;
+          height: 34px;
+          border:1px solid #DEDEDE;
+          border-radius: 4px 0 0 4px;
+          padding: 0 0 0 28px;
+          position: absolute;
+          left: 0;
+          &:focus{
+            outline: none;
+          }
+        }
+        //&:before{
+        //  content: '';
+        //  position: absolute;
+        //  display: inline-block;
+        //  left: 5px;
+        //  top:6px;
+        //  width: 22px;
+        //  height: 22px;
+        //  background:red url("/images/setting/search1.png") no-repeat 2% center;
+        //}
+        a#searchOrgPlant{
+          display:inline-block;
+          width: 20%;
+          height: 34px;
+          line-height: 34px;
+          background: #01B1ED;
+          color: #fff;
+          position: absolute;
+          right: 0;
+          border-radius: 0 4px 4px 0;
+          .setFont(1rem)
+        }
+        img{
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          left: 5px;
+          top:6px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+  .rightInfo{
+    width: 80%;
+    //min-height: 1400px;
+    height: 100%;
+    //overflow: hidden;
+    .infoContent{
+      width: 97.5%;
+      height: 100%;
+      //height: 1000px;
+      margin: 22px auto ;
+      text-align: left;
+      .setFont(1rem);
+      .ownerHead{
+        height: 36px;
+        border-bottom: 1px dashed #DEDEDE;
+        span{
+          display: inline-block;
+          height: 36px;
+          line-height: 36px;
+          color: #fff;
+          border-radius: 4px;
+        }
+        span:nth-of-type(1){
+          width: 119px;
+          background: url("/images/setting/plantManage/title.png");
+          text-indent: 5px;
+        }
+        span:nth-of-type(2){
+          cursor: pointer;
+          float: right;
+          width: 80px;
+          text-align: center;
+          text-indent: 24px;
+          background:#01B1ED  url("/images/setting/plantManage/add.png") no-repeat 5% 6px;
+        }
+        span#modifyPlant-plantManage{
+          background:#01B1ED  url("/images/setting/plantManage/edit.png") no-repeat 5% 6px;
+        }
+      }
+      //业主信息
+      .ownerInfo{
+        //业主表格
+        .ownerContent{
+          width: 100%;
+          #ownerTable{
+            //overflow: hidden;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            .setFont(1rem);
+            border-left: 1px solid #E7E7E7;
+            border-right: 1px solid #E7E7E7;
+            tr{
+              height: 40px!important;
+              line-height: 40px;
+            }
+            thead{
+              tr{
+                background: #01b1ed;
+                color: #fff;
+              }
+            }
+            tbody{
+              tr:nth-child(even){
+                background: #f8f9fb;
+              }
+              tr{
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 1px dashed #e7e7e7;
+                td{
+                  padding: 0;
+                  margin: 0;
+                  line-height: 40px;
+                  color: #666;
+                  a{
+                    /* display: inline-block; */
+                    /* height: 26px; */
+                    /* line-height: 26px; */
+                    text-align: center;
+                    /* border-radius: 4px; */
+                    color: #fff;
+                    vertical-align: middle;
+                  }
+                  a.modifyOwner{
+                    background: rgba(48,166,250,.5) ;
+                    margin-right: 13px;
+                  }
+                  a.deleteOwner{
+                    background: rgba(255,14,38,.5);
+                  }
+                  a.modifyPwd{
+                    background: rgba(255,49,15,.5) ;
+                    margin-right: 13px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+      //电站信息
+      .ptInfo{
+        .ptContent{
+          .ptImg{
+            width: 30%;
+            height:206px ;
+            margin-top: 30px;
+            margin-right: 3.3%;
+            overflow: hidden;
+            float: left;
+            img{
+              width: 100%;
+              display: inline-block;
+              height: 100%;
+            }
+          }
+          .ptImg:nth-of-type(3n){
+            margin-right: 0;
+          }
+          .ptImg:nth-of-type(3n-2){
+            margin-left: 15px;
+          }
+          //表格数据
+          #plantInformation{
+            tr{
+              td{
+                .setFont(1rem);
+                line-height: 40px;
+                color: #666;
+                b{
+                  margin-right: 15px;
+                  label{
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    background: url("/images/setting/plantManage/rect.png") no-repeat center;
+                  }
+                  label.choose{
+                    background: url("/images/setting/plantManage/rect1.png") no-repeat center;
+                  }
+                }
+                a#lookPrice{
+                  display: inline-block;
+                  background:#01B1ED ;
+                  height: 34px;
+                  padding: 0 10px;
+                  line-height: 34px;
+                  border-radius: 4px;
+                  color: #fff;
+                }
+                i{
+                  display: inline-block;
+                  width: 20px;
+                  height: 24px;
+                  vertical-align: middle;
+                  background: url("/images/setting/plantManage/map_1.png") no-repeat center;
+                }
+              }
+              td:nth-of-type(1){
+                display: inline-block;
+                margin-left: 15px;
+                width: 45%;
+              }
+              td:nth-of-type(2){
+                display: inline-block;
+                width: 35%;
+              }
+            }
+            tr:last-child td{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    //新建电站样式
+    .addPlant{
+      width: 97.5%;
+      height: 100%;
+      margin: 22px auto ;
+      text-align: left;
+      .setFont(1rem);
+      .ownerHead {
+        height: 36px;
+        border-bottom: 1px dashed #DEDEDE;
+        span {
+          display: inline-block;
+          height: 36px;
+          line-height: 36px;
+          color: #fff;
+          border-radius: 4px;
+        }
+        span:nth-of-type(1) {
+          width: 119px;
+          background: url("/images/setting/plantManage/title.png");
+          text-indent: 5px;
+        }
+      }
+      .newPlantInfo{
+        #npInfo{
+          margin-top: 20px;
+        }
+        div.orgDiv{
+          &:before{
+            content: '';
+            position: absolute;
+            display: inline-block;
+            right: 20%;
+            top:6px;
+            width: 22px;
+            height: 22px;
+            background: url("/images/setting/search1.png") no-repeat 98% center;
+          }
+        }
+        div.plantItem{
+          display: inline-block;
+          width: 49%;
+          float: left;
+          color: #333;
+          margin-bottom: 10px;
+          position: relative;
+          a{
+            display: inline-block;
+            color: #fff;
+            width: 17.66%;
+            height: 34px;
+            line-height: 34px;
+            border-radius: 4px;
+            text-indent: 30px;
+            background: #01B1ED url("/images/setting/plantManage/map.png") no-repeat 2% center;
+            position: absolute;
+            top: 0;
+            right: 92px;
+
+          }
+          a.seePrice{
+            width: 17%;
+            text-indent: 0;
+            background: #01B1ED;
+            text-align: center;
+            margin-left: 2%;
+            right: 90px;
+            top:0;
+          }
+          input{
+            width: 67.25%;
+            height: 34px;
+            border: 1px solid #EBEBEB;
+            border-radius: 4px;
+            text-indent: 5px;
+            &:focus{
+              outline: none;
+            }
+          }
+          input[disabled]{
+            background: #fff;
+            border:none;
+          }
+          input[readonly]{
+            border:none;
+          }
+          label.error{
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            color: red;
+          }
+          i{
+            position: absolute;
+            right: 90px;
+            top:0;
+            height: 34px;
+            line-height: 34px;
+          }
+          select::-ms-expand { display: none; }  //兼容IE
+          select{
+            width: 33.5%;;
+            height: 34px;
+            border:1px solid #EBEBEB;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            -ms-appearance:none;
+            background: url("/images/setting/plantManage/dropdown.png") no-repeat 98% center;
+            text-indent: 5px;
+            border-radius: 4px;
+            &:focus{
+              outline: none;
+            }
+          }
+          input[name="capacity"]{
+            width: 52.65%;
+            margin-right: 5px;
+          }
+          input[name="plantAddr"]{
+            width:48.4%;
+            margin-right: 5px;
+          }
+          input[name="plantArea"]{
+            width: 63.6%;
+            margin-right: 5px;
+          }
+          input[name="plantPrice"]{
+            width: 58.3%;
+            margin-right: 5px;
+          }
+          select[name="capUnit"]{
+            width: 13.42%;
+            position: absolute;
+            right: 90px;
+            top:0;
+          }
+          select[name="plantPrice"]{
+            width: 48%;
+          }
+          b{
+            font-size: 16px;
+            color: #FF0E26;
+            vertical-align: -4px;
+            margin-right: 5px;
+          }
+          label{
+            font-weight: normal;
+            margin-right: 5px;
+          }
+        }
+        div.plantImgs{
+          //div{
+          //  width: 33%;
+          //  display: inline-block;
+          //  float: left;
+          //}
+          .uploadImgBox{
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            width:30%;
+            height: 190px;
+            text-align: center;
+            line-height: 185px;
+            background: #EBEBEB;
+            border: 1px solid  #E7E7E7;
+            border-radius: 4px;
+            margin-right: 1%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+            input[type="file"] {
+              position: absolute;
+              top: 0;
+              right: 0;
+              .setFont(1rem);
+              background-color: #fff;
+              transform: translate(-300px, 0px) scale(4);
+              height: 40px;
+              opacity: 0;
+              filter: alpha(opacity=0);
+            }
+            .uploadA {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              overflow: hidden;
+              top: 0;
+              right: 0;
+              z-index: 10;
+              img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 10;
+              }
+              input[type="file"] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                .setFont(1rem);
+                background-color: #fff;
+                transform: translate(-300px, 0px) scale(4);
+                height: 40px;
+                opacity: 0;
+                z-index: 20;
+                filter: alpha(opacity=0);
+                outline: 1px solid red;
+              }
+            }
+          }
+        }
+        div.plantMsg{
+          width: 100%;
+          position: relative;
+          margin-top: 10px;
+          height: 130px;
+          label{
+            position: absolute;
+            top:0;
+            font-weight: normal;
+          }
+          textarea{
+            width: 92%;
+            position: absolute;
+            left: 70px;
+            border: 1px solid #EBEBEB;
+            resize: none;
+            text-indent: 5px;
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+        div.plantBtn{
+          text-align: center;
+          margin-top: 30px;
+          position: relative;
+          a{
+            width: 80px;
+            height: 34px;
+            display: inline-block;
+            border-radius: 4px;
+            line-height: 34px;
+            text-indent: 20px;
+            color:#fff;
+          }
+          a:nth-of-type(1){
+            background: #01B1ED url("/images/setting/save.png") no-repeat 2% center;
+          }
+          a:nth-of-type(2){
+            background: #01B1ED url("/images/setting/cancel.png") no-repeat 2% center;
+          }
+        }
+      }
+    }
+  }
+}
+#ownerPhoneNumFrom{
+  label.error{
+    display: inline;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+  }
+}
+//新增业主信息弹窗  编辑电站信息弹窗
+form{
+  .setFont(1rem);
+  div.leftInfo{
+    width: 445px;
+    //height: 378px;
+    //margin-right: 40px;
+    border-right: 1px solid #E1E1E1;
+  }
+  div.rightInfo{
+    width: 400px;
+    //height: 378px;
+  }
+  div.item-group-plant{
+    //height: 36px;
+    //line-height: 36px;
+    position: relative;
+    margin-bottom: 10px;
+    b{
+      font-size: 16px;
+      color: #FF0E26;
+      vertical-align: -5px;
+      margin-right: 5px;
+    }
+    label{
+      color: #333;
+      font-weight: normal;
+    }
+    label.error{
+      margin-top: 10px;
+      color: #FF0E26;
+      width: 100%;
+      display: inline-block;
+      font-weight: normal;
+    }
+    input{
+      width: 280px;
+      height: 34px;
+      text-indent: 5px;
+      color: #666;
+      border:1px solid #EBEBEB;
+      outline: none;
+      border-radius: 4px;
+    }
+    input[readonly]{
+      border:none;
+    }
+    i{
+      display: inline-block;
+      width: 280px;
+      text-align: left;
+      .uploadImgBox{
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        width:120px;
+        height: 124px;
+        text-align: center;
+        line-height: 120px;
+        background: #EBEBEB;
+        border: 1px solid  #E7E7E7;
+        border-radius: 4px;
+        margin-right: 20px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        input[type="file"] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          .setFont(1rem);
+          background-color: #fff;
+          transform: translate(-300px, 0px) scale(4);
+          height: 40px;
+          opacity: 0;
+          filter: alpha(opacity=0);
+        }
+        .uploadA {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          right: 0;
+          z-index: 10;
+          img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+          }
+          input[type="file"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            .setFont(1rem);
+            background-color: #fff;
+            transform: translate(-300px, 0px) scale(4);
+            height: 40px;
+            opacity: 0;
+            z-index: 20;
+            filter: alpha(opacity=0);
+            outline: 1px solid red;
+          }
+        }
+      }
+    }
+    input:focus{
+      outline: none;
+    }
+    input.sysTel{
+      width: 175px;
+    }
+    input.plantArea{
+      width: 266px;
+    }
+    span.sysSpan{
+      display: inline-block;
+      width: 105px;
+      label{
+        vertical-align: middle;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("/images/repImages/rect.png") no-repeat center;
+        margin-right: 4px;
+      }
+      label.onReact{
+        background: url("/images/repImages/rect1.png") no-repeat center;
+      }
+      label.notReact{
+        background: url("/images/repImages/rect.png") no-repeat center;
+      }
+    }
+    textarea{
+      width: 280px;
+      border: 1px solid #EBEBEB;
+      text-indent: 5px;
+      height: 144px;
+      line-height: 36px;
+      border-radius: 4px;
+    }
+    textarea:focus{
+      outline: none;
+    }
+    .select1{
+      width: 140px;
+      height: 34px;
+      border:1px solid #EBEBEB;
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      background: url("/images/setting/plantManage/dropdown.png") no-repeat 98% center;
+      text-indent: 5px;
+      border-radius: 4px;
+      option{
+        padding:10px 0;
+      }
+    }
+    select:focus{
+      outline:none;
+    }
+  }
+  div.userPic{
+    div.picNotice{
+      width: 280px;
+      height: 120px;
+    }
+    span{
+      color: #FF0E26;
+    }
+  }
+}
+form#plantInfoOfPlant{
+  input.capacity{
+    width:200px;
+    margin-right: 4px;
+    //position: absolute;
+    //left: 120px;
+    //top:0;
+  }
+  select.capSelect{
+    vertical-align: middle;
+    width: 76px;
+    height: 34px;
+    //position: absolute;
+    //right: 40px;
+    //top:0;
+  }
+  i{
+    label{
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+      background: url("/images/setting/plantManage/rect.png") no-repeat center;
+    }
+    label.onLabel{
+      background: url("/images/setting/plantManage/rect1.png") no-repeat center;
+    }
+  }
+  i.inPrice{
+    width: 45px;
+  }
+  i.qyi{
+    width: 80px;
+  }
+  i.bi{
+    width: 200px;
+  }
+  i.timeLine{
+    height: 16px;
+    width: 1px;
+    background:#01B1ED;
+    position: absolute;
+    right:15%;
+    top:11px;
+  }
+  input.addrInput{
+    width: 174px;
+    margin-right: 6px;
+  }
+  input.time{
+    background: url("/images/repImages/calendar.png") no-repeat 98% 2px;
+  }
+  a{
+    display: inline-block;
+    color: #fff;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 4px;
+    text-indent: 15px;
+    margin-top: -5px;
+    background: #01B1ED url("/images/setting/plantManage/map.png") no-repeat 2% center;
+  }
+  select[name='plantPrice']{
+    width: 175px;
+    height: 34px;
+    margin-right: 5px;
+  }
+  a.priceSee{
+    background: #01B1ED;
+    text-indent: 0;
+  }
+}
+#cancelOwner{
+  width: 80px;
+  text-indent: 20px;
+  background:#01B1ED url("/images/repImages/cancel.png") no-repeat 5% 2px;
+  //position: absolute;
+  //z-index: 9999;
+}
+#saveOwner{
+  width: 80px;
+  text-indent: 20px;
+  background:#01B1ED url("/images/repImages/save.png") no-repeat 5% 2px;
+}
+#cancelLocation{
+  width: 80px;
+  text-indent: 20px;
+  background:#01B1ED url("/images/repImages/cancel.png") no-repeat 5% 2px;
+  //position: absolute;
+  //z-index: 9999;
+}
+#saveLocation{
+  width: 80px;
+  text-indent: 20px;
+  background:#01B1ED url("/images/repImages/save.png") no-repeat 5% 2px;
+}
+//地图弹窗业务
+#locationMap,#locationMap1{
+  //.modal-header{
+  //  height: 40px;
+  //  padding: 0;
+  //  min-height: 40px;
+  //}
+  //.modal-title{
+  //  line-height: 40px;
+  //}
+  //.modal-content{
+  //  padding: 0;
+  //}
+  #locInfo{
+    height: 140px;
+    //background: rgba(0,0,0,0.5);
+    //opacity:0.8;
+    text-align: left;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    p{
+      line-height:44px;
+      background: #01B1ED;
+      color: #fff;
+      i{
+        margin: 0 10px;
+      }
+      input{
+        height:34px;
+        border: 1px solid #EBEBEB;
+        border-radius: 4px;
+        text-indent: 5px;
+        width: 260px;
+        background: #01B1ED;
+        &:focus{
+          outline: none;
+        }
+      }
+      input[readonly]{
+        border: none;
+      }
+    }
+    input:nth-of-type(3){
+      background: #fff;
+    }
+    p:nth-of-type(3){
+      background: #fff;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
+    }
+    div{
+      border-radius: 4px;
+    }
+    div.jg{
+      height: 10px;
+      //background: #fff;
+    }
+  }
+  .plantImg{
+    width: 32px;
+    height: 50px;
+    float: left;
+  }
+  .plantIcon0{
+    background: url("/images/io/normal.png") center no-repeat;
+  }
+}
+#locInfo1{
+  height: 140px;
+  background: #fff;
+  text-align: left;
+  p{
+    line-height:44px;
+    background: #01B1ED;
+    color: #fff;
+    i{
+      margin: 0 10px;
+    }
+    input{
+      height:34px;
+      border: 1px solid #EBEBEB;
+      border-radius: 4px;
+      text-indent: 5px;
+      width: 260px;
+      background: #01B1ED;
+      &:focus{
+        outline: none;
+      }
+    }
+    input[readonly]{
+      border: none;
+    }
+  }
+  input:nth-of-type(3){
+    background: #fff;
+  }
+  p:nth-of-type(3){
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+  }
+  div{
+    border-radius: 4px;
+  }
+  div.jg{
+    height: 10px;
+    //background: #fff;
+  }
+}
+//电价详情弹窗表格样式
+table.priceDetail{
+  width: 100%;
+  thead{
+    th{
+      height: 40px;
+      line-height: 40px;
+      text-align: left;
+      .setFont(1em);
+      color: #253646;
+      background:rgba(12,188,220,0.08);
+    }
+    th:nth-of-type(1){
+      text-indent: 10px;
+    }
+  }
+  tbody{
+    td{
+      height: 40px;
+      line-height: 40px;
+      text-align: left;
+      .setFont(0.85714em)
+    }
+    tr{
+      border-bottom: 1px solid #F2F2F2;
+      td:nth-of-type(1){
+        text-indent: 10px!important;
+      }
+    }
+  }
+}
+//ztree样式
+.ztree li ul{
+  height: auto;
+}
+.ztree li a.curSelectedNode{
+  border: none;
+
+  background:none;
+}
+//当前被点击的节点 样式
+.ztree li a.curSelectedNode .node_name{
+  border-radius: 4px;
+  padding: 4px 5px;
+  background: #01B1ED;
+}
+//根节点 前面的+ - 设置
+.ztree li span.button.root_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.root_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+//根节点 前面的+ - 设置 结束
+
+//根节点自定义图标设置
+.ztree li span.button.ico_close{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+.ztree li span.button.ico_open{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+//根节点自定义图标设置 结束
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+.ztree li span.button.center_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.center_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+
+.ztree li span{
+  .setFont(1.14rem);
+  line-height: 24px;
+  font-family:MicrosoftYaHei;
+}
+.ztree li span.button{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.pIcon01_ico_open{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//第一级子菜单  class level1
+.ztree li.level1{
+  margin-top: 26px;
+}
+//第一级子菜单  class level2
+.ztree li.level2 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+//第二级子菜单  class level3
+.ztree li.level3 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level4 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level5 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level6 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level7 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level8{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level9{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level10{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li span.button.pIcon01_ico_close{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.icon01_ico_docu{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//去掉hover显示 下划线
+.ztree li a:hover{
+  text-decoration: none;
+}
+//选中样式
+.ztree li a.curSelectedNode .node_name{
+  color: #fff;
+}
+.ztree li span.button.icon03{margin-left: 0px; background: url("/images/setting/addOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.icon04{margin-left: 0px; background: url("/images/setting/delOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+//响应式设置
+@import '../../../media.less';
+@media (max-width: @screen1920) {
+  .plantInfo{
+    .ownerInfo #ownerTable tbody td a{
+      min-width: 30px;
+      padding: 4px 11px;
+    }
+    .ptInfo .ptImg{
+
+    }
+  }
+
+}
+@media (max-width: @screen1500) {
+  .plantInfo{
+    .ownerInfo #ownerTable tbody td a{
+      min-width: 30px;
+      padding: 4px 5px;
+    }
+  }
+}
+@media (max-width: @screen1366) {
+  .plantInfo{
+    .ownerInfo #ownerTable tbody td a{
+      min-width: 28px;
+      padding: 4px 2px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.navList{
+  width: 1500px;
+  .navUl{
+    width: 276px;
+    padding-top: 26px;
+    background: #fff;
+    float: left;
+    list-style:none;
+    text-align: left;
+    margin-right: 9px;
+    height: 100%;
+    li{
+      padding: 20px 0px 20px 36px;
+      margin-bottom: 15px;
+      a{
+        color:#8A8A8A;
+        font-family: "Microsoft Yahei", Verdana, Simsun, "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+      }
+      img{
+        vertical-align: -9px;
+      }
+    }
+    .activeLi{
+      border-left:6px solid #01B1ED;
+      background:rgba(229,248,255,1);
+      a{
+        color: #01B1ED ;
+      }
+    }
+  }
+  .messageList{
+    padding-top: 26px;
+    float: right;
+    padding-left: 13px;
+    text-align: left;
+    .setFont(1rem);
+    color: #333333;
+    width: 1215px;
+    background: #fff;
+
+    height: 100%;  }
+}
+@import '../../../media.less';
+@media(max-width:@screen1500) {
+  .navList{
+    width: 100%;
+    .navUl{
+      width: 17%;
+    }
+    .messageList{
+      width: 82%;
+    }
+  }
+}
+@media(max-width:@screen1366) {
+  .navList{
+    width: 100%;
+    .navUl{
+      width: 17%;
+      margin-right: 10px;
+    }
+    .messageList{
+      width: 82%;
+    }
+  }
+}

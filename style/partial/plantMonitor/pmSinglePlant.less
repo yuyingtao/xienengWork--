@@ -1,0 +1,1094 @@
+.pmSinglePlant-box{
+  .firSection,.secSection,.thrSection,.fourfirSection{
+    width: 98.5333%;
+    height: 230px;
+    margin: auto;
+    .pms-item{
+      height: 100%;
+      float: left;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .palntImg{
+    position: relative;
+    overflow: hidden;
+
+    .cameraImg{
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      bottom: 0px;
+      right: 0px;
+      background: url("/images/pmImages/hosty.png");
+      cursor: pointer;
+      z-index: 99;
+    }
+    .carousel-inner{
+      item{
+        width: 100%;
+        height: 100%;
+        img{
+          height: 230px;
+        }
+      }
+
+    }
+
+  }
+  .palntStatus{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    img{
+      height: 73px;
+      margin-top: 52px;
+    }
+    .spStatus{
+      margin-top: 35px;
+      .setFont(0.85714em);
+      font-weight: 700;
+      span{
+        display: inline-block;
+        padding: 6px 30px;
+      }
+      color: #fff;
+      .normal{
+        background: #3EB766;
+      }
+      .standby{
+        background: #e9cb02;
+      }
+      .fault{
+        background: #cf0000;
+      }
+      .break{
+        background: #909090;
+      }
+      .abnormal{
+        background:#ffa35c;
+      }
+    }
+  }
+
+  .palntIndo{
+    display: inline-block;
+  }
+  .pms-weather{
+    float: left;
+    width: 370px;
+    background: #0ABDDD;
+    height: 230px;
+  .splitLine{
+    //padding-left: 19px;
+    //img{
+    //  width: 82%;
+    //}
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,.2);
+  }
+    .taWeather{
+      height: 87px;
+      img{
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin: 0 auto;
+      }
+      .tomWeather{
+        width: 49%;
+        height: 87px;
+        color: #fff;
+        text-align: center;
+        .lfInfo{
+          width: 40%;
+          height: 100%;
+          float: left;
+          margin-top: 20px;
+          font-size: 1.1428571em;
+        }
+        .jgl1{
+          width: 0;
+          height: 60px;
+          border-right: 1px dashed rgba(255,255,255,.2);
+          float: left;
+          margin-top: 15px;
+        }
+        .rgInfo{
+          width: 59%;
+          height: 100%;
+          float: right;
+          margin-top: 18px;
+          p{
+            //display: inline-block;
+            //margin-top: 5px;
+          }
+        }
+      }
+      .jgLine{
+        width: 2px;
+        background:rgba(255,255,255,.2);
+        height: 87px;
+      }
+    }
+  }
+  .pms-data{
+    float: left;
+    width: 58.158%;
+    .sItem{
+      width: 49%;
+      float: left;
+      height: 108px;
+      position: relative;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      img{
+        margin-top: 65px;
+        width: 52.36%;
+        height: 20px;
+      }
+      div.test1,div.test2,div.test3,div.test4{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 35px;
+        top: 5px;
+        >div{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .sData{
+        width:42%;
+        margin-top: 25px;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        p{
+          margin-top: 6px;
+          color: #8A8A8A;
+        }
+        .data-show{
+          margin-top: 5px;
+          .setFont(1.2857rem);
+          font-weight: 700;
+        }
+      }
+      &:nth-child(2n+1){
+        //margin-left: 1.5%;
+      }
+      &:nth-child(1), &:nth-child(2){
+        //margin-top: 40px;
+        margin-bottom: 13px;
+      }
+      &:nth-child(3), &:nth-child(4){
+       // margin-top: 54px;
+      }
+      &:nth-child(2), &:nth-child(4){
+        float: right;
+      }
+
+      &.one{
+        .data-show{
+          color: #33B87B;
+        }
+      }
+      &.two{
+        .data-show{
+          color: #FD933A;
+        }
+      }
+      &.three{
+        .data-show{
+          color: #1EADE2;
+        }
+      }
+      &.four{
+        .data-show{
+          color: #FC5963;
+        }
+      }
+    }
+  }
+  .weaterImg{
+    .one{
+      color: #FFA000;
+      margin-left: -2%;
+    }
+    .wItem{
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  .secSection{
+    margin-top: 12px;
+    height: 334px;
+    .pms-item{
+      float: left;
+      height: 100%;
+    }
+    .mapItem{
+      position: relative;
+      width: 27.67253%;
+      .capPow{
+        width: 97%;
+        margin: 5px auto;
+        height: 87px;
+        background: #0ABDDD;
+        border-radius: 4px;
+        box-shadow: 0px 4px 0px #07A1BC;
+        p{
+          color: #fff;
+          font-size: 1em;
+          width: 92%;
+          margin: 0 auto;
+          text-align: left;
+          line-height: 30px;
+          span{
+            font-size: 1.28571rem;
+            font-weight: 700;
+          }
+          &:nth-of-type(2){
+            position: relative;
+            i{
+              width: 0%;
+              display: inline-block;
+              height:20px;
+              float: left;
+              &:nth-of-type(1){
+                background: #fff;
+                border-radius: 13px 0 0 13px;
+              }
+              &:nth-of-type(2){
+                width: 100%;
+                background: #09a6c2;
+                border-radius: 0 13px 13px 0;
+              }
+            }
+            b{
+              width: 0;
+              height: 0;
+              border-right: 5px solid transparent;
+              border-bottom: 5px solid #fff;
+              border-left: 5px solid transparent;
+              position: absolute;
+              left: 0%;
+              top: 20px;
+              transform: translate(-50%, 3px)
+            }
+          }
+          &:nth-of-type(3){
+            text-align: right;
+            position: relative;
+            top: 4px;
+            font-size: 0.857142em;
+            //margin-right: 200px;
+            span{
+              font-size: 1em;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      //储能比
+      .energy-head{
+        width: 96%;
+        margin: 8px auto;
+        height: 100px;
+        border-radius: 4px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+        p {
+          margin: 0 auto;
+          width: 94%;
+          text-align: left;
+          position: relative;
+          .current-percent {
+            position: absolute;
+            left: 0%;
+            color: #fff;
+          }
+          &:nth-of-type(1) {
+            line-height: 36px;
+            span:nth-of-type(2) {
+              color: #3EB766;
+              font-size: 1.4285em;
+            }
+          }
+          &:nth-of-type(2) {
+            i {
+              width: 0%;
+              display: inline-block;
+              height: 20px;
+              float: left;
+              background: rgb(62, 183, 102);
+              border-radius: 10px 0 0 10px;
+              &:nth-of-type(2) {
+                width: 100%;
+                background: rgb(228, 228, 241);
+                border-radius: 0 10px 10px 0;
+              }
+            }
+            //三角形
+            b {
+              width: 0;
+              height: 0;
+              border-right: 5px solid transparent;
+              border-bottom: 5px solid rgb(62, 183, 102);
+              border-left: 5px solid transparent;
+              position: absolute;
+              left: 0%;
+              top: 20px;
+              transform: translate(-50%, 3px)
+            }
+          }
+          &:nth-of-type(3){
+            text-align: right;
+            line-height: 44px;
+            span{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      //光储 储能 功率 容量
+      .head-power{
+        width: 97%;
+        margin: 5px auto;
+        //height: 154px;
+        border-radius: 4px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+        p{
+          margin: 0 auto;
+          width:94%;
+          text-align: left;
+          position: relative;
+          .current-percent{
+            position: absolute;
+            left: 0%;
+            color: #fff;
+          }
+          &:nth-of-type(1){
+            span:nth-of-type(2){
+              color: #0ABDDD;
+              font-size: 1.4285em;
+            }
+          }
+          &:nth-of-type(2){
+            i{
+              width: 0%;
+              display: inline-block;
+              height:20px;
+              float: left;
+              background: rgb(10,189,221);
+              border-radius: 10px 0 0 10px;
+              &:nth-of-type(2){
+                width: 100%;
+                background: rgb(228,228,241);
+                border-radius: 0 10px 10px 0;
+              }
+            }
+            //三角形
+            b{
+              width: 0;
+              height: 0;
+              border-right: 5px solid transparent;
+              border-bottom: 5px solid rgb(10,189,221);
+              border-left: 5px solid transparent;
+              position: absolute;
+              left: 0%;
+              top: 20px;
+              transform: translate(-50%, 3px)
+            }
+          }
+          &:nth-of-type(4){
+            span:nth-of-type(2){
+              color: rgb(62,183,102);
+              font-size: 1.4285em;
+            }
+          }
+          &:nth-of-type(5){
+            i{
+              width:0%;
+              display: inline-block;
+              height:20px;
+              float: left;
+              background: rgb(62,183,102);
+              border-radius: 10px 0 0 10px;
+              &:nth-of-type(2){
+                width: 100%;
+                background: rgb(228,228,241);
+                border-radius: 0 10px 10px 0;
+              }
+            }
+            b{
+              width: 0;
+              height: 0;
+              border-right: 5px solid transparent;
+              border-bottom: 5px solid rgb(62,183,102);
+              border-left: 5px solid transparent;
+              position: absolute;
+              left: 0%;
+              top: 20px;
+              transform: translate(-50%, 3px)
+            }
+          }
+          &:nth-of-type(3),&:nth-of-type(6){
+            text-align: right;
+            line-height: 30px;
+            span:nth-of-type(2){
+              font-size: 1.1428em;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      //类型联系人地址并网时间等 光伏
+      .taact{
+        width: 92%;
+        margin: 0 auto;
+        border-bottom: 1px dashed #CDCDCD;
+        p{
+          text-align: left;
+          line-height: 30px;
+        }
+        span{
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+          img{
+            width: 16px;
+            height: 16px;
+          }
+        }
+        i{
+          color: #8A8A8A;
+        }
+        b{
+          color:#253646;
+        }
+      }
+      .plant-information{
+        margin-top:16px;
+        border-bottom:none;
+        line-height: 36px;
+      }
+      //简介
+      .info{
+        width: 92%;
+        margin: 0 auto;
+        p{
+          line-height: 36px;
+          color: #253646;
+          text-align: left;
+        }
+      }
+      .cn-plant-info{
+        border-bottom: none;
+        p{
+          line-height: 40px;
+        }
+      }
+      .contributionInfo{
+        width: 92%;
+        margin: 0 auto;
+        border-bottom: 1px dashed #CDCDCD;
+        h2{
+          font-weight: 700;
+          .setFont(1em);
+          height: 50px;
+          line-height: 50px;
+          color: #253646;
+          margin: 0;
+          text-align: left;
+        }
+        .todayTimeWeek{
+          margin-top:18px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 13px;
+          box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+      .sgPlantWeather{
+        border:none;
+        width: 87.7%;
+      }
+      .contributionItem{
+        width: 92%;
+        margin: 0 auto;
+        .flex{
+          width: 100%;
+          display: flex;
+          display: -webkit-box;
+          display: -webkit-flex;
+          .flex_center{
+            margin:auto;
+            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            -webkit-box-orient: vertical;
+            -webkit-flex-flow: column;
+            flex-flow: column;
+            -webkit-box-pack:center;
+            -webkit-justify-content:center;
+            justify-content:center;
+            -webkit-box-align: center; /*Safari,Opera,Chrome*/
+            -webkit-align-items:center;
+            align-items: center;
+            box-align: center;
+            font-size: 1em;
+            div{
+              width: 88px;
+              height: 112px;
+              margin-top: 52px;
+              img{
+                margin:0;
+              }
+            }
+            b{
+              font-size: 1.142857rem;
+              color: #0ABDDD;
+              text-align: center;
+              font-weight: bold;
+            }
+            span{
+              padding-top:10px;
+              color:#121E28;
+              text-align: center;
+            }
+          }
+        }
+        .flex_flex{
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          flex:1;
+        }
+      }
+      .weather-item{
+        width: 87.7%;
+      }
+      .today-weather{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        height: 140px;
+        width: 100%;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0,0,0,.5);
+        //background: url("/images/weather/weather_bg.png") no-repeat;
+        .weather-img{
+          margin-left:25px;
+          margin-right: 40px;
+        }
+        .tep{
+          font-size: 4.28em;
+          margin-right: 40px;
+        }
+        .weather-tep{
+          font-size: 1.1428em;
+          p{
+            line-height: 30px;
+          }
+        }
+      }
+      .tom-after{
+        margin-top: 16px;
+        .tomorrow{
+          display: flex;
+          justify-content: center;
+          width: 49%;
+          height: 102px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          border: 4px;
+          border-radius: 4px;
+        }
+        .tomorrow-img{
+          width: 45%;
+          margin-top:20px;
+          margin-bottom: 16px;
+          p{
+            margin-top: 5px;
+            color: #8A8A8A;
+            font-size: 1em;
+          }
+        }
+        .tomorrow-tep{
+          margin-top:30px;
+          width: 40%;
+          p{
+            font-size: 1em;
+            line-height: 26px;
+          }
+        }
+      }
+
+    }
+    .mapBox-title{
+      position: absolute;
+      z-index: 99999;
+      text-align: left;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #fff;
+      padding-left: 5px;
+      background: rgba(0,0,0,.5);
+    }
+    .powerItem{
+      width: 71.58322%;
+      margin-left: 0.6765%;
+      text-align: left;
+      .sp-tit{
+        width: 96%;
+        margin: 0 auto;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px dashed #CDCDCD;
+        .curve_box_top{
+          float: right;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          //padding-bottom: 10px;
+          //border-bottom: 1px dashed #CDCDCD;
+          .curve_box_top_lf{
+            text-align: right;
+            line-height: 34px;
+            .search_box{
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              border: 1px solid #F1F1F1;
+              text-align: center;
+              line-height: 34px;
+              border-radius: 50%;
+              margin-left: 10px;
+              cursor: pointer;
+              img{
+                vertical-align: -5px;
+              }
+            }
+          }
+          .curve_box_top_ri{
+            //width: 102px;
+            .chooseDimension{
+              position: relative;
+              cursor: pointer;
+              margin-left: 10px;
+              padding: 0 10px 14px 10px;
+              border-bottom: 4px solid transparent;
+              color: #888888;
+              cursor:pointer;
+              font-size: 1.142857em;
+              b{
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                display: inline-block;
+                width: 100%;
+                height: 0;
+                //border: 1px solid #0abddd;
+
+              }
+            }
+            .activeTime1{
+              /*&:after{
+                content: ' ';
+                display: inline-block;
+                width: 100%;
+                height: 2px ;
+                background: red;
+              }*/
+              b{
+                height: 4px;
+                background: #0abddd;
+              }
+            }
+          }
+          input.Wdate{
+            width: 37%;
+          }
+        }
+        .searchPowerBox{
+          line-height: 50px;
+          .search_box{
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #F1F1F1;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 50%;
+            margin-left: 4px;
+            img{
+              vertical-align: -5px;
+            }
+          }
+        }
+      }
+      h2{
+        font-weight: 700;
+        line-height: 50px;
+        width: 20%;
+        float: left;
+        .setFont(1em);
+        margin: 0;
+      }
+    }
+  }
+  .thrSection {
+    .sp-tit{
+      height: 40px;
+      border-bottom: 1px solid #e7e7e7;
+      h2 {
+        line-height: 40px;
+        text-align: left;
+        font-weight: 700;
+        .setFont(1em);
+        margin: 0;
+        width: 50%;
+        float: left;
+        //display: inline-block;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background: url(/images/pmImages/ioon_1.png) no-repeat center;
+          vertical-align: middle;
+          margin: -2px 10px 0 7px;
+        }
+      }
+      .dateChange{
+        text-align: left;
+        width: 43.5%;
+        height: 40px;
+        line-height: 40px;
+        nav{
+          display:inline-block;
+          span{
+            display: inline-block;
+            width: 71px;
+            text-align: center;
+            color: #707070;
+            cursor: pointer;
+          }
+          span.isActive{
+            color: #4BAEFE;
+            //border-bottom: none;
+            background: url("/images/pmImages/online.png") left bottom no-repeat ;
+          }
+        }
+        input#dateStart,input#dateEnd{
+          height: 26px;
+          outline: none;
+        }
+        img#searchTime{
+          margin-top:10px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .l-quota{
+      padding-left: 3.3829%;
+      color: #707070;
+      text-align: left;
+      margin-top: 46px;
+      p{
+        font-size: 1.28571em;
+      }
+      span{
+        font-size: 2.166666em;
+        color: #28c24a;
+      }
+      img{
+        margin-left: 14px;
+        margin-right: 3px;
+        vertical-align: baseline;
+      }
+      .data{
+        font-size: 0.85714em;
+        margin-top: 18px;
+      }
+      .splitLine{
+        margin: 6px 1px 20px -30px;
+      }
+    }
+  }
+  .dataTables_wrapper {
+    .dataTables_paginate {
+      float: none;
+      text-align: center;
+      margin: 2em 0;
+    }
+    .dataTables_length{
+      height: 0;
+    }
+  }
+}
+
+
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+.pmSinglePlant-box{
+  .sp-content{
+    width: 1500px;
+    .palntImg{
+      width: 409px;
+      img{
+        width: 100%;
+      }
+    }
+    .palntStatus{
+      width:180px;
+      height: 230px;
+      background-color: #fff;
+      float: left;
+      img{
+        width: 82px;
+      }
+    }
+    //天气及电站状态
+    .wpContain{
+      width: 550px;
+      margin-left: 10px;
+      background-color: transparent;
+    }
+    //收益统计
+    .profContain{
+      width: 498px;
+      margin-left: 10px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .palntIndo{
+      width:100%;
+    }
+  }
+  .titleBar{
+    width: 1472px;
+  }
+  .activeTime{
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 19px;
+    color: #fff;
+    font-size: 0.85714em;
+  }
+  .weaterImg{
+    margin-left: 9%;
+    text-align: left;
+    margin-top: 5px;
+    color: #fff;
+    height: 110px;
+    //img{
+    //  display: inline-block;
+    //  width: 85%;
+    //}
+    .todayWeather{
+      display: inline-block;
+      float: left;
+      width: 30%;
+      img{
+        margin-top: 20px;
+      }
+    }
+    .weatherInfo{
+      text-align: center;
+      width: 50%;
+      float: right;
+      span{
+        display: block;
+        font-size: 1em;
+        //width: 100%;
+        &:nth-of-type(1){
+          .setFont(4.3em);
+          line-height: 100%;
+        }
+      }
+    }
+    .wItem{
+      width: 31%;
+      .weatherBox{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+      }
+    }
+    .one {
+      .weatherBox{
+        width: 50px;
+        height: 50px;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .two{
+      margin-left: 7%;
+      font-size: 0.8571em;
+    }
+    .three{
+      font-size: 0.8571em;
+    }
+  }
+  .dataTxt{
+    margin-left: 10%;
+    text-align: left;
+    label{
+      display: inline-block;
+      width: 65px;
+    }
+  }
+  .thrSection{
+    height: 346px;
+    margin-top: 12px;
+    .l-quota{
+      float: left;
+      width: 22.185%;
+      height: 100%;
+    }
+    .r-kpi{
+      float: left;
+      width: 77.8078%;
+      height: 280px;
+    }
+  }
+  .fourfirSection{
+    .deviceDetail{
+      width:59.95%;
+      margin-left: 0.67%;
+    }
+  }
+}
+#profitLine{
+  height: 280px;
+}
+@import '../../media.less';
+@media(max-width:@screen1920) {
+
+}
+@media(max-width:@screen1500) {
+  .pmSinglePlant-box{
+    .sp-content{
+      width: 100%;
+
+      .palntImg{
+        width: 27.69%;
+      }
+      .wpContain{
+        width: 37.212449%;
+        margin-left: 0.62%;
+      }
+      //收益统计
+      .profContain{
+        width: 33.694181%;
+        margin-left:0.62%;
+        background-color: transparent;
+      }
+      .palntStatus{
+        width:32.727272%;
+        background-color: #fff;
+      }
+      .pms-weather{
+        width:67.272727%;
+      }
+      .palntIndo{
+        //width:82.986768%;
+      }
+    }
+    .titleBar{
+      width: 98.5333%;
+    }
+    .pms-weather .splitLine{
+      margin: 3px 0;
+    }
+    .dataTxt{
+      line-height: 22px;
+    }
+    .fourfirSection{
+      .deviceDetail .txt p{
+        margin-top: 15px;
+      }
+      .dynamicData .contain{
+        margin-top: 18px;
+      }
+      .deviceDataDetail .data-item {
+        label{
+          width: 78px;
+        }
+        span{
+          width: 69px;
+        }
+
+      }
+    }
+  }
+}
+@media(max-width:@screen1366) {
+  .pmSinglePlant-box {
+    .pms-data .sItem .sData p{
+      margin-top: 12px;
+    }
+    .thrSection .l-quota{
+      margin-top: 58px;
+    }
+    label{
+      margin-bottom: 0;
+    }
+    .fourfirSection{
+      .deviceDetail .txt p{
+        margin-top: 19px;
+      }
+      .dynamicData .contain{
+        margin-top: 20px;
+      }
+    }
+    .fourfirSection .deviceDataDetail {
+      .box-item {
+        float: left;
+        vertical-align: top;
+        margin-left: 6px;
+      }
+      .data-item{
+        margin-left: 4%;
+        label{
+          width: 46px;
+        }
+        span{
+          width: 60px;
+        }
+      }
+    }
+    .secSection .mapItem .contributionItem{
+      width: 99%;
+    }
+  }
+}
+@media(max-width:@screen1024) {
+  .pmSinglePlant-box {
+    .pms-data .sItem .sData p{
+      margin-top: 14px;
+    }
+    .dataTxt{
+      line-height: 18px;
+    }
+    .thrSection .l-quota{
+      margin-top: 68px;
+    }
+  }
+}
+@import "../../videoHis.less";
+@import "../../videoLive.less";

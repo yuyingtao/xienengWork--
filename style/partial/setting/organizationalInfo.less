@@ -1,0 +1,571 @@
+.organizationBox{
+  display: flex;
+  height: 100%;
+}
+.organizationLf{
+  width: 294px;
+  min-width: 294px;
+  //position: relative;
+  overflow-x:auto;
+  border-right: 1px solid #E7E7E7;
+  height: 100%;
+  .searchBox{
+    width: 270px;
+    height: 34px;
+    position: relative;
+    margin: 0 auto 26px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    .addOr{
+      position: absolute;
+      right: 30px;
+      top: 64px;
+    }
+    .delOr{
+      position: absolute;
+      right: 4px;
+      top:64px;
+    }
+    .searchImg{
+      width: 18px;
+      height: 18px;
+      margin: 6px 8px;
+      text-align: center;
+      line-height: 18px;
+      img{
+        vertical-align: -3px;
+      }
+    }
+    input{
+      display: block;
+      width: 180px;
+      border: none;
+      outline: none;
+      color: #ccc;
+      .setFont(1rem);
+    }
+    input::-webkit-input-placeholder {color:#D3D3D3;.setFont(1rem);}
+    .searchBtn{
+      cursor: pointer;
+      width: 55px;
+      height: 33px;
+      line-height: 34px;
+      text-align: center;
+      color: #fff;
+      .setFont(1rem);
+
+      background: rgba(1,177,237,1);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+//.ztree li span.button.switch{
+//  width: 16px;
+//  height: 16px;
+//  font-size: 16px;.ztree li span
+//  border-radius: 4px;
+//}
+.ztree{
+  width: 100%;
+  height: 700px;
+  //overflow-y: auto;
+}
+.ztree li ul{
+  height: auto;
+}
+.ztree li a.curSelectedNode{
+  border: none;
+
+  background:none;
+}
+//当前被点击的节点 样式
+.ztree li a.curSelectedNode .node_name{
+  border-radius: 4px;
+  padding: 4px 5px;
+  background: #01B1ED;
+  color: white;
+}
+//根节点 前面的+ - 设置
+.ztree li span.button.root_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.root_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+//根节点 前面的+ - 设置 结束
+
+//根节点自定义图标设置
+.ztree li span.button.ico_close{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+.ztree li span.button.ico_open{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+//根节点自定义图标设置 结束
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+.ztree li span.button.center_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.center_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_open{
+  background: url("/images/setting/reduction.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.ztree li span.button.bottom_close{
+  background: url("/images/setting/add.png");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+// 第一级子节点展开和关闭时前面的+-设置  button.center是第一个子节点到倒数第二个 最后一个子节点为button.bottom 我也不知为什么这么奇怪
+
+.ztree li span{
+  .setFont(1.14rem);
+  line-height: 24px;
+  font-family:"Microsoft YaHei";
+  //color: #333;
+}
+.ztree li span.button{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.pIcon01_ico_open{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//第一级子菜单  class level1
+.ztree li.level1{
+  margin-top: 26px;
+}
+//第一级子菜单  class level2
+.ztree li.level2 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+//第二级子菜单  class level3
+.ztree li.level3 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level4 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level5 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level6 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level7 {
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level8{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level9{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li.level10{
+  //height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.ztree li span.button.pIcon01_ico_close{
+  margin-right:7px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+.ztree li span.button.icon01_ico_docu{
+  margin-right:0px;
+  width: 24px;
+  height: 24px;
+  vertical-align:top;
+  *vertical-align:middle
+}
+//去掉hover显示 下划线
+.ztree li a:hover{
+  text-decoration: none;
+}
+.ztree li span.button.icon03{margin-right:0px;background: url("/images/setting/addOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.icon04{background: url("/images/setting/delOr.png") no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+//右边信息显示栏
+.organizationRi{
+  flex-grow:1;
+  padding-left: 12px;
+  text-align: left;
+  .cpLog{
+    width: 119px;
+    padding-left: 8px;
+    height: 36px;
+    line-height: 36px;
+    .setFont(1rem);
+    color: white;
+    text-align: left;
+    background: url("/images/setting/title.png");
+  }
+  .orDetai{
+    border-top: 1px dashed #E0E0E0;
+    padding-top: 28px;
+    p{
+      margin-bottom: 46px;
+      color:#666666;
+      .setFont(1rem);
+      .messName{
+        display: inline-block;
+        width: 96px;
+        .setFont(1rem);
+        margin-right: 3px;
+        text-align: right;
+        color: #333;
+      }
+      .isUse{
+        color: #29AD00;
+      }
+    }
+  }
+  .orEdit{
+    border-top: 1px dashed #E0E0E0;
+    padding-top: 28px;
+    display: none;
+    p {
+      margin-bottom: 18px;
+      color: #666666;
+      .setFont(1rem);
+      .messName {
+        display: inline-block;
+        width: 96px;
+        .setFont(1rem);
+        //margin-right: 18px;
+        text-align: right;
+        color: #333;
+        span{
+          color: red;
+          vertical-align: -3px;
+          margin-right: 3px;
+        }
+      }
+      input{
+        display: inline-block;
+        padding-left: 7px;
+        width: 360px;
+        height: 36px;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+      }
+    }
+    .phoneNum{
+      .AreaCode{
+        width: 50px;
+        height: 36px;
+      }
+    }
+    .submit{
+      margin-left: 200px;
+      margin-top: 56px;
+      .cancel{
+        margin-right: 34px;
+        &:before{
+          background: url(/images/setting/cancel.png) no-repeat center;
+        }
+      }
+      .preservation{
+        &:before{
+          background: url(/images/setting/save.png) no-repeat center;
+        }
+      }
+    }
+  }
+}
+//.modify{
+//  position: relative;
+//  display: inline-block;
+//  min-width: 50px;
+//  font-size: 12px;
+//  background: #01B1ED;
+//  height: auto;
+//  line-height: inherit;
+//  padding: 4px 8px;
+//  /* padding-right: 15px; */
+//  color: #fff;
+//  border-radius: 0;
+//  border: none;
+//  text-align: center;
+//  &:hover{
+//    color: #fff;
+//    opacity: .9;
+//  }
+//}
+.orEdit{
+  p {
+    margin-bottom: 8px;
+    color: #666666;
+    .setFont(1rem);
+    .messName {
+      display: inline-block;
+      width: 96px;
+      .setFont(1rem);
+      //margin-right: 18px;
+      text-align: right;
+      color: #333;
+      span{
+        color: red;
+        vertical-align: -3px;
+        margin-right: 3px;
+      }
+    }
+    input{
+      display: inline-block;
+      padding-left: 7px;
+      width: 280px;
+      height: 36px;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+    }
+    .orImg{
+      display: inline-block;
+      width: 280px;
+      text-align: left;
+    }
+  }
+  .phoneNum{
+    .AreaCode{
+      width: 50px;
+      height: 36px;
+    }
+  }
+  .submit{
+    .setFont(0.86rem);
+    margin-left: 140px;
+    margin-top: 56px;
+    .cancel{
+      margin-right: 34px;
+      &:before{
+        background: url(/images/setting/cancel.png) no-repeat center;
+      }
+    }
+    .preservation{
+      &:before{
+        background: url(/images/setting/save.png) no-repeat center;
+      }
+    }
+  }
+}
+.OrgmodifyPassword{
+  line-height: 34px;
+  .setFont(0.86rem);
+}
+//弹窗信息
+.radio{
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  div{
+    height: 20px;
+    line-height: 20px;
+  }
+  img{
+    margin-right: 9px;
+  }
+}
+.nexRdio{
+  display: flex;
+  border: 1px dashed #BFBFBF;
+  width: 305px;
+  margin: 0 auto;
+  padding: 0 50px;
+  background: rgba(247,247,247,1);
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  div{
+    img{
+      margin-right: 5px;
+      vertical-align: -4px;
+    }
+  }
+}
+label.error{
+  //width: 100%;
+  //margin: 5px 0px;
+  display: inline-block;
+  //margin-left: 120px;
+  width: 100%;
+  color: #FF0E26;
+  font-weight: normal;
+}
+#pwdForm1{
+  label.error{
+    //width: 100%;
+    //margin: 5px 0px;
+    display: inline-block;
+    margin-top: 4px;
+    //margin-left: 38px;
+    width: 100%;
+    color: #FF0E26;
+    font-weight: normal;
+  }
+}
+.addCancel{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  //line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/cancel.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+.addSave{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  //line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/save.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+.isShow{
+  label.error{
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+}
+@import '../../media.less';
+//@media(max-width:@screen1500) {
+//  .organizationBox{
+//    width: 70%;
+//    ul{
+//      width: 17%;
+//    }
+//    .messageList{
+//      width: 80%;
+//    }
+//  }
+//}
+@media (max-width: @screen1920) {
+  .organizationRi{
+      p{
+        input{
+          width: 260px;
+        }
+      }
+    }
+  }
+@media (max-width: @screen1500) {
+  .organizationRi{
+    .orEdit{
+      .submit{
+        margin-left: 110px;
+      }
+      p{
+        input{
+          width: 260px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: @screen1366) {
+  .organizationRi{
+    .orEdit{
+      .submit{
+        margin-left: 70px;
+      }
+      p{
+        input{
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+

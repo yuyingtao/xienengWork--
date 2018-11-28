@@ -1,0 +1,430 @@
+.organizationBox{
+  .roleListBox{
+    flex-shrink: 0;
+    width: 158px;
+    height: 970px;
+    border: 1px solid #E7E7E7;
+    margin-left: 8px;
+    .roleType{
+      height: 42px;
+      //line-height: 42px;
+      padding: 12px;
+      background-color: #00ACEA;
+      color:white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        cursor: pointer;
+      }
+    }
+    #addRoleBtn{}
+    .roleList{
+      width: 100%;
+      list-style: none;
+      .setFont(1rem);
+      li{
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        text-align: left;
+        padding-left: 14px;
+        color: #6B6B6B;
+        cursor: pointer;
+      }
+      .activeLi{
+        background: #C0EEFF;
+        color: #01b1ed;
+        border-left: 4px solid #5ad3ff;
+      }
+    }
+    .promptMess{
+      margin: 200px auto 0;
+      width: 96px;
+      color: #959595;
+      line-height: 22px;
+      .setFont(0.86rem);
+    }
+  }
+  .jurisdictionList{
+    flex-grow: 1;
+    padding: 0px 12px;
+    .authoritySearch{
+      display: flex;
+      justify-content: space-between;
+      .searchBox{
+        width: 270px;
+        height: 34px;
+        position: relative;
+        //margin: 0 auto 26px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #DEDEDE;
+        border-radius: 4px;
+        .addOr{
+          position: absolute;
+          right: 30px;
+          top: 64px;
+        }
+        .delOr{
+          position: absolute;
+          right: 4px;
+          top:64px;
+        }
+        .searchImg{
+          width: 18px;
+          height: 18px;
+          margin: 6px 8px;
+          text-align: center;
+          line-height: 18px;
+          img{
+            vertical-align: -3px;
+          }
+        }
+        input{
+          display: block;
+          width: 180px;
+          border: none;
+          outline: none;
+          color: #ccc;
+          .setFont(1rem);
+        }
+        input::-webkit-input-placeholder {color:#D3D3D3;.setFont(1rem);}
+        .searchBtn{
+          cursor: pointer;
+          width: 55px;
+          height: 33px;
+          line-height: 34px;
+          text-align: center;
+          color: #fff;
+          .setFont(1rem);
+
+          background: rgba(1,177,237,1);
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+      .takeUpAll{
+        width: 88px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        background: #01B1ED;
+        .setFont(1rem);
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .authorityTitle{
+      height: 42px;
+      line-height: 42px;
+      .setFont(1.14rem);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px 0px 32px;
+      margin-top: 8px;
+      background: #30A6FA;
+      color: #fff;
+    }
+    .showAccordLength{
+      text-align: left;
+      .setFont(1rem);
+      color: #373438;
+      height: 42px;
+      line-height: 42px;
+      background: #CDF2FF;
+      padding-left: 12px;
+      span{
+        color: #01B1ED;
+      }
+    }
+    #authorityZtree{
+      //padding-left: 40%;
+      max-height: 600px;
+      overflow: auto;
+    }
+  }
+}
+.authorityZtree li a:hover {text-decoration:none; background-color: #E7E7E7;}
+.authorityZtree li a span.button.switch {visibility:hidden}
+.authorityZtree.showIcon li a span.button.switch {visibility:visible}
+.authorityZtree li a.curSelectedNode {background-color:#D4D4D4;border:0;height:30px;}
+.authorityZtree li span {line-height:30px;}
+.authorityZtree li span.button {margin-top: -7px;}
+.authorityZtree li span.button.switch {width: 16px;height: 16px;}
+.authorityZtree li span.button {background-image:none; *background-image:none}
+
+.authorityZtree li span.button.noline_open {background-position: 0 0;}
+.authorityZtree li span.button.noline_close {background-position: -18px 0;}
+.authorityZtree li span.button.noline_open.level0 {background-position: 0 -18px;}
+.authorityZtree li span.button.noline_close.level0 {background-position: -18px -18px;}
+.authorityZtree .level0{
+  //width: 98%;
+}
+.authorityZtree li {
+  line-height:42px;
+  position: relative;
+}
+.authorityZtree li a.level0 span {
+  color: #373438;
+  .setFont(1rem);
+  font-weight: bold;
+}
+.authorityZtree li span{
+  .setFont(1rem) !important;
+  //color: #333 !important;
+}
+.authorityZtree li a.curSelectedNode{
+  background: #CDF2FF!important;
+  height: 42px;
+  line-height: 42px;
+}
+.authorityZtree .icon02{
+  float: right;
+  margin-top: 13px!important;
+}
+.authorityZtree .icon01{
+  color: #ccc;
+  .setFont(1rem)!important;
+  display: inline-block;
+  //margin-top: 20px!important;
+  position: absolute;
+  left: 40%;
+  //margin-left: 32% !important;
+  //outline: 1px solid green !important;
+  width: 35% !important;
+  height: 38px !important;
+  margin-top: 0px !important;
+  line-height: 42px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.authorityZtree li a {
+  width: 95%;
+  height:42px;
+  line-height: 42px;
+  padding-top: 0px;
+}
+.authorityZtree li span.button{
+  margin-right: 10px !important;
+}
+.authorityZtree li span.button.switch.level0 {
+  width: 24px;
+  height:20px;
+  margin-top: 10px;
+}
+.authorityZtree li span.button.switch.level1 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+
+.authorityZtree li span.button.switch.level2 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level3 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level4 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level5 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level6 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level7 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level8 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level9 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li span.button.switch.level10 {
+  width: 20px;
+  height:20px;
+  margin-top: 10px;
+
+}
+.authorityZtree li.level1{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level2{
+  margin-top: 0px!important;
+
+}
+.authorityZtree li.level3{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level4{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level5{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level6{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level7{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level8{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level9{
+  margin-top: 0px!important;
+}
+.authorityZtree li.level10{
+  margin-top: 0px!important;
+}
+//checkbox样式
+.authorityZtree li span.button.chk.checkbox_true_full{
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  background: url("/images/repImages/rect1.png") !important;
+}
+.authorityZtree li span.button.chk.checkbox_false_full{
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  background: url("/images/repImages/rect.png") !important;
+
+}
+.authorityZtree li span.button.chk.checkbox_false_disable{
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  background: url("/images/repImages/rect2.png") !important;
+}
+.authorityZtree li span.button.chk.checkbox_true_part{
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  background: url("/images/repImages/rect3.jpg") !important;
+}
+.authorityZtree li span.button.chk.checkbox_true_focus{
+  width: 20px !important;
+  height: 20px !important;
+  background-position: 0px 0px;
+}
+.authorityZtree li span.button.chk{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.authorityZtree li span.button.center_close{
+background: url("/images/setting/add.png");
+  margin-right:8px !important;
+}
+.authorityZtree li span.button.center_open{
+  background: url("/images/setting/reduction.png");
+  margin-right:8px !important;
+}
+.authorityZtree li span.button.roots_close{
+background: url("/images/setting/add.png");
+}
+.authorityZtree li span.button.roots_open{
+background: url("/images/setting/reduction.png");
+}
+.authorityZtree li span.button.bottom_open{
+background: url("/images/setting/reduction.png");
+  margin-right: 8px !important;
+}
+.authorityZtree li span.button.bottom_close{
+  background: url("/images/setting/add.png");
+  margin-right: 8px !important;
+}
+.authorityZtree li a.curSelectedNode .node_name{
+  border-radius: 4px;
+  padding: 4px 5px;
+  background: none!important;
+  color: #333!important;
+}
+#qrDelete,#qrAddRole{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  //line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/save.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+
+.addInput{
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  border: 1px solid #01b1ed;
+  border-radius: 4px;
+  input{
+    border:none;
+    outline:none;
+    display: inline-block;
+    width: 170px;
+    height: 26px;
+    line-height: 30px;
+    padding: 0 10px;
+    .setFont(1rem);
+    color: #8A8A8A;
+  }
+}
+#addRoleForm label.error{
+  margin-left: 0px;
+}
+@import '../../media.less';
+@media (max-width: 1500px){
+  //.navList .messageList {
+  //  width: 78%;
+  //}
+}

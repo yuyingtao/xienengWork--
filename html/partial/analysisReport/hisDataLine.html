@@ -1,0 +1,110 @@
+<div class="hisDataLine">
+    <div class="dataLineCon">
+        <div class="lineHead">
+            <div class="leftBar fl">
+                <div class="fl"><span i18n="report.plantArea">plantArea</span>:</div>
+                <input id="showWin" type="text" readonly class="selectPlant">
+            </div>
+            <!--autoPickDate:true 点击一次自动补全时间-->
+            <div class="rightBar fr">
+                <span i18n="report.time">--</span>
+                <div>
+                    <!--onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',isShowClear:false,maxDate:''})"-->
+                    <input type="text" class="timeChoose"  id="timeStart">
+                    <label for=""></label>
+                </div>
+                &nbsp; - &nbsp;
+                <div>
+                    <!--onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'timeStart\',{d:1,m:-1})}',minDate:'#F{$dp.$D(\'timeStart\')}',isShowClear:false})"-->
+                    <input type="text" class="timeChoose" id="timeEnd">
+                    <label for=""></label>
+                </div>
+                <!--<a class="sureTime">确定</a>-->
+            </div>
+        </div>
+        <div class="loadingData" id="loadingData" i18n="sp.loading">
+            loading
+        </div>
+        <div class="deviceDetail pms-item" id="nanImg" style="margin-top: 100px;">
+            <img class="noData" src="/images/NaN.png" alt="">
+        </div>
+        <div class="blocks" style="width: 100%; height: 35px"></div>
+        <div class="deviceForm">
+            <form action="" id="deviceForm" style="display: none">
+                <fieldset>
+                    <legend i18n="report.device">device</legend>
+                    <div class="selectBtn">
+                        <div class="formItem spanColor fr">
+                            <span id="cancelSelect" i18n="cancel">
+                                cancel
+                            </span>
+
+                        </div>
+                        <div class="formItem spanColor fr">
+                            <span id="oppSelect" i18n="report.oppSelect">
+                                oppSelect
+                                <!--<input type="checkbox" name="" >-->
+                               <!--<label for="" class="unChoose"></label>-->
+                            </span>
+                        </div>
+                        <div class="formItem spanColor fr">
+                            <span id="selectAll" i18n="report.selectAll">
+                                selectAll
+                                <!--<input type="checkbox" name="" >-->
+                                <!--<label for="" class="unChoose"></label>-->
+                            </span>
+                        </div>
+                    </div>
+                    <div class="items">
+                    </div>
+
+                    <div class="sureBtn">
+                        <a i18n="sure">sure</a>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="blocks" style="width: 100%; height: 35px"></div>
+            <form action="" id="dataForm" style="display: none;">
+                <fieldset>
+                    <legend i18n="report.data">data</legend>
+                    <div class="selectBtn">
+                        <div class="formItem spanColor fr">
+                            <span id="cancelSelectData" i18n="cancel">
+                                cancel
+                            </span>
+                        </div>
+                        <div class="formItem spanColor fr">
+                            <span id="oppSelectData" i18n="report.oppSelect">
+                                oppSelect
+                            </span>
+
+                        </div>
+                        <div class="formItem spanColor fr">
+                            <span id="selectAllData" i18n="report.selectAll">
+                                <!--<input type="checkbox" name="" >-->
+                            <!--<label for="" class="unChoose"></label>-->
+                                selectAll
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="items">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="btns" style="display: none">
+            <a id="canSel" i18n="report.cancelSelect">cancelSelect</a>
+            <a id="getLine" i18n="report.getLine">getLine</a>
+            <a id="saveLine" i18n="report.saveDefault">saveDefault</a>
+        </div>
+        <div class="lineBox">
+            <div id="loadLine" style="display: none;margin-top: 50px" i18n="sp.loading">loading</div>
+            <div id="lineContent1">
+
+            </div>
+        </div>
+    </div>
+    <input type="text" id="plantId" style="display: none">
+</div>

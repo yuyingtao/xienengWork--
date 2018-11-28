@@ -1,0 +1,216 @@
+<div class="plantInfo">
+    <div class="leftInfo fl">
+        <div class="leftTab">
+            <div class="tab">
+                <span class="activeSpan" data-type="1" i18n="grouping by org">grouping by org</span>
+                <span data-type="2" i18n="grouping by region">grouping by region</span>
+            </div>
+            <div class="organizationLf1">
+                <img src="/images/setting/search1.png" alt="">
+                <input type="text" i18nOnly = "placeholder" i18n="inputPlantName" placeholder="inputPlantName" id="key">
+                <a id="searchOrgPlant" i18n="search">search</a>
+            </div>
+            <div id="ztree1" class="ztree" style="margin-top: 10px">
+            </div>
+        </div>
+    </div>
+    <div class="rightInfo fr" style="overflow-y: auto" >
+        <div class="infoContent" style="display: none">
+            <div class="ownerInfo">
+                <div class="ownerHead">
+                    <span i18n="owner's info">owner's info</span>
+                    <span id="addOwner" data-type="1" permission = 'plantOwnerManageNew' i18n="add">add</span>
+                </div>
+                <div class="ownerContent">
+                    <table id="ownerTable" class="hover stripe">
+                        <thead>
+                            <tr>
+                                <th width="14%" style="text-indent: 20px" i18n="order">order</th>
+                                <th width="24%" i18n="account">account</th>
+                                <th width="24%" i18n="username">username</th>
+                                <th width="18%" i18n="telephone">telephone</th>
+                                <th i18n="operate">operate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--<tr>-->
+                                <!--<td>序号</td>-->
+                                <!--<td>账号</td>-->
+                                <!--<td>用户名</td>-->
+                                <!--<td>电话</td>-->
+                                <!--<td>操作</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>序号</td>-->
+                                <!--<td>账号</td>-->
+                                <!--<td>用户名</td>-->
+                                <!--<td>电话</td>-->
+                                <!--<td>操作</td>-->
+                            <!--</tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ptInfo">
+                <div class="ownerHead">
+                    <span i18n="plant's info">plant's info</span>
+                    <span id="modifyPlant-plantManage" permission = 'plantInfoManageEdit' i18n="modify">modify</span>
+                </div>
+                <div class="ptContent">
+                    <!--<div class="ptImg">-->
+                        <!--<image src="/images/repImages/default_plant.png"></image>-->
+                    <!--</div>-->
+                    <!--<div class="ptImg">-->
+                        <!--<image src="/images/repImages/default_plant.png"></image>-->
+                    <!--</div>-->
+                    <!--<div class="ptImg">-->
+                        <!--<image src="/images/repImages/default_plant.png"></image>-->
+                    <!--</div>-->
+                    <div class="plantImages">
+
+                    </div>
+                    <table id="plantInformation" width="100%">
+                        <tr>
+                            <td><span i18n="plantName">plantName</span>：<b>--</b></td>
+                            <td><span i18n="capacity">capacity</span>：<b>--</b></td>
+                            <td><span i18n="accessTime">accessTime</span>：<b>--</b></td>
+                        </tr>
+                        <tr>
+                            <td><span i18n="plantAddress">plantAddress</span>：<b>--</b><i id="plantLocation"></i></td>
+                            <td><span i18n="plantType">plantType</span>：<b>--</b></td>
+                            <td><span i18n="orgName">orgName</span>：<b>--</b></td>
+                        </tr>
+                        <tr>
+                            <td><span i18n="detailedAddress">detailedAddress</span>：<b>--</b></td>
+                            <td><span i18n="price">price</span><span style="visibility: hidden">电价</span>：<b>--</b><a
+                                    id="lookPrice">查看电价</a></td>
+                            <td><span i18n="areaCovered">areaCovered</span>：<b>--</b></td>
+                        </tr>
+                        <tr>
+                            <td><span i18n="location">location</span>：<b>--</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span i18n="introduction">introduction</span>：<b>--</b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--<div id="map" style="width: 500px;height: 500px"></div>-->
+        <div class="noData" style="margin-top: 100px">
+            <img src="/images/repImages/NaN.png" alt="">
+        </div>
+        <div class="addPlant" style="display: none;">
+            <div class="ownerHead">
+                <span i18n="plant's info">plant's info</span>
+            </div>
+            <div class="newPlantInfo">
+                <form id="npInfo">
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="plantName">plantName</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="plantName" class="checkPlantName" required>
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="accessTime">accessTime</span><span style="visibility: hidden">1</span>:</label>
+                        <input style="cursor: pointer;border: 1px solid #ebebeb" type="text" name="gridConnectedDate" onclick="WdatePicker({readOnly:true})" required>
+                    </div>
+                    <div class="plantItem orgDiv">
+                        <b>*</b>
+                        <label for=""><span i18n="orgName">orgName</span><span style="visibility: hidden">1</span>:</label>
+                        <input style="cursor: pointer" type="text" name="org"  required>
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="capacity">capacity</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="capacity" class="checkNumber" required>
+                        <select name="capUnit"  required>
+                            <!--<option value="KW">KW</option>-->
+                            <!--<option value="MW">MW</option>-->
+                            <!--<option value="GW">GW</option>-->
+                        </select>
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for="" style="margin-right: 3px"><span i18n="plantType">plantType</span><span style="visibility: hidden">1</span>:</label>
+                        <select name="plantTypeA" required>
+                        </select>
+                        <select name="plantTypeB" required>
+
+                        </select>
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="price">price</span><span style="visibility: hidden">你好</span><span style="visibility: hidden">1</span>:</label>
+                        <!--<input type="text" name="plantPrice" class="inputPrice" required>-->
+                        <!--<i class="inputPrice">元/kwh</i>-->
+                        <select name="plantPrice" id="" class="selectPrice">
+
+                        </select>
+                        <a class="seePrice" id="seePrice">查看电价规则</a>
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="plantAddress">plantAddress</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="plantAddr"  required placeholder="根据地图定位自动带出,不可编辑" readonly>
+                        <a id="getAddr" i18n="mapPosition">mapPosition</a>
+                    </div>
+                    <div class="plantItem">
+                        <b style="color: #fff">*</b>
+                        <label for=""><span i18n="location">location</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="loaction"  placeholder="根据地图定位自动带出,不可编辑" readonly>
+                    </div>
+                    <div class="plantItem">
+                        <b style="color: #fff">*</b>
+                        <label for=""><span i18n="detailedAddress">detailedAddress</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="plantFullAddress">
+                    </div>
+                    <div class="plantItem">
+                        <b>*</b>
+                        <label for=""><span i18n="areaCovered">areaCovered</span><span style="visibility: hidden">1</span>:</label>
+                        <input type="text" class="checkNumber" name="plantArea" required>
+                        <i>㎡</i>
+                    </div>
+                    <div class="plantItem">
+                        <b style="color: #fff">*</b>
+                        <label for=""><span i18n="plantImg">plantImg</span>：</label>
+                        <p style="color:#FF0E26;width: 280px;display: inline-block;font-size: 14px" i18n="suggestImg">suggestImg</p>
+                    </div>
+                    <div class="plantItem" style="visibility: hidden;">
+                        <b>*</b>
+                        <label for="">详细地址<span style="visibility: hidden">1</span>:</label>
+                        <input type="text" name="plantFullAddress">
+                    </div>
+                    <div class="plantImgs">
+                        <div class="uploadImgBox" style="margin-left: 70px"><image id="addImgBox1" src="/images/setting/upload3.png"></image>
+                            <img class="closeImageHtml sx1" src="/images/setting/close.png" style="display:none;position: absolute;right: 0;z-index: 100;top: 0;width: 20px;height: 20px;"/>
+                            <input id = "add_img1" type="file" accept="image/jpeg,image/gif,image/png" />
+                        </div>
+                        <div class="uploadImgBox"><image id="addImgBox2" src="/images/setting/upload3.png"></image>
+                            <img class="closeImageHtml sx2" src="/images/setting/close.png" style="display:none;position: absolute;right: 0;z-index: 100;top: 0;width: 20px;height: 20px;"/>
+                            <input id = "add_img2" type="file" accept="image/jpeg,image/gif,image/png" />
+                        </div>
+                        <div class="uploadImgBox"><image id="addImgBox3" src="/images/setting/upload3.png"></image>
+                            <img class="closeImageHtml sx3" src="/images/setting/close.png" style="display:none;position: absolute;right: 0;z-index: 100;top: 0;width: 20px;height: 20px;"/>
+                            <input id = "add_img3" type="file" accept="image/jpeg,image/gif,image/png" />
+                        </div>
+                    </div>
+                    <div class="plantMsg">
+                        <b></b>
+                        <label for=""><span i18n="introduction">introduction</span>：</label>
+                        <textarea name="plantIntroduction"  cols="30" rows="6" i18nOnly = "placeholder" i18n="inputPlantIntroduction" placeholder="inputPlantIntroduction"></textarea>
+                    </div>
+                    <div class="plantBtn">
+                        <a id="savePlant" i18n="save">save</a>
+                        <a id="cancelPlant" i18n="cancel">cancel</a>
+                        <input id="resetForm" type="reset" name="reset" style="display: none;" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

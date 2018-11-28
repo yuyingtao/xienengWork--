@@ -1,0 +1,97 @@
+@import 'common.less';
+.sp-body{
+  margin: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.navSysCtrolNav{
+  position: fixed;
+  width: 34px;
+  height: 20px;
+  top:8px;
+  left: calc(~"50% - 17px");
+  cursor: pointer;
+  z-index: 999;
+  .navSysCtrolArrow{
+    text-align: center;
+  }
+  .navSysCtrol{
+    display: none;
+    height: 0px;
+  }
+  &.on{
+    .navSysCtrolArrow{
+      display: none;
+    }
+    .navSysCtrol{
+      position: fixed;
+      display: flex;
+      width: 660px;
+      top:0;
+      left: calc(~"50% - 330px");
+      border: 1px solid #001449;
+      box-shadow: inset 0px 0px 15px #056CB9;
+      color: #fff;
+      z-index: 999;
+      background-color: #001449;
+      opacity:0.8;
+      justify-content: center;
+      .ctrolBox{
+        text-align: center;
+        font-size: 1.28571rem;
+        margin-top: 5px;
+        cursor: pointer;
+        &.on,&:hover{
+          .nsItem{
+            background: url("/images/energyEfficient/activeMonitor/upbox_1.png") no-repeat;
+
+          }
+          span{
+            color: #2DCBFF;
+          }
+        }
+      }
+      .nsItem{
+        width: 192px;
+        height: 148px;
+        text-align: center;
+        background: url("/images/energyEfficient/activeMonitor/upbox_2.png") no-repeat;
+        img{
+          margin-top: 34px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:@screen1920) {
+  html,body{
+    .setFont(14px);
+  }
+  .sp-body{
+    .setFont(1em);
+  }
+}
+@media(max-width:@screen1500) {
+  html,body{
+    .setFont(13px);
+  }
+  .sp-body{
+    .setFont(.92857em);
+  }}
+@media(max-width:@screen1366) {
+  html,body{
+    .setFont(12px);
+  }
+  .sp-body{
+    .setFont(.85714em);
+  }
+}
+@media(max-width:@screen1024) {
+  .container-fluid{
+    padding: 0;
+  }
+  .sp-body{
+    width: @screen1024;
+    .setFont(.7em);
+  }
+}

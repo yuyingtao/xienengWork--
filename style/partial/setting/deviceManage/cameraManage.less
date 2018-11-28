@@ -1,0 +1,263 @@
+.cameraTable{
+  .setFont(1rem);
+  width: 97.6%;
+  min-width: 800px;
+  tbody{
+    tr{
+      td{
+        color: #666!important;
+        position: relative;
+        .zoomIcon{
+          display: none;
+          position: absolute;
+          z-index: 100;
+          height: 18px;
+          width: 18px;
+          background: rgba(0,0,0,0.4);
+          left: 30px;
+          top:20px;
+        }
+        .imgs:hover .zoomIcon{
+          display: block;
+        }
+        .bigImg{
+          background: #fff;
+          display: none;
+          position: absolute;
+          left: -50px;
+          top:-130px;
+          z-index: 200;
+          width: 220px;
+          height:140px;
+          img{
+            margin: 11px 22px;
+            width: 176px;
+            height: 118px;
+          }
+          a{
+            color: #01B1ED;
+            .setFont(1.14rem);
+            position: absolute;
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+//弹窗样式
+form#cameraTep,form#newCameraTep{
+  .setFont(1rem);
+  div.leftInfo{
+    width: 440px;
+    border-right: 1px solid #E1E1E1;
+    input{
+      margin-right: 30px;
+    }
+    i{
+      margin-right: 30px;
+    }
+    select{
+      margin-right: 30px;
+    }
+  }
+  .uploadImgBox{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width:194px;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background: #EBEBEB;
+    border: 1px solid  #E7E7E7;
+    border-radius: 4px;
+    margin-right: 12px;
+    left: -110px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    input[type="file"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .setFont(1rem);
+      background-color: #fff;
+      transform: translate(-300px, 0px) scale(4);
+      height: 40px;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    .uploadA {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+      }
+      input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        .setFont(1rem);
+        background-color: #fff;
+        transform: translate(-300px, 0px) scale(4);
+        height: 40px;
+        opacity: 0;
+        z-index: 20;
+        filter: alpha(opacity=0);
+        outline: 1px solid red;
+      }
+    }
+  }
+  div.rightInfo{
+    width: 400px;
+  }
+  div.item-group{
+    //height: 36px;
+    //line-height: 36px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: right;
+    b{
+      font-size: 16px;
+      color: #FF0E26;
+      vertical-align: -5px;
+      margin-right: 5px;
+    }
+    label{
+      color: #333;
+      font-weight: normal;
+    }
+    label.error{
+      margin-top: 10px;
+      color: #FF0E26;
+      width: 100%;
+      display: inline-block;
+      font-weight: normal;
+      text-align: center;
+    }
+    input{
+      width: 280px;
+      height: 34px;
+      text-indent: 5px;
+      color: #666;
+      border:1px solid #EBEBEB;
+      outline: none;
+      border-radius: 4px;
+    }
+    select{
+      width: 280px;
+      height: 34px;
+    }
+    input.input1{
+      width: 244px;
+      margin: 0;
+    }
+    i{
+      display: inline-block;
+      width: 36px;
+      text-align: left;
+      //margin-left: 5px;
+    }
+    i.imgStatus{
+      display: inline-block;
+      width: 280px;
+    }
+    input:focus{
+      outline: none;
+    }
+    input.sysTel{
+      width: 175px;
+    }
+    input.plantArea{
+      width: 266px;
+    }
+    span.sysSpan{
+      display: inline-block;
+      width: 105px;
+      label{
+        vertical-align: middle;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("/images/repImages/rect1.png") no-repeat center;
+        margin-right: 4px;
+      }
+    }
+    textarea{
+      width: 280px;
+      border: 1px solid #EBEBEB;
+      text-indent: 5px;
+      height: 144px;
+      line-height: 36px;
+      border-radius: 4px;
+    }
+    textarea:focus{
+      outline: none;
+    }
+    select{
+      width: 280px;
+      height: 34px;
+      border:1px solid #EBEBEB;
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      background: url("/images/setting/plantManage/dropdown.png") no-repeat 98% center;
+      text-indent: 5px;
+      border-radius: 4px;
+      option{
+        padding:10px 0;
+      }
+    }
+    select:focus{
+      outline:none;
+    }
+  }
+  div.userPic{
+    div.picNotice{
+      width: 280px;
+      height: 120px;
+    }
+    span{
+      color: #FF0E26;
+    }
+  }
+}
+.dataTables_wrapper .dataTables_paginate{
+  float: none;
+  text-align: center;
+}
+//响应式设置
+@import '../../../media.less';
+@media (max-width: @screen1920) {
+  .td-noWrap-camera{
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    &.td-noWrap-time{
+      max-width: 80px;
+    }
+  }
+
+}
+@media (max-width: @screen1500) {
+  .td-noWrap-camera{
+    max-width: 100px;
+  }
+}
+@media (max-width: @screen1366) {
+  .td-noWrap-camera{
+    max-width: 80px;
+  }
+}

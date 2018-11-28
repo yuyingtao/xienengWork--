@@ -1,0 +1,228 @@
+.inverterDeviceTable{
+  .setFont(1rem);
+  width: 97.6%;
+  tbody{
+    tr{
+      td{
+        color: #666!important;
+      }
+    }
+  }
+}
+//弹窗样式
+.inverterDetail{
+  input[readonly]{
+    background: #f7f7f7;;
+  }
+  .headChange{
+    height: 40px;
+    border-bottom: 1px solid rgb(10,189,221);
+    text-align: left;
+    margin-bottom: 20px;
+    span{
+      background: #f4f4f4;
+      display: inline-block;
+      color: #333;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      width: 100px;
+      margin-right: 20px;
+      border-bottom: 1px solid rgb(10,189,221);
+      border-radius: 4px 4px 0 0;
+      cursor:pointer;
+    }
+    span.chooseSpan{
+      background:rgb(10,189,221);
+      color: #fff;
+    }
+  }
+  .devInfo{
+    .jgLine{
+      border-bottom: 1px dashed #DEDEDE;
+      text-align: left;
+      margin-bottom: 10px;
+      span{
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        color: #fff;
+        width: 119px;
+        background: url("/images/setting/plantManage/title.png");
+        text-indent: 5px;
+      }
+    }
+  }
+  .devForm{
+    .formItem{
+      width: 50%;
+      display: inline-block;
+      text-align: right;
+      height: 36px;
+      line-height: 36px;
+      color: #333;
+      float: left;
+      input{
+        text-indent: 5px;
+        width: 300px;
+        border: 1px solid #DEDEDE;
+        height: 34px;
+        border-radius: 4px;
+        &:focus{
+          outline: none;
+        }
+        &[disabled]{
+          background: #fff;
+          border: none;
+        }
+      }
+      label{
+        font-weight: normal;
+      }
+    }
+  }
+  p{
+    text-align: left;
+    color: #FA9430;
+    margin-bottom: 10px;
+    img{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  //表格样式
+  table{
+    thead{
+      th{
+        border-bottom:none;
+        .setFont(1rem);
+        background-color: #30A6FA;
+        color: #fff;
+        padding: 9px 7px;
+      }
+    }
+    tbody{
+      tr{
+        background-color: #f8f9fb;
+        text-align: left;
+        &:hover{
+          background-color: #e4eeff !important;
+          &.selected{
+            background-color: #e4eeff;
+          }
+        }
+        &.odd{
+          background-color: #fff;
+          &.selected{
+            background-color: #e4eeff;
+          }
+        }
+        td{
+          border-bottom: 1px dotted #e3e3e3;
+          border-right: 1px solid transparent;
+          color: #333;
+          padding: 9px 7px;
+          input{
+            border: none;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+          }
+        }
+        &.selected{
+          background-color: #e4eeff;
+        }
+      }
+      .td-noWrap{
+        display: inline-block;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+      }
+    }
+  }
+}
+//组串信息弹窗
+.zcTep{
+  .searchDiv{
+    display: inline-block;
+    width: 25%;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    input{
+      span{
+        .setFont(1rem);
+      }
+      width: 50%;
+      border: 1px solid #DEDEDE;
+      height: 34px;
+      border-radius: 4px;
+      .setFont(1rem);
+      text-indent: 5px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .sureSearch{
+    height: 36px;
+    a {
+      width: 80px;
+      float: left;
+      .setFont(1rem);
+      height: 34px;
+      line-height: 34px;
+      display: inline-block;
+      text-indent: 20px;
+      border-radius: 4px;
+      color: #fff;
+      background: #01B1ED url(/images/setting/search_1.png) no-repeat 5% 2px;
+    }
+  }
+  ul.resUl{
+    width: 100%;
+    text-align: left;
+    li{
+      display: inline-block;
+      width: 20%;
+      margin: 10px 0;
+    }
+  }
+}
+.dataTables_wrapper .dataTables_paginate{
+  float: none;
+  text-align: center;
+}
+.setNavBox table.dataTable.inverterDeviceTable tbody tr td, .setNavBox table.dataTable.display tbody tr td{
+  //padding: 11px 7px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+  padding: 0.5em 1em!important;
+}
+
+//响应式设置
+@import '../../../media.less';
+@media (max-width: @screen1920) {
+  .td-noWrap-interver{
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    &.td-noWrap-time{
+      max-width: 80px;
+    }
+  }
+
+}
+@media (max-width: @screen1500) {
+  .td-noWrap-interver{
+    max-width: 80px;
+  }
+}
+@media (max-width: @screen1366) {
+  .td-noWrap-interver{
+    max-width: 70px;
+  }
+}

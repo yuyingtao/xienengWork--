@@ -1,0 +1,402 @@
+.boxShow{
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 7px RGBA(68,68,68,.31);
+}
+.cur-head{
+  height: 56px;
+  line-height: 56px;
+  background-color: #fff;
+  box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.1);
+  >div{
+    text-align: left;
+    width: 1500px;
+    margin: 0 auto;
+    color: #000016;
+    font-size: 1.14285em;
+    font-weight: 700;
+    padding-left: 1%;
+  }
+}
+
+.cur-imIndex{
+  width: 1500px;
+  padding: 16px;
+  margin: 12px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  .im-map-contain{
+    width: 835px;
+    height: 908px;
+    float: left;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    position: relative;
+    background-color: #e7e7e7;
+    .mapBox{
+      z-index: 0;
+    }
+    .map-tool-area{
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      text-align: center;
+      color: #333;
+      .map-tit{
+        display: inline-block;
+        float: left;
+        background-color: #fff;
+        min-width: 90px;
+        padding: 0 10px;
+        height: 90px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 7px RGBA(68,68,68,.31);
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+      .mt-main{
+        font-weight: 700;
+        font-size: 1.28571em;
+        padding-top: 23px;
+      }
+      .mt-sub{
+        font-size: 1em;
+      }
+      .map-select-box{
+        display: inline-block;
+        position: relative;
+        margin-left: 13px;
+        background-color: #fff;
+        padding: 0 0 14px 14px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 7px rgba(68, 68, 68, 0.31);
+        border: 1px solid #ccc;
+        .arrow{
+          position: absolute;
+          left: -11px;
+          top: 18px;
+        }
+      }
+      .navigation-tit{
+        text-align: left;
+        color: #01adf6;
+        font-size: 1.1428em;
+      }
+      .navigation-box{
+        table{
+          min-width: 437px;
+          text-align: left;
+          color: #575757;
+          td{
+            line-height: 2.4em;
+            padding-right: 15px;
+            white-space:nowrap;
+          }
+          a:hover{
+            color: #ffa35c;
+          }
+        }
+      }
+    }
+  }
+  //曲线图
+  .curveBox{
+    position: absolute;
+    bottom: 30px;
+    left: calc(~"(100% - 89.7129%)/2");
+    .boxShow;
+    width: 89.7129%;
+    height: 240px;
+    padding: 20px 0 10px 0;
+  }
+  .detail-close{
+    position: absolute;
+    right: 8px;
+    top:8px;
+    cursor: pointer;
+  }
+  .l-curve{
+    width: 64%;
+    height: 210px;
+    float: left;
+    border-right: 1px solid #d4d4d4;
+  }
+  .r-Msg{
+    width: 35%;
+    float: left;
+    padding-left: 2%;
+    .msg-row{
+      text-align: left;
+      margin-top: 19px;
+      button{
+        float: right;
+        border: none;
+        font-size: 0.857142em;
+      }
+      &:first-child{
+        margin-top: 29px;
+      }
+    }
+    .msg-attention{
+      text-align: center;
+      button{
+        float: none;
+      }
+      .sp-btn{
+        font-size: 1em;
+        border: 1px solid #0abddd;
+        padding: 3px 10px;
+      }
+    }
+    .labelName{
+      display: inline-block;
+      width: 177px;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      vertical-align: middle;
+      padding: 4px 0;
+      font-size: 1.14285em;
+    }
+    .alarm-status{
+      color: #B2B2B2;
+      float: right;
+      padding-right: 20px;
+      &.on{
+        color: #FF0000;
+      }
+    }
+  }
+
+  .plant-icon.markerOn{
+    z-index: 9999999999 !important;
+    label{
+      opacity: 1;
+    }
+  }
+  .plantIcon{
+    position: relative;
+    z-index: 10;
+    .plantImg{
+      width: 32px;
+      height: 50px;
+      float: left;
+      &.on{
+        width: 46px;
+        height: 67px;
+        margin-left: -12px;
+        margin-top: -17px;
+        background: url("/images/io/location.png") center no-repeat;
+      }
+      &:hover{
+        width: 46px;
+        height: 67px;
+        margin-left: -12px;
+        margin-top: -17px;
+        background: url("/images/io/location.png") center no-repeat;
+      }
+    }
+    .plantIcon0{
+      background: url("/images/io/normal.png") center no-repeat;
+    }
+    .plantIcon1{
+      background: url("/images/io/prompted.png") center no-repeat;
+    }
+    .plantIcon2{
+      background: url("/images/io/fault.png") center no-repeat;
+    }
+    .plantIcon3{
+      background: url("/images/io/brokenchain.png") center no-repeat;
+    }
+    .plantIcon4{
+      background: url("/images/io/abnormal.png") center no-repeat;
+    }
+    &:hover{
+      z-index: 999999!important;
+      label{
+        opacity: 1;
+      }
+    }
+    label{
+      .boxShow;
+      opacity: 0.8;
+      color: rgb(0, 0, 0);
+      position: absolute;
+      padding: 6px;
+      color: #222;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+      margin-left: 9px;
+      max-width: inherit;
+      &:before{
+        left: 0;
+        margin-left: -7px;
+        border-right-color: #fff;
+        top: 50%;
+        margin-top: -5px;
+        position: absolute;
+        pointer-events: none;
+        content: "";
+        width: 7px;
+        height: 9px;
+        background: url("/images/io/shadow_1.png") no-repeat center;
+      }
+    }
+  }
+
+//  告警列表
+  .im-alarm-contain{
+    float: right;
+    width: 621px;
+    height: 908px;
+    .active-alarm,.attention-alarm{
+      text-align: left;
+      width: 49%;
+      height: 120px;
+      background: #0AC2E3;
+      border-radius: 4px;
+      cursor: pointer;
+      .left-icon{
+        display: inline-block;
+        width: 78px;
+        height: 78px;
+        margin-top: 21px;
+        margin-left: 8.496%;
+        background: url("/images/io/real-time_1.png") no-repeat center;
+      }
+      &.on{
+        background:#FFA35C;
+        .left-icon{
+          background: url("/images/io/real-time.png") no-repeat center;
+        }
+      }
+      .right-data{
+        margin-top: 21px;
+        display: inline-block;
+        color: #fff;
+        font-size: 1.14285em;
+        width: calc(~"90% - 78px");
+        text-align: center;
+        .data-main{
+          font-size: 2.4285em;
+        }
+      }
+    }
+    .attention-alarm{
+      margin-left: 2%;
+      .left-icon{
+        background: url("/images/io/attention.png") no-repeat center;
+      }
+      &.on{
+        .left-icon{
+          background: url("/images/io/attention_1.png") no-repeat center;
+        }
+      }
+    }
+  }
+  .alarm-list{
+    height: 776px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  //表格
+  table.dataTable.stripe tbody tr td, table.dataTable.display tbody tr td{
+    //padding: 2px 10px;
+  }
+  .dataTables_length{
+    height: 0;
+  }
+  .dataTables_wrapper .dataTables_paginate{
+    float: none;
+    text-align: center;
+    margin: 2.6em 0;
+  }
+  .dataTables_wrapper .dataTables_info {
+    clear: both;
+    text-align: left;
+     float: none;
+    padding-top: 0.755em;
+  }
+}
+.sp-btn{
+  border: 1px solid #0abddd;
+  color: #0abddd;
+  border-radius: 14px;
+  padding: 6px 10px;
+  background-color: transparent;
+}
+@import '../../media.less';
+@media (max-width: @screen1920) {
+  .im-map-contain{
+    width: 835px;
+    height: 908px;
+  }
+  .im-alarm-contain{
+    width: 621px;
+    height: 908px;
+  }
+  .td-noWrap{
+    max-width: 135px;
+    &.td-noWrap-time{
+      max-width: 165px;
+    }
+  }
+}
+
+@media (max-width: @screen1500) {
+  .cur-imIndex .r-Msg .labelName{
+    width: 152px;
+  }
+  .cur-head{
+    >div{
+      width: 100%;
+    }
+  }
+  .cur-imIndex{
+    width: 100%;
+    padding: 16px;
+    margin: 12px auto;
+  }
+  .im-map-contain{
+    width: 56.6666%;
+    height: 905px;
+  }
+  .im-alarm-contain{
+    width: 42.4666%;
+    height: 905px;
+
+  }
+  .td-noWrap{
+    max-width: 120px;
+  }
+}
+
+@media (max-width: @screen1366) {
+  .cur-imIndex .r-Msg .labelName{
+    width: 108px;
+  }
+  .cur-imIndex .r-Msg .msg-row{
+    margin-top: 11px;
+    button{
+      float: none;
+    }
+  }
+  .td-noWrap{
+    max-width: 80px;
+  }
+  table.dataTable.stripe tbody tr td, table.dataTable.display tbody tr td{
+    padding: 11px 4px;
+  }
+}
+
+@media (max-width: @screen1024) {
+
+}

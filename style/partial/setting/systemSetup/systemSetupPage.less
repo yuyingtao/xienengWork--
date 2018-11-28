@@ -1,0 +1,298 @@
+.title{
+  //width: 119px;
+  padding-left: 8px;
+  height: 36px;
+  line-height: 36px;
+  .setFont(1rem);
+  border-bottom: 1px dashed rgba(222,222,222,1);
+  color: white;
+  text-align: left;
+  background: url(/images/setting/title.png) no-repeat;
+}
+.sysName{
+  margin: 32px 0px 27px;
+  span{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  .sysSpanName{
+    color: #666666;
+    margin-left: 20px;
+  }
+}
+.sysLog{
+  display: flex;
+  margin-bottom: 37px;
+  span{
+    margin-top: 14px;
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  .sysLogImgBox{
+    max-width: 150px;
+    height: 48px;
+   // border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    //line-height: 144px;
+    margin-left: 21px;
+    //img{
+    //    width: 101px;
+    //    height: 37px;
+    //  vertical-align: 0px;
+    //}
+  }
+}
+.loginImgBox{
+  display: flex;
+  span{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  .eachImg{
+    margin-left: 21px;
+    display: flex;
+    .eachImgBox{
+      width: 280px;
+      height: 156px;
+      margin-right: 10px;
+      position: relative;
+      input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        .setFont(1rem);
+        background-color: #fff;
+        display: inline-block;
+        width: 280px;
+        height: 156px;
+        opacity: 0;
+        z-index: 20;
+        filter: alpha(opacity=0);
+      }
+    }
+    img{
+      margin-right: 10px;
+      width: 100%;
+      height: 100%;
+      vertical-align: 0;
+    }
+  }
+}
+.btnBox{
+  width: 350px;
+  margin: 57px auto;
+}
+showBox{
+  .loginImgBox{
+   .eachImg{
+     img{
+       width: 280px;
+       height: 156px;
+     }
+   }
+  }
+}
+.QRcode{
+  display: flex;
+  margin-top: 28px;
+  span{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  .QRcodeImg {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    margin-left: 21px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.editBox{
+  #newIcon{
+    max-width: 150px;
+    width: 130px;
+    height: 48px;
+    border:1px solid #EBEBEB;
+  }
+  .sysName{
+    .sysSpanName{
+      display: inline-block;
+      width: 360px;
+      height: 34px;
+      padding-left: 8px;
+      line-height: 34px;
+      border: 1px solid #EBEBEB;
+      border-radius: 4px;
+    }
+  }
+  .sysLog{
+    overflow: hidden;
+    .sysLogImgBox{
+      position: relative;
+      //.closeBtn{
+      //  width: 20px;
+      //  height: 20px;
+      //  position: absolute;
+      //  top: 0;
+      //  right: 0;
+      //}
+    }
+    input[type="file"]{
+      position: absolute;
+      top: 0;
+      right: 0;
+      .setFont(1rem);
+      background-color: #fff;
+      height: 48px;
+      max-width: 150px;
+      width: 130px;
+      opacity: 0;
+      z-index: 20;
+      filter: alpha(opacity=0);
+    }
+    .uploadA{
+      display: none;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      overflow: hidden;
+      top:0;
+      right:0;
+      z-index: 22;
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    //.closeBtn{
+    //  display: inline-block;
+    //  width: 20px;
+    //  height: 20px;
+    //  position: absolute;
+    //  overflow: hidden;
+    //  top: 0;
+    //  right: 0;
+    //  z-index: 30;
+    //}
+    i{
+      margin-top: 50px;
+      margin-left: 10px;
+      color: #FF0E26;
+      .setFont(0.86rem);
+    }
+  }
+  .loginImgBox{
+    .eachImg{
+      display: flex;
+      width: 90%;
+      .eachImgBox{
+        width: 27%;
+        height: 156px;
+        line-height: 209px;
+        background: #F7F7F7;
+        text-align: center;
+        //border: 1px solid #EFEFEF;
+        margin-right: 10px;
+        position: relative;
+        input[type="file"] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          .setFont(1rem);
+          background-color: #fff;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 20;
+          filter: alpha(opacity=0);
+        }
+        .uploadA{
+          display: none;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          overflow: hidden;
+          top:0;
+          right:0;
+          z-index: 22;
+          img{
+            position: absolute;
+            top: 0;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    i{
+      margin-top: 130px;
+      margin-left: 10px;
+      color: #FF0E26;
+      .setFont(0.86rem);
+    }
+  }
+  //.eachImgBox:hover .uploadA{
+  //  display: block !important;
+  //}
+  .QRcode{
+    overflow: hidden;
+    .QRcodeImg{
+      position: relative;
+      .closeBtn1{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    input[type="file"]{
+      position: absolute;
+      top: 0;
+      right: 0;
+      .setFont(1rem);
+      background-color: #fff;
+      height: 120px;
+      width: 120px;
+      opacity: 0;
+      z-index: 20;
+      filter: alpha(opacity=0);
+    }
+    .closeBtn1{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      z-index: 30;
+    }
+    i{
+      margin-top: 90px;
+      margin-left: 10px;
+      color: #FF0E26;
+      .setFont(0.86rem);
+    }
+  }
+}
+@import "../../../media.less";
+

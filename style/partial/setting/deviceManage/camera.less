@@ -1,0 +1,200 @@
+.operationBtn{
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+  &:hover{
+    opacity: .9;
+    color: #fff;
+  }
+}
+#modifyCamFrom,#modifyCamFrom1{
+  display: flex;
+  .modifyFromMd{
+    width: 1px;
+    height: 146px;
+    background:rgba(225,225,225,1);
+    margin: 0 30px;
+  }
+  select[disabled]{
+    background: #fff;
+    border: none;
+  }
+
+  .eachRow{
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+    label{
+      display: inline-block;
+      width: 80px;
+      font-weight: normal;
+      text-align: right;
+      margin-right: 5px;
+    }
+    .eachInput{
+      width: 280px;
+      height: 36px;
+      border:1px solid #EBEBEB;
+      border-radius: 4px;
+      background: #fff;
+      input{
+        display: inline-block;
+        width: 260px;
+        height: 32px;
+        border: none;
+        outline: none;
+        background: #fff;
+      }
+    }
+    .disabledDiv{
+      background: #fff;
+      line-height: 32px;
+      text-align: left;
+      border: none;
+      input{
+        text-indent: 5px;
+        background: #fff;
+        border: none;
+      }
+    }
+  }
+}
+#modifyCameraModel{
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+#addCameraModel{
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+#modifyPlant,#modifyPlant1{
+  display: inline-block;
+  width: 270px;
+  height: 32px;
+  outline: none;
+  border: none;
+}
+#addPlantId{
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+#addCamFrom1{
+  display: flex;
+  .modifyFromMd{
+    width: 1px;
+    height: 146px;
+    background:rgba(225,225,225,1);
+    margin: 0 30px;
+  }
+  .eachRow{
+    display: flex;
+    margin-bottom: 26px;
+    align-items: center;
+    label{
+      display: inline-block;
+      width: 80px;
+      font-weight: normal;
+      text-align: right;
+      margin-right: 5px;
+    }
+    .eachInput{
+      width: 280px;
+      height: 36px;
+      border:1px solid #EBEBEB;
+      border-radius: 4px;
+      label{
+        display: inline-block;
+        width: 100%;
+        color: #FF0E26 !important;
+        .error{
+          margin-top: 5px;
+          width: 100%;
+        }
+      }
+      input{
+        display: inline-block;
+        width: 260px;
+        height: 32px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+#qrAddCam,
+#qrDeleteUser,
+#qrSavemodify{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  //line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/save.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+.modifyCameraSNBox{
+  background:rgb(235, 235, 228);
+}
+.dataTables_wrapper .dataTables_paginate span .paginate_button{
+  padding: 0.25em 1em !important;
+}
+.dataTables_wrapper .dataTables_paginate{
+  float: none;
+  text-align: center;
+}
+@import '../../../media.less';
+@media (max-width: @screen1920) {
+  .td-noWrap{
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    &.td-noWrap-time{
+      max-width: 165px;
+    }
+  }
+}
+@media (max-width: @screen1500) {
+  .td-noWrap{
+    max-width: 90px;
+  }
+}
+@media (max-width: @screen1366) {
+  .td-noWrap{
+    max-width: 60px;
+  }
+}
+
+@import "../../../videoHis.less";
+@import "../../../videoLive.less";

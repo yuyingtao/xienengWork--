@@ -1,0 +1,377 @@
+@import 'media.less';
+body{font-family:"Microsoft YaHei",Helvetica,Arial,sans-serif;text-align:center;margin:0 auto;padding:0;font-size:@basicFontSize;display: block!important;}
+*{
+  margin: 0;
+  padding: 0;
+}
+body > div{margin-right:auto;margin-left:auto;}
+div,form,ul,ol,li,span,p{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;outline: none}
+ul,ol,li{list-style:none}
+table,td,input{font-size:1em}
+a{outline-style:none;text-decoration:none;color: inherit;}
+a:hover{text-decoration:none;cursor:pointer;color: inherit}
+
+.clearfix:after{centent:"";height:0;line-height:0;display:block;visibility:hidden;clear:both}
+.clearfix{zoom:1;}
+//去掉ie input框后的×
+::-ms-clear,::-ms-reveal{display:none;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+//去掉select默认样式
+select::-ms-expand { display: none; }  //兼容IE
+select{
+  //width: 380px;
+  //height: 34px;
+  border:1px solid #EBEBEB;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  -ms-appearance:none;
+  background: url("/images/setting/plantManage/dropdown.png") no-repeat 98% center;
+  padding: 0px 22px 0 6px;
+  border-radius: 4px;
+  &:focus{
+    outline: none;
+  }
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+input,button{
+  outline: none;
+}
+input:-ms-input-placeholder{
+  color: #ccc;
+}
+
+input::-webkit-input-placeholder{
+  color: #ccc;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+}
+html,body{
+  font-size:@basicFontSize;
+  width: 100%;
+  height: 100%;
+  //background-color: #0D1635;
+  //overflow: hidden;
+  //position: fixed;
+}
+//浮动
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+//背景白色
+.bw{
+  background-color: #fff;
+}
+b,i{
+  font-weight: normal;
+  font-style: normal;
+}
+//间距
+.blocks{
+  width: 100%;
+  height: 15px;
+}
+//日历
+input.Wdate{
+  width: 170px;
+  height: 30px;
+  line-height: 31px;
+  border: none;
+  border-radius: 13px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  padding: 0 9px;
+  cursor: pointer;
+  background: transparent url(/images/pmImages/calendar.png) no-repeat 95% 6px;
+}
+//弹窗
+.modal-dialog{
+  margin: 0 auto;
+  position: absolute;
+}
+.modal .cus-img-btn{
+
+  padding: 4px 13px;
+}
+.modal-open .modal{
+  background-color: rgba(0,0,0,.5);
+}
+fieldset {
+  display: block;
+  -webkit-margin-start: 2px;
+  -webkit-margin-end: 2px;
+  -webkit-padding-before: 0.35em;
+  -webkit-padding-start: 0.75em;
+  -webkit-padding-end: 0.75em;
+  -webkit-padding-after: 0.625em;
+  min-width: -webkit-min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+  border-image: initial;
+}
+legend {
+  display: block;
+  width: auto;
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+//bootstrap
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+//滚动条
+.mCSB_container_wrapper{
+  margin-right: 15px;
+}
+.mCSB_container{
+  margin-right: 0;
+}
+.mCSB_container_wrapper>.mCSB_container{
+  padding-right: 0;
+}
+//弹窗
+.modal-header{
+  background: url(/images/bg_3.png) #01b1ed no-repeat center;
+  color: #fff;
+  font-size: 1.14285em;
+  padding: 12px;
+  text-align: left;
+  .close {
+    margin-top: -2px;
+    color: #fff;
+    opacity: .9;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+.modal .cus-img-btn{
+  background-color: #01b1ed;
+  color: #fff;
+  font-size: 1.14285em;
+  padding: 4px 17px;
+}
+.modal-footer{
+  padding: 8px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f7f7f7;
+}
+.modal-content{
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0, .4);
+  border: none;
+}
+//图标按钮
+//搜索
+.imgBtn{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/repImages/search2.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+//按钮图标 取消
+.cancel{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/cancel.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+//保存按钮 图标
+.save{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/save.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+//删除按钮
+.delete{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/delete.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+//信增按钮
+.add{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/add_1.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+.edit{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 40px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  &:before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    left: 5px;
+    top: 2px;
+    height: 30px;
+    background: url(/images/setting/save.png) no-repeat center;
+    overflow: hidden;
+  }
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}
+
+//无图标按钮
+.imgNoBtn{
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  background: #01B1ED;
+  height: 34px;
+  //line-height: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  &:hover{
+    color: #fff;
+    opacity: .9;
+  }
+}

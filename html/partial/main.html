@@ -1,0 +1,91 @@
+<div class="mianPage">
+    <input type="text" data-plantId="" id="singlePlantId" style="display: none" value="">
+    <input type="text" data-plantId="" id="singlePlantType" style="display: none" value="">
+    <div class="headerposBox"></div>
+    <header class="sp-component">
+       <div class="headerBox">
+           <div class="cmLogo">
+               <img id="logoImg" alt="Logo" src="" >
+           </div>
+           <nav>
+               <ul>
+                   <li permission = 'plantMon'>
+                       <div class="firPer">
+                           <img src="/images/newMain/nav_bg1.png" alt="">
+                       </div>
+                       <a id="plantUrl" i18n="plantMon.plantMon" attr-href="partial/plantMonitor/pmManyPlant/pmManyPlant.html">plantMon</a>
+                       <div class="next">
+                           <img src="/images/newMain/nav_bg4.png" alt="">
+                       </div>
+                   </li>
+                   <li permission = 'iom'>
+                       <div class="firPer">
+                           <img src="/images/newMain/nav_bg1.png" alt="">
+                       </div>
+                       <a attr-href="partial/io/ioIndex.html" i18n="iom">iom</a>
+                       <div class="next">
+                           <img src="/images/newMain/nav_bg4.png" alt="">
+                       </div>
+                   </li>
+                   <li permission = 'report'>
+                       <div class="firPer">
+                           <img src="/images/newMain/nav_bg1.png" alt="">
+                       </div>
+                       <a attr-href="partial/analysisReport/arIndex.html" i18n="ar">ar</a>
+                       <div class="next">
+                           <img src="/images/newMain/nav_bg4.png" alt="">
+                       </div>
+                   </li>
+                   <li permission = 'screen'>
+                       <div class="firPer">
+                           <img src="/images/newMain/nav_bg1.png" alt="">
+                       </div>
+                       <a href="#" id="switchScreen" i18n="largeScreen">largeScreen</a>
+                       <div class="next">
+                           <img src="/images/newMain/nav_bg4.png" alt="">
+                       </div>
+                   </li>
+                   <li>
+                       <div class="firPer">
+                           <img src="/images/newMain/nav_bg1.png" alt="">
+                       </div>
+                       <a attr-href="partial/povertyAlleviation/povertyAlleviation.html">扶贫管理</a>
+                       <div class="next">
+                           <img src="/images/newMain/nav_bg4.png" alt="">
+                       </div>
+                   </li>
+               </ul>
+           </nav>
+           <div class="other">
+               <div class="alarm" id="alarmBtn">
+                   <img src="/images/newMain/alarmlight.png" alt="">
+               </div>
+               <div class="admin sp-user">
+                   <img src="/images/newMain/admin.png" alt="">
+                   <a id="userName"></a>
+                   <div class="showDrop">
+                       <b class="triangle-up"></b>
+                       <ul>
+                           <li i18n="modifyPWD" id="modifyPwd">modifyPWD</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="setup">
+                   <img src="/images/newMain/set.png" alt="">
+                   <a class="sp-setting sp-navBtn sp-nav-tool-item" id="setting" attr-href="partial/setting/stIndex.html" title="setting" i18n="setting">setting</a>
+               </div>
+               <div class="exit">
+                   <!--<a class="sp-exit sp-navBtn sp-nav-tool-item">-->
+                   <!--<span class="picImg" id="exitSys" aria-hidden="true">退出</span>-->
+                   <!--</a>-->
+                   <a class="sp-setting sp-navBtn sp-nav-tool-item" id="exitSys" i18nOnly = "title" title="exit" i18n="exit">exit</a>
+               </div>
+           </div>
+       </div>
+    </header>
+    <div class="mainPageScroll" id="mainPageScroll">
+        <div id="mianPage_container" class="mianPage_container sp-component">
+            <!--<div style="width: 400px;height: 400px;background: #f1f1f1" id="sbt"></div>-->
+        </div>
+    </div>
+</div>

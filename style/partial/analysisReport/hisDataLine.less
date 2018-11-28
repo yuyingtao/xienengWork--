@@ -1,0 +1,504 @@
+.hisDataLine{
+  width: 100%;
+  background: #fff;
+  .dataLineCon{
+    width: 98%;
+    margin:0 auto;
+    overflow: hidden;
+    .lineHead{
+      margin-top: 16px;
+      text-align: left;
+      height: 36px;
+      line-height: 36px;
+      color: #333;
+      font-size: 1em;
+      .selectPlant{
+        height: 32px;
+        line-height: 32px;
+        border-radius: 4px;
+        border: 1px solid #c5c5c5;
+        padding: 0 7px;
+        margin-left: 5px;
+        min-width: 200px;
+      }
+      .navBar{
+        width: 325px;
+        margin-left: 10px;
+        height: 34px;
+        line-height: 36px;
+        font-size: 1em;
+        color: #333;
+        border: 1px solid #C5C5C5;
+        border-radius: 4px;
+        position: relative;
+        .chooseArea{
+          width: 100%;
+          span{
+            height: 34px;
+            line-height: 34px;
+            cursor: pointer;
+          }
+        }
+        .filter{
+          height: 32px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 0 5px;
+          background: #01B1ED ;
+          color: #fff;
+          cursor: pointer;
+        }
+        .areaNames{
+          z-index: 20;
+          width: 100%;
+          position: absolute;
+          top: 45px;
+          border: 1px solid #C5C5C5;
+          background: #fff;
+          min-height: 100px;
+          display: none;
+          span{
+            display: inline-block;
+            padding:0 5px;
+            margin-top: 20px;
+            margin-right: 20px;
+            background:#01B1ED;
+            color: #fff;
+          }
+        }
+        //&:before{
+        //  content: '筛选';
+        //  position: absolute;
+        //  right: 5px;
+        //}
+      }
+    //  搜索
+      .searchBox{
+        width: 18.36%;
+        position: relative;
+        margin-left: 26px;
+        &:before {
+          top: 6px;
+          left: 5px;
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          background: url("/images/repImages/search.png") no-repeat center;
+        }
+        input{
+          width: 100%;
+          height: 34px;
+          line-height: 34px;
+          border: 1px solid #C5C5C5;
+          border-radius: 4px 0 0 4px;
+          padding: 0 5px 0 28px;
+          color: #666;
+          font-size: 1em;
+          font-weight: 500;
+          float: left;
+          &:focus {
+            outline: none;
+          }
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color: #ccc;
+        }
+
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color: #ccc;
+        }
+
+        input:-ms-input-placeholder {
+          color: #ccc;
+        }
+
+        input::-webkit-input-placeholder {
+          color: #ccc;
+        }
+        .plantContain {
+          a {
+            display: block;
+            width: 100%;
+            height: 36px;
+            margin: 0;
+            padding: 0;
+            line-height: 36px;
+            text-indent: 5px;
+            color: #8A8A8A;
+            font-weight: normal;
+            //background: ;
+          }
+          a:hover {
+            background: #01B1ED;
+            color: #fff;
+          }
+        }
+        .plantContain {
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          background: #fff;
+          display: none;
+          .arrow{
+            position: absolute;
+            top: 35px;
+            left: 10%;
+            z-index: 99;
+            bottom: -10px;
+            display: inline-block;
+            width: 17px;
+            height: 13px;
+            background: url(/images/pmImages/shadow.png);
+          }
+        }
+        .pnContainer {
+          width: 258px;
+          position: absolute;
+          top:47px;
+          z-index: 20;
+          background: #fff;
+          border: 1px solid #ccc;
+          padding: 5px 0;
+          box-shadow: 0 0px 7px rgba(68,68,68,.3);
+        }
+      }
+    /*右边时间*/
+      .rightBar{
+        width: 36%;
+        position: relative;
+        >div{
+          display: inline-block;
+          width: 40%;
+          position: relative;
+        }
+        input.timeChoose{
+          width: 100%;
+          display: inline-block;
+          height: 34px;
+          text-indent: 5px;
+          //position: absolute;
+          border: 1px solid #C5C5C5;
+          border-radius: 4px;
+          cursor: pointer;
+          &:focus{
+            outline: none;
+          }
+          background: url("/images/repImages/calendar.png") no-repeat 96% 2px;
+        }
+        label{
+          display: inline-block;
+          width: 1px;
+          height: 18px;
+          background: #01B1ED;
+          position: absolute;
+          top:10px;
+          right: 40px;
+        }
+        a.sureTime{
+          height: 34px;
+          display: inline-block;
+          padding: 0 5px;
+          border-radius: 4px;
+          color: #fff;
+          margin-left: 5px;
+          background:#01B1ED ;
+        }
+      }
+    }
+    //表单样式
+    .deviceForm{
+      width: 100%;
+      form{
+        margin:0 auto;
+        width: 96.4%;
+        position: relative;
+        clear: both;
+        fieldset{
+          color: #8A8A8A;
+          border-radius: 4px;
+          font-size: 1em;
+          div.selectBtn{
+            width:100%;
+            float: right;
+            .formItem{
+              width: 128px;
+              //#cancelSelectData{
+              //  input{
+              //    display: none;
+              //    label{
+              //      width: 20px;
+              //      height: 20px;
+              //      background: url("/images/repImages/rect.png") no-repeat center;
+              //    }
+              //  }
+              //}
+              input{
+                display: none;
+              }
+              label.unChoose{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                background: url("/images/repImages/rect.png") no-repeat center;
+              }
+              label.choose{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                background: url("/images/repImages/rect1.png") no-repeat center;
+              }
+            }
+          }
+          div.items{
+            min-height: 100px;
+          }
+          border: 1px solid #eee;
+          text-align: left;
+          .spanColor{
+            span{
+              color: #01B1ED;
+            }
+          }
+          div.formItem{
+            min-width: 9%;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+            span{
+              cursor: pointer;
+              //color: #01B1ED;
+            }
+            input{
+              display: none;
+            }
+            label.unChoose{
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px;
+              width: 20px;
+              height: 20px;
+              background: url("/images/repImages/rect.png") no-repeat center;
+            }
+            label.choose{
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px;
+              width: 20px;
+              height: 20px;
+              background: url("/images/repImages/rect1.png") no-repeat center;
+            }
+          }
+
+          div.sureBtn{
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
+            height: 34px;
+            a{
+              display: inline-block;
+              padding: 0 22px;
+              background: #01B1ED;
+              border-radius: 4px;
+              height: 34px;
+              line-height: 34px;
+              color: #fff;
+              font-size: 1em;
+              text-align: center;
+            }
+          }
+        }
+        legend{
+          position: absolute;
+          left:20px;
+          top: -16px;
+          font-size: 16px;
+          height: 34px;
+          line-height: 34px;
+          text-align: center;
+          background: #01B1ED;
+          border-radius: 4px;
+          display: inline-block;
+          width: 110px;
+          color: #fff;
+        }
+        input{
+
+        }
+      }
+    }
+    //按钮
+    .btns{
+      margin-top: 20px;
+      width: 100%;
+      a{
+        display: inline-block;
+        height: 34px;
+        line-height: 34px;
+        //background: #01B1ED;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1em;
+       //padding: 0 22px;
+        text-align: center;
+        margin-right: 56px;
+        text-indent: 30px;
+      }
+      a#saveLine{
+        width: 114px;
+        background: #01B1ED url("/images/repImages/save.png") no-repeat 5% 2px;
+      }
+      a#canSel{
+        width: 100px;
+        background: #01B1ED url("/images/repImages/cancel.png") no-repeat 5% 2px;
+      }
+      a#getLine{
+        width: 100px;
+        background: #01B1ED url("/images/repImages/curve.png") no-repeat 5% 2px;
+      }
+      //a:nth-of-type(1){
+      //  background: url("/");
+      //}
+    }
+    .lineBox{
+      width: 100%;
+      height: 500px;
+      #lineContent1{
+        width: 100%;
+        height: 500px;
+      }
+    }
+    div#checkbox{
+      background: yellow;
+      label.test{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        color: red;
+        background: url("/images/repImages/rect.png") no-repeat center;
+      }
+    }
+  }
+}
+//弹窗
+.changeWin1{
+  position: relative;
+  padding: 20px;
+  text-align: left;
+  .selectPlant{
+    height: 32px;
+    line-height: 32px;
+    border-radius: 4px;
+    border: 1px solid #c5c5c5;
+    padding: 0 7px;
+    margin-left: 5px;
+    min-width: 200px;
+  }
+  .map-select-box{
+    display: inline-block;
+    position: absolute;
+    top:68px;
+    left: 14px;
+    margin-left: 13px;
+    background-color: #fff;
+    padding: 0 0 14px 14px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 7px RGBA(68,68,68,.31);
+    border: 1px solid #ccc;
+    z-index: 99;
+    .arrow{
+      position: absolute;
+      left: 120px;
+      top: -13px;
+    }
+  }
+  .navigation-tit{
+    text-align: left;
+    color: #01adf6;
+    font-size: 1.1428em;
+  }
+  .navigation-box{
+    table{
+      min-width: 437px;
+      text-align: left;
+      color: #575757;
+      td{
+        line-height: 2.4em;
+        padding-right: 15px;
+        white-space:nowrap;
+      }
+      a:hover{
+        color: #ffa35c;
+      }
+    }
+  }
+  .ue-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    .bootstrap-duallistbox-container select{
+      width: 100%;
+      margin: 0;
+      height: 318px !important;
+    }
+  }
+  .imgBtn.comfort{
+    float: right;
+    &:before{
+      background: url("/images/repImages/report.png") no-repeat center;
+    }
+  }
+  //.imgBtn.comfort.setSave{
+  //  &:before{
+  //    background:url("/images/repImages/save.png") no-repeat center;
+  //  }
+  //}
+  .box1,.box2{
+    border: 1px solid #E1E1E1;
+    padding: 0;
+    border-radius: 4px;
+    height: 360px;
+    label{
+      border-bottom: 1px solid #01B1ED;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 8px;
+      margin-bottom: 0;
+    }
+  }
+  .info-container{
+    display: none;
+  }
+  .form-control{
+    border: none;
+    box-shadow: none;
+  }
+  .settingUp-btns{
+    display: none;
+  }
+  .bootstrap-duallistbox-container .btn-box {
+    //margin-top: 90px;
+    padding: 0;
+    float: left;
+    margin: 11% 4%;
+  }
+  .btn-box .btn{
+    border-radius: 4px;
+  }
+  option{
+    //background: transparent;
+  }
+  .cus-ib-cancel{
+    float: right;
+    &:before{
+      background: url("/images/repImages/report.png") no-repeat center;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<div class="organizationBox">
+    <div class="organizationLf">
+        <div class="searchBox">
+            <div class="searchImg">
+                <img src="/images/setting/search1.png" alt="">
+            </div>
+            <input type="text" id="key" class="searchContent"  i18n="searchPlaceholder" placeholder="searchPlaceholder">
+            <div class="searchBtn" i18n="search">search</div>
+        </div>
+        <div id="ztree" class="ztree">
+        </div>
+    </div>
+    <div class="organizationRi " id="organizationRi">
+        <div class="cpLog" i18n="orgDetail">
+            orgDtail
+        </div>
+        <div class="orDetai">
+            <p><span class="messName" i18n="orgNames">orgNames</span><b style="margin-right: 18px">:</b><span class="orgName"></span></p>
+            <p><span class="messName" i18n="orgCode">orgCode</span><b style="margin-right: 18px">:</b><span class="orgCode"></span></p>
+            <p class="isShow"><span class="messName" i18n="administratorAccount">administratorAccount</span><b style="margin-right: 18px">:</b><span class="loginId"></span></p>
+            <p class="isShow"><span class="messName" i18n="email">email</span><b style="margin-right: 18px">:</b><span class="email"></span></p>
+            <p class="isShow"><span class="messName" i18n="userTel">userTel</span><b style="margin-right: 18px">:</b><span class="userTel"></span></p>
+            <p><span class="messName" i18n="orgStatus">orgStatus</span><b style="margin-right: 18px">:</b><span class="isUse" i18n="enable">enable</span></p>
+            <a  permission = 'groupInfoEdit' class="edit imgBtn" id="edit" i18n="edit">edit</a> <a  permission = 'groupInfoEdit' class="OrgmodifyPassword imgNoBtn" id="modifyPassword" i18n="modifyPWD">modifyPWD</a>
+        </div>
+        <div class="orEdit">
+            <form id="modifyForm">
+                <p>
+                <span class="messName">
+                    <span>*</span><b i18n="orgNames">orgNames</b>
+                </span>
+                    <b style="margin-right: 18px">:</b>
+                    <input type="text" required name="orgName"/>
+                </p>
+                <p>
+                <span class="messName" i18n="orgCode">
+                    orgCode
+                </span>
+                    <b style="margin-right: 18px">:</b>
+                    <input type="text" name="orgCode" disabled="true"/>
+                </p>
+                <p class="isShow">
+                <span class="messName">
+                    <span>*</span><b i18n="administratorAccount">administratorAccount</b>
+                </span>
+                    <b style="margin-right: 18px">:</b>
+                    <input id="modifyLoginId" type="text" class="checkRepeatLoginId" required name="loginId"/>
+                </p>
+                <p class="isShow">
+                <label class="messName" i18n="email" style="font-weight: normal">
+                    email
+                </label>
+                    <b style="margin-right: 18px">:</b>
+                    <input id="modifyEmail" type="email" name="email" class="checkRepeatEmail"/>
+                </p>
+                <p class="phoneNum isShow">
+                <label class="messName" i18n="userTel" style="font-weight: normal">
+                    userTel
+                </label>
+                    <b style="margin-right: 18px">:</b>
+                    <input id="modifyTel" type="text" name="userTel" class="checkRepeatTel mobile"/>
+                </p>
+                <p>
+                <span class="messName" i18n="orgStatus">
+                    orgStatus
+                </span>
+                    <b style="margin-right: 18px">:</b>
+                    <img class="isOpenImg" src="images/setting/enabled.png" alt="">
+                </p>
+                <div class="submit">
+                    <a class="cancel imgBtn" id="cancel" i18n="cancel">cancel</a>
+                    <a class="preservation imgBtn" id="modifySave" i18n="save">save</a>
+                    <!--<input type="button" value="保存" id="modifySave"/>-->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

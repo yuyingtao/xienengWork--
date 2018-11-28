@@ -1,0 +1,54 @@
+<div class="compareRep">
+    <!--个性化设置弹出框-->
+    <div class="personSet">
+        <div class="settingContent">
+
+        </div>
+    </div>
+    <div class="comRepContent">
+        <div class="repHead">
+            <div class="leftBar">
+
+            </div>
+            <div class="fl" style="height: 34px;line-height: 34px"><span i18n="report.plantArea">plantArea</span>：</div>
+            <input id="showWin" type="text" readonly class="selectPlant">
+            <div class="rightBar fr">
+                <nav class="dimenSwi">
+                    <span class="activeSpan" data-dimension="day" i18n="report.dayReport">dayReport</span>
+                    <span data-dimension="month" i18n="report.monthReport">monthReport</span>
+                    <span style="float:right;" data-dimension="year" i18n="report.yearReport">yearReport</span>
+                </nav>
+                <input type="text" class="" id="dimenTime">
+                <a id="getLineTable" class="imgNoBtn" i18n="sure">sure</a>
+                <a class="export fr" i18n="export">export</a>
+            </div>
+        </div>
+        <div class="loadingData" id="loadingData" style="margin-top: 100px;display: none" i18n="sp.loading">
+            loading
+        </div>
+        <div class="deviceDetail pms-item" id="nanImg" style="margin-top: 100px;">
+            <img class="noData" src="/images/NaN.png" alt="">
+        </div>
+        <!--各种曲线-->
+        <div class="lineBox" style="display: none">
+            <div id="lineContent"></div>
+        </div>
+        <!--报表表格-->
+        <div class="repTable" style="display: none">
+            <div class="caption" i18n="report.plantCompare">
+                plantCompare
+            </div>
+            <div class="plantInfo">
+                <span i18n="report.org">org</span>
+                <span>--</span>
+                <span i18n="report.area">area</span>
+                <span>--</span>
+                <span i18n="report.countTime">countTime</span>
+                <span>--</span>
+            </div>
+            <table class="reportTable hover stripe" width="100%" id="reportTable" style="margin: 0; padding: 0;">
+            </table>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="login-page" id="loginPage">
+    <ul class="backScroll">
+        <li><a href="#"><img id="loginImages1" src="/images/loginImages/bg1.jpg"/></a></li>
+        <li><a href="#"><img id="loginImages2" src="/images/loginImages/bg2.jpg"/></a></li>
+        <li><a href="#"><img id="loginImages3" src="/images/loginImages/bg3.jpg"/></a></li>
+    </ul>
+    <div class="login-contain">
+        <header>
+            <div>
+                <img id="logoImg" alt="logo">
+                <span>丨</span>
+                <span id="logoTxt">--</span>
+            </div>
+        </header>
+        <section>
+            <nav>
+                <div class="loginTab">
+                    <span class="isActive" data-method="code">扫码登录<b></b></span>
+                    <!--<span data-method="phone" style="width: 100%;border-bottom: none;font-size: 18px;font-weight: 500;    margin-top: 10px;">账号/手机号登录</span>-->
+                    <span data-method="phone" >账号/手机号登录<b></b></span>
+                </div>
+                <div class="scanLogin">
+                    <div class="codeImg">
+                        <div id="qrCodeImg" class="qrCodeImg"></div>
+                        <!--<div class="codeMask" id="codeMask"><img src="/images/success.png" alt=""><p id="scanRes">扫码成功</p></div>
+                        <div class="codeRefresh" id="codeRefresh"><p>二维码失效</p><button id="refreshCode">刷新</button></div>-->
+                    </div>
+                    <div class="loginItem" style="display: none">
+                        <input type="text" name="requestType" value="0">
+                    </div>
+                </div>
+                <div class="phoneLogin" style="display: none">
+                    <form action="" id="loginForm" class="loginForm">
+                        <div class="loginItem">
+                            <label for="" class="userIcon loginLabel"></label>
+                            <input type="text" class="loginInput idInput" name="loginId" id="loginId" placeholder="请输入账号/手机号码">
+                        </div>
+                        <div class="loginItem">
+                            <label for="" class="pwdIcon loginLabel"></label>
+                            <input type="password" class="loginInput passwordInput" name="password" id="password" placeholder="请输入密码">
+                            <span class="loginSpan">
+                            <i class="loginLine"></i>
+                            <i class="loginEye" data-flag="1"></i>
+                        </span>
+                        </div>
+                        <div class="loginItem yzmDiv" style="display: none">
+                            <label for="" class="yzmIcon loginLabel"></label>
+                            <input type="text" name="yzm" id="yzm" class="loginInput">
+                            <i class="code" id="getCode" style="width: 100px;height: 40px"></i>
+                            <i class="changeCode" style="cursor: pointer;float: right;line-height: 40px">看不清,换一张</i>
+                        </div>
+                        <div class="syn-errorInfo errorInfo"><span class="errorInfoTxt"></span></div>
+                        <div class="loginItem checkboxItem">
+                            <input type="checkbox">
+                            <b>记住登录状态</b>
+                        </div>
+                        <div class="loginItem submitBtn">
+                            <input type="button" id="submitBtn" value="登  录">
+                        </div>
+                        <div class="loginItem" style="display: none">
+                            <input type="text" name="requestType" value="1">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="codeDiv">
+                    <img src="/images/loginImages/gzh.png" alt="">
+                    <p>小程序</p>
+                </div>
+                <div class="aboutCompany">
+                    <p>Copyright 2017 版权所有</p>
+                    <p><a class="toHref" href="http://www.miitbeian.gov.cn">蜀ICP备145520976号</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--<form class="loginForm">-->
+        <!--<input type="hidden" id="isLoginPage">-->
+        <!--<fieldset>-->
+            <!--<legend>登录</legend>-->
+            <!--<p>-->
+                <!--<label>用户名: <input name="loginId" id="loginId" type="text"></label>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label>密&nbsp;&nbsp;&nbsp;&nbsp;码: <input name="passWord" id="passWord" type="password"></label>-->
+            <!--</p>-->
+            <!--<p style="display:none">-->
+                <!--<label>登录方式: <input name="requestType" id="requestType" type="text"  value="1"></label>-->
+            <!--</p>-->
+            <!--<input type="button" id="submitBtn" value="登录"></input>-->
+        <!--</fieldset>-->
+    <!--</form>-->
+</div>

@@ -1,0 +1,375 @@
+.runRep{
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  .runRepContent{
+    width: 98%;
+    margin: 0 auto;
+    min-height: 800px;
+    overflow: hidden;
+      .repHead{
+      margin-top: 16px;
+      margin-bottom: 16px;
+      text-align: left;
+      height:36px;
+      .leftBar {
+        width: 18.36%;
+        position: relative;
+        margin-right: 26px;
+        &:before {
+          top: 6px;
+          left: 5px;
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          background: url("/images/repImages/search.png") no-repeat center;
+        }
+        input {
+          width: calc(~"100% - 55px");
+          height: 34px;
+          line-height: 34px;
+          border: 1px solid #C5C5C5;
+          border-radius: 4px;
+          padding: 0 5px 0 28px;
+          color: #666;
+          font-size: 1em;
+          font-weight: 500;
+          float: left;
+          &:focus {
+            outline: none;
+          }
+          &::-webkit-input-placeholder {
+            color: #b3b3b3;
+          }
+        }
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #999;
+      }
+
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #999;
+      }
+
+      input:-ms-input-placeholder {
+        color: #999;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #999;
+      }
+      .searchBtn {
+        float: left;
+        display: inline-block;
+        width: 55px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #fff;
+        background-color: #01B1ED;
+        border-radius: 0 4px 4px 0;
+      }
+      //  搜索框
+      .plantContain {
+        a {
+          display: block;
+          width: 100%;
+          height: 36px;
+          margin: 0;
+          padding: 0;
+          line-height: 36px;
+          text-indent: 5px;
+          color: #8A8A8A;
+          font-weight: normal;
+          //background: ;
+        }
+        a:hover {
+          background: #01B1ED;
+          color: #fff;
+        }
+      }
+        .plantContain {
+         position: relative;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         background: #fff;
+         display: none;
+         .arrow{
+           position: absolute;
+           top: 35px;
+           left: 10%;
+           z-index: 99;
+           bottom: -10px;
+           display: inline-block;
+           width: 17px;
+           height: 13px;
+           background: url(/images/pmImages/shadow.png);
+         }
+       }
+        .pnContainer {
+          width: 258px;
+          position: absolute;
+          top:47px;
+          z-index: 20;
+          background: #fff;
+          border: 1px solid #ccc;
+          padding: 5px 0;
+          box-shadow: 0 0px 7px rgba(68,68,68,.3);
+        }
+      //  中间组织文字
+      .centerBar{
+        width: 18.91%;
+        position: relative;
+        &:before {
+          top: 2px;
+          right: 5px;
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url("/images/repImages/organizations.png") no-repeat center;
+        }
+        span{
+          font-size: 1em;
+          color: #333;
+          display: inline-block;
+          //margin-left: 26px;
+          margin-right: 26px;
+        }
+        input{
+          width: calc(~"100% - 63px");
+          border: 1px solid #C5C5C5;
+          padding: 0;
+          height: 34px;
+          line-height: 34px;
+          text-indent: 5px;
+          border-radius: 4px;
+          &:focus{
+            outline: none;
+          }
+        }
+        label{
+          display: inline-block;
+          width: 1px;
+          height: 18px;
+          background: #C5C5C5;
+          position: absolute;
+          top: 8px;
+          right: 40px;
+        }
+      }
+      //右边
+      .rightBar{
+        font-size: 1em;
+        color: #B2B2B2;
+        height: 34px;
+        line-height: 34px;
+        position: relative;
+        .dimenSwi{
+          display: inline-block;
+          width: 110px;
+          border: 1px solid #01B1ED;
+          border-radius: 4px;
+          overflow: hidden;
+          margin-right: 8px;
+          vertical-align: top;
+          span{
+            display: inline-block;
+            width: 50%;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            height: 32px;
+            line-height: 32px;
+          }
+          span.activeSpan{
+            background: #01B1ED ;
+            color: white;
+          }
+        }
+        input{
+          border: 1px solid #B3B3B3;
+          border-radius: 4px;
+          width: 150px;
+          height: 34px;
+          text-indent: 5px;
+          cursor: pointer;
+          margin-right: 15px;
+          &:focus{
+            outline: none;
+          }
+          background: url("/images/repImages/calendar.png") no-repeat 95% 2px;
+        }
+        a.export{
+          &:before{
+            top:0;
+            background:#01B1ED url("/images/repImages/export.png") no-repeat 5% 2px;
+          }
+
+        }
+        a.sureTime{
+          margin-right: 15px;
+        }
+      }
+    }
+    /* 曲线*/
+    .lineBox{
+      width: 100%;
+      height: 350px;
+      #lineContent{
+        width: 100%;
+        height: 350px;
+      }
+    }
+    /*报表数据表格*/
+    .repTable{
+      width: 100%;
+      .caption{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #30A6FA ;
+        color: #fff;
+        font-size: 1.142857em;
+        padding: 0;
+        border-radius: 4px 4px 0 0 ;
+      }
+      .repTableHead {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+      table.stripe{
+        thead{
+          th{
+            background:#e0f2fe;
+            color: #333;
+            text-align: center;
+          }
+        }
+        tbody{
+          td{
+            text-align: center;
+          }
+        }
+      }
+      //  tr{
+      //    width: 100%;
+      //    border: 1px solid #C5C5C5;
+      //  }
+      //  tr td{
+      //    color: #333;
+      //    display: inline-block;
+      //    border-right: 1px solid #C5C5C5;
+      //  }
+      //  tr td:nth-of-type(1){
+      //    width: 10.8%;
+      //  }
+      //  tr td:nth-of-type(2){
+      //    width: 22%;
+      //  }
+      //  tr td:nth-of-type(3){
+      //    width: 12.7%;
+      //  }
+      //  tr td:nth-of-type(4){
+      //    width: 27.8%;
+      //  }
+      //  tr td:nth-of-type(5){
+      //    width: 12.4%;
+      //  }
+      //  tr td:nth-of-type(6){
+      //    width: 14.3%;
+      //    border-right: 0;
+      //  }
+      //}
+      .reportTable{
+        width: 100%;
+      }
+      div.plantInfo{
+        width: 100%;
+        height: 40px;
+        border:1px solid #ededed;
+        line-height: 40px;
+        color: #333;
+        border-bottom: none;
+        font-size: 1.142857em;
+        background: #F5F8FD;
+        span{
+          border-right:1px solid #ededed;
+          display: inline-block;
+        }
+        span:nth-of-type(1){
+          width: 10.8%;
+          margin: 0;
+          text-align: center;
+        }
+        span:nth-of-type(2){
+          width: 22%;
+        }
+        span:nth-of-type(3){
+          width: 12.7%;
+        }
+        span:nth-of-type(4){
+          width: 27.8%;
+        }
+        span:nth-of-type(5){
+          width: 12.4%;
+        }
+        span:nth-of-type(6){
+          width: 10%;
+          border: none;
+          //text-indent: 10px;
+         // width:calc(~"100% - 10.8% - 22% - 12.7% - 27.8% - 12.4%");
+        }
+      }
+    }
+  }
+}
+/*
+* @description: 响应式，以下为响应式样式设置
+* 需导入默认参数文件@import '../../media.less'
+* 设置宽高度，字体
+* 默认字体为@basicFontSize:14px
+**/
+.plantRep {
+  .rep-content {
+    width: 1500px;
+  }
+  .titleBar {
+    width: 1500px;
+  }
+}
+
+@import '../../media.less';
+@media (max-width: @screen1920) {
+
+}
+
+@media (max-width: @screen1500) {
+  .plantRep {
+    .rep-content {
+      width: 100%;
+
+      .palntImg {
+        width: 27.69%;
+      }
+    }
+    .titleBar {
+      width: 98.5333%;
+    }
+  }
+}
+
+@media (max-width: @screen1366) {
+
+}
+
+@media (max-width: @screen1024) {
+
+}

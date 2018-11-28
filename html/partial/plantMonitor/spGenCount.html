@@ -1,0 +1,29 @@
+<!--
+*2018/3/6
+*@author: SP0014
+*@description:  单电站监控页面  发电量统计收益曲线
+-->
+<div class="sp-tit">
+    <h2 i18n="sp.genProfit">genProfit</h2>
+    <div class="curve_box_top">
+        <div class="curve_box_top_ri">
+            <span class="activeTime1 chooseDimension" data-type="0"><span i18n="day">day</span><b></b></span>
+            <span class="chooseDimension" data-type="1"><span i18n="month">month</span><b></b></span>
+            <span class="chooseDimension" data-type="2"><span i18n="year">year</span><b></b></span>
+        </div>
+        <div class="curve_box_top_lf">
+            <input type="text" class="Wdate" id="dateStart">
+            —
+            <input type="text" class="Wdate" id="dateEnd">
+            <span class="search_box" id="searchGenProfit">
+                <img src="/images/newMain/search.png" alt="">
+            </span>
+        </div>
+    </div>
+</div>
+<div class="r-kpi">
+    <div class="" id="" style="text-align: center">
+        <div id="loadGenProfit" style="margin: 50px auto" i18n="sp.loading">loading</div>
+        <div id="profitLine"></div>
+    </div>
+</div>
